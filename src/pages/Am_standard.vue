@@ -177,6 +177,7 @@
                           <option value="3">3</option>
                           <option value="4">4</option>
                           <option value="5">5</option>
+
                         </select>
                       </td>
 
@@ -2968,7 +2969,8 @@
                     class="form-control"
                     v-model="form.total_percent"
                     required
-                  /></th>
+                  />
+                </th>
               </tr>
             </tfoot>
           </table>
