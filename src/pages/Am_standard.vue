@@ -856,8 +856,9 @@
 
                       <td>Is the Red book completed and up-to-date as at the time of inspection? Are entries accurate for the time inspected?
                       </td>
+                      
                       <td
-                        id="46"
+                        id="33"
                         class=" haccp_compliance"
                         data-name="Is the Red book completed and up-to-date as at the time of inspection? Are entries accurate for the time inspected?"
                       >
@@ -874,18 +875,24 @@
                           <option value="1">No</option>
                         </select>
                       </td>
-
                     </tr>
                   </tbody>
+
                   <tbody>
                     <tr>
                       <td
                         class="rotate"
-                        rowspan="13"
+                        rowspan="14"
                       >Hygiene & Cleanliness</td>
+                      <td colspan="2" class="font-weight-bold">Check that the following areas are clean and free of grease/dirt or debris:</td>
+
+                    </tr>
+
+                    <tr>  
                       <td>All Equipment (Interior & Exterior)</td>
+                      
                       <td
-                        id="54"
+                        id="34"
                         class=" hygiene"
                         data-name="All Equipment (Interior & Exterior)"
                       >
@@ -905,27 +912,13 @@
                           <option value="5">5</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="55"
-                        class=" "
-                        data-name="All Equipment (Interior & Exterior)"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td>Cold room (Rack surfaces, wall & floor)</td>
+                      
                       <td
-                        id="56"
+                        id="35"
                         class=" hygiene"
                         data-name="Cold room (Rack surfaces, wall & floor)"
                       >
@@ -945,27 +938,12 @@
                           <option value="5">5</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="57"
-                        class=""
-                        data-name="Cold room (Rack surfaces, wall & floor)"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td>Deep freezers (No ice buildup and kept clean)</td>
                       <td
-                        id="58"
+                        id="36"
                         class=" hygiene"
                         data-name="Deep freezers (No ice buildup and kept clean)"
                       >
@@ -985,27 +963,12 @@
                           <option value="5">5</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="59"
-                        class=""
-                        data-name="Deep freezers (No ice buildup and kept clean)"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td>Extractor canopy grills (clean and no grease)</td>
                       <td
-                        id="60"
+                        id="37"
                         class=" hygiene"
                         data-name="Extractor canopy grills (clean and no grease)"
                       >
@@ -1025,27 +988,12 @@
                           <option value="5">5</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="61"
-                        class=""
-                        data-name="Extractor canopy grills (clean and no grease)"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Kitchen floor, corners, walls, ceilings </td>
                       <td
-                        id="62"
+                        id="38"
                         class=" hygiene"
                         data-name="Kitchen floor, corners, walls, ceilings"
                       >
@@ -1065,27 +1013,12 @@
                           <option value="5">5</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="63"
-                        class=""
-                        data-name="Kitchen floor, corners, walls, ceilings"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td>Storage (floor, racks, smells)</td>
                       <td
-                        id="64"
+                        id="39"
                         class=" hygiene"
                         data-name="Storage (floor, racks, smells)"
                       >
@@ -1105,27 +1038,12 @@
                           <option value="5">5</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="65"
-                        class=""
-                        data-name="Storage (floor, racks, smells)"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Lobby (floor & table surfaces + legs) </td>
                       <td
-                        id="66"
+                        id="40"
                         class=" hygiene"
                         data-name=" Lobby (floor & table surfaces + legs) "
                       >
@@ -1145,27 +1063,12 @@
                           <option value="5">5</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="67"
-                        class=""
-                        data-name=" Lobby (floor & table surfaces + legs) "
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td>Customer convenience</td>
                       <td
-                        id="68"
+                        id="40"
                         class=" hygiene"
                         data-name="Customer convenience"
                       >
@@ -1182,27 +1085,12 @@
                           <option value="1">No</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="69"
-                        class=""
-                        data-name="Customer convenience"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td>Staff changing room and toilet</td>
                       <td
-                        id="70"
+                        id="41"
                         class=" hygiene"
                         data-name="Staff changing room and toilet"
                       >
@@ -1219,27 +1107,12 @@
                           <option value="1">No</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="71"
-                        class=""
-                        data-name="Staff changing room and toilet"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td>Dump area</td>
                       <td
-                        id="72"
+                        id="42"
                         class=" hygiene"
                         data-name="Dump area"
                       >
@@ -1256,27 +1129,12 @@
                           <option value="1">No</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="73"
-                        class=""
-                        data-name="Dump area"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td>Grease trap and sink</td>
                       <td
-                        id="74"
+                        id="43"
                         class=" hygiene"
                         data-name="Grease trap and sink"
                       >
@@ -1293,28 +1151,13 @@
                           <option value="1">No</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="75"
-                        class=""
-                        data-name="Grease trap and sink"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td>Is the restaurant environment (external) and back area clean, free from foul smell?
                       </td>
                       <td
-                        id="76"
+                        id="44"
                         class=" hygiene"
                         data-name="Is the restaurant environment (external) and back area clean, free from foul smell?"
                       >
@@ -1334,35 +1177,20 @@
                           <option value="5">5</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="77"
-                        class=""
-                        data-name="Is the restaurant environment (external) and back area clean, free from foul smell?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td>Is the Green book completed and up-to-date as at the time of inspection? Are entries accurate for the time inspected?
                       </td>
                       <td
-                        id="46"
+                        id="45"
                         class=" hygiene"
                         data-name="Is the Green book completed and up-to-date as at the time of inspection? Are entries accurate for the time inspected?"
                       >
                         <label
                           for=""
                           class="label"
-                        >HACCP Compliance</label>
+                        >Hygiene & Cleanliness</label>
                         <select
                           class="form-control"
                           name=""
@@ -1372,21 +1200,20 @@
                           <option value="1">No</option>
                         </select>
                       </td>
-
                     </tr>
-
                   </tbody>
+
                   <tbody>
                     <tr>
                       <td
                         class="rotate"
-                        rowspan="13"
+                        rowspan="12"
                       > Customer Experience</td>
-                      <td>All Equipment (Interior & Exterior)</td>
+                      <td>Is there adequate parking for all customers?</td>
                       <td
-                        id="78"
+                        id="46"
                         class=" customer_experience"
-                        data-name="All Equipment (Interior & Exterior)"
+                        data-name="is there adequate parking for all customers?"
                       >
                         <label
                           for=""
@@ -1397,36 +1224,18 @@
                           name=""
                           v-model="customer_experience.s1"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="79"
-                        class=""
-                        data-name="All Equipment (Interior & Exterior)"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
-                      <td>Is there adequate parking for all customers?</td>
+                    <tr>
+                      <td> Did security guards welcome customers appropriately and provide the needed guide? </td>
                       <td
-                        id="80"
+                        id="47"
                         class=" customer_experience"
-                        data-name="is there adequate parking for all customers?"
+                        data-name="Did security guards welcome customers appropriately and provide the needed guide"
                       >
                         <label
                           for=""
@@ -1437,36 +1246,18 @@
                           name=""
                           v-model="customer_experience.s2"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="81"
-                        class=""
-                        data-name="is there adequate parking for all customers?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
-                      <td> Did security guards welcome customers appropriately and provide the needed guide? </td>
+                    <tr>
+                      <td>Is external signage in good condition? Is it fully lite (if visit is after dusk or before dawn)?</td>
                       <td
-                        id="82"
+                        id="48"
                         class=" customer_experience"
-                        data-name="Did security guards welcome customers appropriately and provide the needed guide"
+                        data-name="Is external signage in good condition? Is it fully lite (if visit is after dusk or before dawn)?"
                       >
                         <label
                           for=""
@@ -1477,36 +1268,18 @@
                           name=""
                           v-model="customer_experience.s3"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="83"
-                        class=""
-                        data-name="Did security guards welcome customers appropriately and provide the needed guide"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
-                      <td>Is external signage in good condition? Is it fully lite (if visit is after dusk or before dawn)?</td>
+                    <tr>
+                      <td>Is the visual appeal of the restaurant negatively affected by anything? Check walls, floor, tables, chairs, windows, other customers etc</td>
                       <td
-                        id="84"
+                        id="49"
                         class=" customer_experience"
-                        data-name="Is external signage in good condition? Is it fully lite (if visit is after dusk or before dawn)?"
+                        data-name="Is the visual appeal of the restaurant negatively affected by anything? Check walls, floor, tables, chairs, windows, other customers etc"
                       >
                         <label
                           for=""
@@ -1524,29 +1297,14 @@
                           <option value="5">5</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="85"
-                        class=""
-                        data-name="Is external signage in good condition? Is it fully lite (if visit is after dusk or before dawn)?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
-                      <td>Is the visual appeal of the restaurant negatively affected by anything? Check walls, floor, tables, chairs, windows, other customers etc</td>
+                    <tr>
+                      <td>Is the volume of the music appropriate? Are there any other sound that could affect the customer's experience or comfort at the restaurant?</td>
                       <td
-                        id="86"
+                        id="50"
                         class=" customer_experience"
-                        data-name="Is the visual appeal of the restaurant negatively affected by anything? Check walls, floor, tables, chairs, windows, other customers etc"
+                        data-name="Is the volume of the music appropriate? Are there any other sound that could affect the customer's experience or comfort at the restaurant?</"
                       >
                         <label
                           for=""
@@ -1557,36 +1315,18 @@
                           name=""
                           v-model="customer_experience.s5"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="87"
-                        class=""
-                        data-name="Is the visual appeal of the restaurant negatively affected by anything? Check walls, floor, tables, chairs, windows, other customers etc"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
-                      <td>Is the volume of the music appropriate? Are there any other sound that could affect the customer's experience or comfort at the restaurant?</td>
+                    <tr>
+                      <td>Did cashier make eye contact and/or greet customer(s) on approach?</td>
                       <td
-                        id="88"
+                        id="51"
                         class=" customer_experience"
-                        data-name="Is the volume of the music appropriate? Are there any other sound that could affect the customer's experience or comfort at the restaurant?</"
+                        data-name="Did cashier make eye contact and/or greet customer(s) on approach?"
                       >
                         <label
                           for=""
@@ -1597,36 +1337,19 @@
                           name=""
                           v-model="customer_experience.s6"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="89"
-                        class=""
-                        data-name="Is the volume of the music appropriate? Are there any other sound that could affect the customer's experience or comfort at the restaurant?</"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
+                    
                     <tr>
-
-                      <td>Is the volume of the music appropriate? Are there any other sound that could affect the customer's experience or comfort at the restaurant?</td>
+                      <td>Are all listed menu items available for the customer as at and when ordered?
+                      </td>
                       <td
-                        id="90"
+                        id="52"
                         class=" customer_experience"
-                        data-name="Is the volume of the music appropriate? Are there any other sound that could affect the customer's experience or comfort at the restaurant?"
+                        data-name="Are all listed menu items available for the customer as at and when ordered?"
                       >
                         <label
                           for=""
@@ -1644,30 +1367,14 @@
                           <option value="5">5</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="91"
-                        class=""
-                        data-name="Is the volume of the music appropriate? Are there any other sound that could affect the customer's experience or comfort at the restaurant?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
-                      <td>Are all listed menu items available for the customer as at and when ordered?
-                      </td>
+                    <tr>
+                      <td> Did cashier suggest compliments to the customer's original order in order to upsell and improve on the customer's experience? </td>
                       <td
-                        id="92"
+                        id="53"
                         class=" customer_experience"
-                        data-name="Are all listed menu items available for the customer as at and when ordered?"
+                        data-name="Did cashier suggest compliments to the customer's original order in order to upsell and improve on the customer's experience?"
                       >
                         <label
                           for=""
@@ -1678,36 +1385,18 @@
                           name=""
                           v-model="customer_experience.s8"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="93"
-                        class=""
-                        data-name="Are all listed menu items available for the customer as at and when ordered?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
-                      <td> Did cashier suggest compliments to the customer's original order in order to upsell and improve on the customer's experience? </td>
+                    <tr>
+                      <td>Was customer served within 3 minutes?</td>
                       <td
-                        id="94"
+                        id="54"
                         class=" customer_experience"
-                        data-name="Did cashier suggest compliments to the customer's original order in order to upsell and improve on the customer's experience?"
+                        data-name="Was customer served within 3 minutes?"
                       >
                         <label
                           for=""
@@ -1718,36 +1407,18 @@
                           name=""
                           v-model="customer_experience.s9"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="95"
-                        class=""
-                        data-name="Did cashier suggest compliments to the customer's original order in order to upsell and improve on the customer's experience?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
-                      <td>Was customer served within 3 minutes?</td>
+                    <tr>
+                      <td> Is TV tuned to the appropriate music, news or sports channel? </td>
                       <td
-                        id="96"
+                        id="55"
                         class=" customer_experience"
-                        data-name="Was customer served within 3 minutes?"
+                        data-name="Is TV tuned to the appropriate music, news or sports channel?"
                       >
                         <label
                           for=""
@@ -1758,36 +1429,18 @@
                           name=""
                           v-model="customer_experience.s10"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="97"
-                        class=""
-                        data-name="Was customer served within 3 minutes?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
-                      <td> Is TV tuned to the appropriate music, news or sports channel? </td>
+                    <tr>
+                      <td> Was host cheerful and pleasant to customer? Did he greet customer and provide any and all assistance customer ? </td>
                       <td
-                        id="98"
+                        id="56"
                         class=" customer_experience"
-                        data-name="Is TV tuned to the appropriate music, news or sports channel?"
+                        data-name="Was host cheerful and pleasant to customer? Did he greet customer and provide any and all assistance customer ?"
                       >
                         <label
                           for=""
@@ -1805,29 +1458,14 @@
                           <option value="5">5</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="99"
-                        class=""
-                        data-name="Is TV tuned to the appropriate music, news or sports channel?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
-                    <tr>
 
-                      <td> Was host cheerful and pleasant to customer? Did he greet customer and provide any and all assistance customer ? </td>
+                    <tr>
+                      <td>If raining, did security guard assist customer with an umbrella? </td>
                       <td
-                        id="100"
+                        id="57"
                         class=" customer_experience"
-                        data-name="Was host cheerful and pleasant to customer? Did he greet customer and provide any and all assistance customer ?"
+                        data-name="If raining, did security guard assist customer with an umbrella?"
                       >
                         <label
                           for=""
@@ -1838,68 +1476,10 @@
                           name=""
                           v-model="customer_experience.s12"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select>
                       </td>
-
-                      <!-- <td
-                        id="101"
-                        class=""
-                        data-name="Was host cheerful and pleasant to customer? Did he greet customer and provide any and all assistance customer ?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
-                    </tr>
-                    <tr>
-
-                      <td>If raining, did security guard assist customer with an umbrella? </td>
-                      <td
-                        id="102"
-                        class=" customer_experience"
-                        data-name="If raining, did security guard assist customer with an umbrella?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Customer Experience</label>
-                        <select
-                          class="form-control"
-                          name=""
-                          v-model="customer_experience.s13"
-                        >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select>
-                      </td>
-
-                      <!-- <td
-                        id="103"
-                        class=""
-                        data-name="If raining, did security guard assist customer with an umbrella?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label>
-                        <input
-                          type="text"
-                          class="form-control border-0"
-                        />
-                      </td> -->
                     </tr>
                   </tbody>
                 </table>
@@ -1908,7 +1488,7 @@
 
                 <h5 class="subtitle">Comments</h5>
                 <div
-                  id="20"
+                  id="58"
                   class="form-group question"
                   data-name="The 5 top things this restaurant did very well"
                 >
@@ -1925,7 +1505,7 @@
                   </div>
                 </div>
                 <div
-                  id="21"
+                  id="59"
                   class="form-group question"
                   data-name="The 5 top things that could be improved"
                 >
@@ -1942,7 +1522,7 @@
                   </div>
                 </div>
                 <div
-                  id="22"
+                  id="60"
                   class="form-group question"
                   data-name="Food & Beverage Comments & Observations"
                 >
@@ -1959,7 +1539,7 @@
                   </div>
                 </div>
                 <div
-                  id="23"
+                  id="61"
                   class="form-group question"
                   data-name="General Comments & Observations"
                 >
@@ -1990,7 +1570,7 @@
                   <tbody>
                     <tr>
                       <td
-                        id="24"
+                        id="62"
                         class=""
                         data-name="task"
                       >
@@ -2005,7 +1585,7 @@
                         >
                       </td>
                       <td
-                        id="25"
+                        id="63"
                         class=""
                         data-name="assignedTo"
                       >
@@ -2019,15 +1599,6 @@
                           type="hidden"
                           name=""
                         >
-                        <!-- 
-                        <v-select
-                          class="form-control"
-                          v-model="tasks.task1"
-                          :options="all_users"
-                          label="name"
-                          :reduce="name => name.name"
-                        >
-                        </v-select> -->
                         <select
                           class="form-control"
                           id="us"
@@ -2045,7 +1616,7 @@
                         </select>
                       </td>
                       <td
-                        id="26"
+                        id="64"
                         class=""
                         data-name="dueDate"
                       >
@@ -2064,7 +1635,7 @@
                     </tr>
                     <tr>
                       <td
-                        id="28"
+                        id="65"
                         class=""
                         data-name="task"
                       >
@@ -2079,7 +1650,7 @@
                         >
                       </td>
                       <td
-                        id="29"
+                        id="66"
                         class=""
                         data-name="assignedTo"
                       >
@@ -2093,15 +1664,6 @@
                           type="hidden"
                           name=""
                         >
-
-                        <!-- <v-select
-                          class="form-control"
-                          v-model="tasks.task2"
-                          :options="all_users"
-                          label="name"
-                          :reduce="name => name.name"
-                        >
-                        </v-select> -->
                         <select
                           class="form-control"
                           id="us2"
@@ -2119,7 +1681,7 @@
                         </select>
                       </td>
                       <td
-                        id="30"
+                        id="67"
                         class=""
                         data-name="dueDate"
                       >
@@ -2138,7 +1700,7 @@
                     </tr>
                     <tr>
                       <td
-                        id="32"
+                        id="68"
                         class=""
                         data-name="task"
                       >
@@ -2153,7 +1715,7 @@
                         >
                       </td>
                       <td
-                        id="33"
+                        id="69"
                         class=""
                         data-name="assignedTo"
                       >
@@ -2167,15 +1729,6 @@
                           type="hidden"
                           name=""
                         >
-                        <!-- 
-                        <v-select
-                          class="form-control"
-                          v-model="tasks.task3"
-                          :options="all_users"
-                          label="name"
-                          :reduce="name => name.name"
-                        >
-                        </v-select> -->
                         <select
                           class="form-control"
                           id="us3"
@@ -2193,7 +1746,7 @@
                         </select>
                       </td>
                       <td
-                        id="34"
+                        id="70"
                         class=""
                         data-name="dueDate"
                       >
@@ -2212,7 +1765,7 @@
                     </tr>
                     <tr>
                       <td
-                        id="36"
+                        id="71"
                         class=""
                         data-name="task"
                       >
@@ -2227,7 +1780,7 @@
                         >
                       </td>
                       <td
-                        id="37"
+                        id="72"
                         class=""
                         data-name="assignedTo"
                       >
@@ -2241,15 +1794,6 @@
                           type="hidden"
                           name=""
                         >
-
-                        <!-- <v-select
-                          class="form-control"
-                          v-model="tasks.task4"
-                          :options="all_users"
-                          label="name"
-                          :reduce="name => name.name"
-                        >
-                        </v-select> -->
                         <select
                           class="form-control"
                           id="us4"
@@ -2267,7 +1811,7 @@
                         </select>
                       </td>
                       <td
-                        id="38"
+                        id="73"
                         class=""
                         data-name="dueDate"
                       >
@@ -2286,7 +1830,7 @@
                     </tr>
                     <tr>
                       <td
-                        id="40"
+                        id="74"
                         class=""
                         data-name="task"
                       >
@@ -2301,7 +1845,7 @@
                         >
                       </td>
                       <td
-                        id="41"
+                        id="75"
                         class=""
                         data-name="assignedTo"
                       >
@@ -2315,15 +1859,6 @@
                           type="hidden"
                           name=""
                         >
-
-                        <!-- <v-select
-                          class="form-control"
-                          v-model="tasks.task5"
-                          :options="all_users"
-                          label="name"
-                          :reduce="name => name.name"
-                        >
-                        </v-select> -->
                         <select
                           class="form-control"
                           id="us5"
@@ -2341,7 +1876,7 @@
                         </select>
                       </td>
                       <td
-                        id="42"
+                        id="76"
                         class=""
                         data-name="dueDate"
                       >
@@ -2356,7 +1891,6 @@
                           name=""
                         >
                       </td>
-
                     </tr>
 
                   </tbody>
@@ -2419,8 +1953,6 @@
           </md-card-content>
         </md-card>
 
-        <!-- </div> -->
-
       </div>
     </div>
     <div
@@ -2441,7 +1973,7 @@
               <tr>
                 <td>Opening Procedures</td>
                 <td
-                  id="6"
+                  id="77"
                   class=" points"
                   data-name="points earned"
                 >
@@ -2457,7 +1989,7 @@
                 </td>
                 <td class="possible">35</td>
                 <td
-                  id="7"
+                  id="78"
                   class=" percent "
                   data-name="percent earned"
                 >
@@ -2475,7 +2007,7 @@
               <tr>
                 <td>Staff Issues</td>
                 <td
-                  id="8"
+                  id="79"
                   class=" points"
                   data-name="points earned"
                 ><label
@@ -2491,7 +2023,7 @@
                 </td>
                 <td class="possible">20</td>
                 <td
-                  id="9"
+                  id="80"
                   class=" percent"
                   data-name="percent earned"
                 >
@@ -2511,7 +2043,7 @@
               <tr>
                 <td>Production Management</td>
                 <td
-                  id="10"
+                  id="81"
                   class=" points"
                   data-name="points earned"
                 ><label
@@ -2526,7 +2058,7 @@
                 </td>
                 <td class="possible">35</td>
                 <td
-                  id="11"
+                  id="82"
                   class=" percent"
                   data-name="percent earned"
                 >
@@ -2545,7 +2077,7 @@
               <tr>
                 <td>HACCP Compliance</td>
                 <td
-                  id="12"
+                  id="83"
                   class=" points"
                   data-name="points earned"
                 ><label
@@ -2560,7 +2092,7 @@
                 </td>
                 <td class="possible">35</td>
                 <td
-                  id="13"
+                  id="84"
                   class=" percent"
                   data-name="percent earned"
                 >
@@ -2579,7 +2111,7 @@
               <tr>
                 <td>Hygiene & Cleanliness</td>
                 <td
-                  id="14"
+                  id="85"
                   class=" points"
                   data-name="points earned"
                 ><label
@@ -2594,7 +2126,7 @@
                 </td>
                 <td class="possible">60</td>
                 <td
-                  id="15"
+                  id="86"
                   class=" percent"
                   data-name="percent earned"
                 >
@@ -2613,7 +2145,7 @@
               <tr>
                 <td>Customer Experience</td>
                 <td
-                  id="16"
+                  id="87"
                   class=" points"
                   data-name="points earned"
                 ><label
@@ -2628,7 +2160,7 @@
                 </td>
                 <td class="possible">65</td>
                 <td
-                  id="17"
+                  id="88"
                   class=" percent"
                   data-name="percent earned"
                 >
@@ -2650,7 +2182,7 @@
               <tr>
                 <th>TOTALS</th>
                 <th
-                  id="18"
+                  id="89"
                   class="points "
                   data-name="points earned"
                 ><label
@@ -2664,7 +2196,7 @@
                   /></th>
                 <th>250</th>
                 <th
-                  id="19"
+                  id="90"
                   class="percent "
                   data-name="percent earned"
                 >
@@ -2727,7 +2259,6 @@ export default {
         s1: "",
         s2: "",
         s3: "",
-        s4: "",
       },
       production_management: {
         s1: "",
@@ -2737,6 +2268,7 @@ export default {
         s5: "",
         s6: "",
         s7: "",
+        s8: "",
       },
       haccp_compliance: {
         s1: "",
@@ -2746,6 +2278,9 @@ export default {
         s5: "",
         s6: "",
         s7: "",
+        s8: "",
+        s9: "",
+        s10: "",
       },
       hygiene: {
         s1: "",
@@ -2759,7 +2294,8 @@ export default {
         s9: "",
         s10: "",
         s11: "",
-        s12: ""
+        s12: "",
+        s13: "",
       },
       customer_experience: {
         s1: "",
@@ -2774,7 +2310,6 @@ export default {
         s10: "",
         s11: "",
         s12: "",
-        s13: ""
       },
 
 
