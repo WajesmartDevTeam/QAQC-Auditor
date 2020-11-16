@@ -144,7 +144,10 @@
                   </ol>
 
                   <h5 class="subtitle"><u>Score Guide</u></h5>
-                  <ul class="d-flex justify-content-start" style="list-style: none;">
+                  <ul
+                    class="d-flex justify-content-start"
+                    style="list-style: none;"
+                  >
                     <li>Yes = <span class="ml-1">5</span></li>
                     <li class="ml-4">No = <span class="ml-1">1</span></li>
                   </ul>
@@ -157,16 +160,16 @@
                     <th>Score</th>
                     <!-- <th>Comments</th> -->
                   </thead>
-                  
+
                   <tbody>
                     <tr>
                       <td
                         class="rotate"
                         rowspan="7"
                       >Opening Procedures</td>
-                      
+
                       <td>Did manager(s) and all staff arrive at and around 6.30am?</td>
-                      
+
                       <td
                         id="6"
                         class=" opening_procedures"
@@ -186,10 +189,11 @@
                           <option value="3">3</option>
                           <option value="4">4</option>
                           <option value="5">5</option>
+
                         </select>
                       </td>
                     </tr>
-                    
+
                     <tr>
                       <td>Did manager conduct walk-around with 2 security guards?</td>
                       <td
@@ -214,7 +218,7 @@
 
                     <tr>
                       <td>Did manager conduct opening stock count in conjunction with inventory and security officers? Any discrepancies with prior day closing stock records?</td>
-                      
+
                       <td
                         id="8"
                         class=" opening_procedures"
@@ -235,10 +239,10 @@
                       </td>
                     </tr>
 
-                    <tr>                      
+                    <tr>
                       <td>Was stock count conducted before stock started being issued out for production?
                       </td>
-                      
+
                       <td
                         id="9"
                         class=" opening_procedures"
@@ -258,7 +262,7 @@
                         </select>
                       </td>
                     </tr>
-                    
+
                     <tr>
                       <td>Did manager approve all stock issued from store prior to issue?</td>
                       <td
@@ -283,7 +287,7 @@
 
                     <tr>
                       <td> Did pastries arrive or where pastries ready by 7am? </td>
-                      
+
                       <td
                         id="11"
                         class=" opening_procedures"
@@ -309,7 +313,7 @@
 
                     <tr>
                       <td>Was restaurant and products ready for customers by 7.30am?</td>
-                      
+
                       <td
                         id="12"
                         class=" opening_procedures"
@@ -337,7 +341,7 @@
                         class="rotate"
                         rowspan="3"
                       >Staff Issues</td>
-                      
+
                       <td>Were all staff properly dressed (uniform or chef jacket tucked-in over a black pair of pants, covered black work shoe and cap)?</td>
                       <td
                         id="13"
@@ -364,7 +368,7 @@
 
                     <tr>
                       <td>Were all staff properly groomed (men clean shaven, female well pedicured etc)?</td>
-                      
+
                       <td
                         id="14"
                         class=" staff_issues"
@@ -390,7 +394,7 @@
 
                     <tr>
                       <td> Did all staff on duty roaster report to work? </td>
-                      
+
                       <td
                         id="15"
                         class=" staff_issues"
@@ -418,9 +422,9 @@
                         class="rotate"
                         rowspan="8"
                       >Production Management</td>
-                      
+
                       <td>Are recipes cards pasted in conspicuous area in the kitchen?</td>
-                      
+
                       <td
                         id="16"
                         class=" production_management"
@@ -438,12 +442,12 @@
                           <option value="5">Yes</option>
                           <option value="1">No</option>
                         </select>
-                      </td>                      
+                      </td>
                     </tr>
 
                     <tr>
                       <td>Recipe & Process Compliance: Observe several menu production processes to see if recipe and/or processes are being followed</td>
-                      
+
                       <td
                         id="17"
                         class=" production_management"
@@ -469,7 +473,7 @@
 
                     <tr>
                       <td>Spice Inventory: Check that all pre-mixed spices are available, check condition of pre-mix spices, expiry dates, check that spices are being used for production</td>
-                      
+
                       <td
                         id="18"
                         class=" production_management"
@@ -523,7 +527,7 @@
 
                     <tr>
                       <td>Are all menu items available and replenished in a timely manner?</td>
-                      
+
                       <td
                         id="20"
                         class=" production_management"
@@ -571,7 +575,7 @@
 
                     <tr>
                       <td>Are proper records kept for production and transfer of products between FOH & BOH?</td>
-                      
+
                       <td
                         id="22"
                         class=" production_management"
@@ -594,7 +598,7 @@
 
                     <tr>
                       <td>Is the sensory evaluation chart completed and up-to-date as at the time of inspection? Are entries done in right procedures?</td>
-                      
+
                       <td
                         id="23"
                         class=" production_management"
@@ -618,17 +622,17 @@
                       </td>
                     </tr>
                   </tbody>
-                  
+
                   <tbody>
                     <tr>
                       <td
                         class="rotate"
                         rowspan="10"
                       >HACCP Compliance</td>
-                      
+
                       <td>Are all equipment properly labelled with their correct temperature limits?
                       </td>
-                      
+
                       <td
                         id="24"
                         class=" haccp_compliance"
@@ -655,7 +659,7 @@
                     <tr>
                       <td>Are all equipment functioning within their appropriate temperature limits/boundaries?
                       </td>
-                      
+
                       <td
                         id="25"
                         class=" haccp_compliance"
@@ -709,7 +713,7 @@
                     <tr>
                       <td>Are all food items stored in food Grade containers and properly code dated?
                       </td>
-                      
+
                       <td
                         id="27"
                         class=" haccp_compliance"
@@ -733,7 +737,7 @@
                     <tr>
                       <td>Are all work surfaces wiped with appropriate food grade sanitizer prior to use in the morning?
                       </td>
-                      
+
                       <td
                         id="28"
                         class=" haccp_compliance"
@@ -756,7 +760,7 @@
 
                     <tr>
                       <td>Are all kitchen crew using a hand glove when handling fresh produce?</td>
-                      
+
                       <td
                         id="29"
                         class=" haccp_compliance"
@@ -803,7 +807,7 @@
 
                     <tr>
                       <td> Use probe to check the holding temperature of a few menu items on display. Where they within the appropriate holding temperature? </td>
-                      
+
                       <td
                         id="31"
                         class=" haccp_compliance"
@@ -829,7 +833,7 @@
 
                     <tr>
                       <td> Is the cold room chart completed and up-to-date as at the time of inspection? Are entries done in right procedures? </td>
-                      
+
                       <td
                         id="32"
                         class=" haccp_compliance"
@@ -856,7 +860,7 @@
 
                       <td>Is the Red book completed and up-to-date as at the time of inspection? Are entries accurate for the time inspected?
                       </td>
-                      
+
                       <td
                         id="33"
                         class=" haccp_compliance"
@@ -884,13 +888,16 @@
                         class="rotate"
                         rowspan="14"
                       >Hygiene & Cleanliness</td>
-                      <td colspan="2" class="font-weight-bold">Check that the following areas are clean and free of grease/dirt or debris:</td>
+                      <td
+                        colspan="2"
+                        class="font-weight-bold"
+                      >Check that the following areas are clean and free of grease/dirt or debris:</td>
 
                     </tr>
 
-                    <tr>  
+                    <tr>
                       <td>All Equipment (Interior & Exterior)</td>
-                      
+
                       <td
                         id="34"
                         class=" hygiene"
@@ -916,7 +923,7 @@
 
                     <tr>
                       <td>Cold room (Rack surfaces, wall & floor)</td>
-                      
+
                       <td
                         id="35"
                         class=" hygiene"
@@ -1342,7 +1349,7 @@
                         </select>
                       </td>
                     </tr>
-                    
+
                     <tr>
                       <td>Are all listed menu items available for the customer as at and when ordered?
                       </td>
@@ -2209,7 +2216,8 @@
                     class="form-control"
                     v-model="form.total_percent"
                     required
-                  /></th>
+                  />
+                </th>
               </tr>
             </tfoot>
           </table>
@@ -2407,23 +2415,23 @@ export default {
       this.getTotal();
     },
     'points.p2': function (val) {
-      this.percents.p2 = Math.ceil(val / 20 * 100);
+      this.percents.p2 = Math.ceil(val / 15 * 100);
       this.getTotal();
     },
     'points.p3': function (val) {
-      this.percents.p3 = Math.ceil(val / 35 * 100);
+      this.percents.p3 = Math.ceil(val / 40 * 100);
       this.getTotal();
     },
     'points.p4': function (val) {
-      this.percents.p4 = Math.ceil(val / 35 * 100);
+      this.percents.p4 = Math.ceil(val / 50 * 100);
       this.getTotal();
     },
     'points.p5': function (val) {
-      this.percents.p5 = Math.ceil(val / 60 * 100);
+      this.percents.p5 = Math.ceil(val / 65 * 100);
       this.getTotal();
     },
     'points.p6': function (val) {
-      this.percents.p6 = Math.ceil(val / 65 * 100);
+      this.percents.p6 = Math.ceil(val / 60 * 100);
       this.getTotal();
     },
   },
@@ -2507,14 +2515,9 @@ export default {
             due_date: due_date
 
           })
-          // console.log(plannerTask)
 
           this.acquireTokenPopupAndCallMSGraph(JSON.stringify(plannerTask))
         }
-
-
-
-
       });
 
 
@@ -2526,19 +2529,14 @@ export default {
       this.setPercents();
       this.getSum();
 
-
-
-      // this.$store.dispatch('updateAmmvr', data)
-      // this.$router.push('amvrfeedback')
-
     },
     setPercents () {
       this.percents.p1 = Math.ceil(this.points.p1 / 35 * 100);
-      this.percents.p2 = Math.ceil(this.points.p2 / 20 * 100);
-      this.percents.p3 = Math.ceil(this.points.p3 / 35 * 100);
-      this.percents.p4 = Math.ceil(this.points.p4 / 35 * 100);
-      this.percents.p5 = Math.ceil(this.points.p5 / 60 * 100);
-      this.percents.p6 = Math.ceil(this.points.p6 / 65 * 100);
+      this.percents.p2 = Math.ceil(this.points.p2 / 15 * 100);
+      this.percents.p3 = Math.ceil(this.points.p3 / 40 * 100);
+      this.percents.p4 = Math.ceil(this.points.p4 / 50 * 100);
+      this.percents.p5 = Math.ceil(this.points.p5 / 65 * 100);
+      this.percents.p6 = Math.ceil(this.points.p6 / 60 * 100);
     },
     getTotal () {
 
@@ -2672,20 +2670,12 @@ export default {
       this.$socket
         .makePostRequest(req)
         .then(response => {
-          // console.log(response.data.message);
-
           this.$swal.fire("Success", response.data.message, "success");
-          // location.reload();
-          // this.$store.dispatch('updateAmmvr', {})
           location.reload();
         })
         .catch(error => {
-          // console.log(error);
           this.$swal.fire("Error", error.message, "error");
           this.form.question_answer = [];
-          // this.$store.dispatch('updateAmmvr', {})
-          // this.$router.push('openingsoa')
-
         });
     },
 
@@ -2827,5 +2817,8 @@ export default {
 }
 #mvr {
   display: none;
+}
+td {
+  text-align: left;
 }
 </style>

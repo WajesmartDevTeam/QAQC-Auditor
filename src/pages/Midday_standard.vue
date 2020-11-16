@@ -142,7 +142,10 @@
                   </ol>
 
                   <h5 class="subtitle"><u>Score Guide</u></h5>
-                  <ul class="d-flex justify-content-start" style="list-style: none;">
+                  <ul
+                    class="d-flex justify-content-start"
+                    style="list-style: none;"
+                  >
                     <li>Yes = <span class="ml-1">5</span></li>
                     <li class="ml-4">No = <span class="ml-1">1</span></li>
                   </ul>
@@ -153,7 +156,7 @@
                     <th>Category</th>
                     <th>Question</th>
                     <th>Score</th>
-                    
+
                   </thead>
                   <tbody>
                     <tr>
@@ -181,7 +184,8 @@
                           <option value="3">3</option>
                           <option value="4">4</option>
                           <option value="5">5</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
                     <tr>
 
@@ -203,7 +207,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -225,7 +230,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -247,7 +253,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -271,7 +278,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -297,7 +305,8 @@
                           <option value="3">3</option>
                           <option value="4">4</option>
                           <option value="5">5</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -320,7 +329,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -342,7 +352,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -364,7 +375,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -386,7 +398,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -409,7 +422,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -450,7 +464,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -474,7 +489,8 @@
                           <option value="3">3</option>
                           <option value="4">4</option>
                           <option value="5">5</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -495,7 +511,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
                   </tbody>
 
@@ -522,7 +539,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -544,7 +562,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -566,7 +585,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -609,7 +629,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
                   </tbody>
 
@@ -968,7 +989,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -1122,7 +1144,10 @@
                     </tr>
 
                     <tr>
-                      <td colspan="2" class="font-weight-bold">Check that the following areas are clean and free of grease/dirt or debris:</td>
+                      <td
+                        colspan="2"
+                        class="font-weight-bold"
+                      >Check that the following areas are clean and free of grease/dirt or debris:</td>
                     </tr>
 
                     <tr>
@@ -1192,7 +1217,8 @@
                           <option value="3">3</option>
                           <option value="4">4</option>
                           <option value="5">5</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -1216,7 +1242,8 @@
                           <option value="3">3</option>
                           <option value="4">4</option>
                           <option value="5">5</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -1306,7 +1333,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -1367,7 +1395,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -1392,7 +1421,8 @@
                           <option value="3">3</option>
                           <option value="4">4</option>
                           <option value="5">5</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -1475,7 +1505,7 @@
                         class="rotate"
                         rowspan="10"
                       > General Operations Management</td>
-                      
+
                       <td> Do crew appear motivated and working as a coherent team? </td>
                       <td
                         id="60"
@@ -1493,7 +1523,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -1514,7 +1545,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -1693,7 +1725,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
                   </tbody>
 
@@ -1722,7 +1755,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -1764,7 +1798,8 @@
                         >
                           <option value="5">Yes</option>
                           <option value="1">No</option>
-                        </select></td>
+                        </select>
+                      </td>
                     </tr>
 
                     <tr>
@@ -2366,7 +2401,8 @@
                       max="100"
                       class="form-control"
                       v-model="percents.p1"
-                    /></td>
+                    />
+                  </td>
                 </tr>
                 <tr>
                   <td>Hosting</td>
@@ -2397,7 +2433,8 @@
                       max="100"
                       class="form-control"
                       v-model="percents.p2"
-                    /></td>
+                    />
+                  </td>
                 </tr>
                 <tr>
                   <td>Production Management</td>
@@ -2428,7 +2465,8 @@
                       max="100"
                       class="form-control"
                       v-model="percents.p3"
-                    /></td>
+                    />
+                  </td>
                 </tr>
                 <tr>
                   <td>HACCP Compliance</td>
@@ -2459,7 +2497,8 @@
                       max="100"
                       class="form-control"
                       v-model="percents.p4"
-                    /></td>
+                    />
+                  </td>
                 </tr>
                 <tr>
                   <td>Hygiene & Cleanliness</td>
@@ -2490,7 +2529,8 @@
                       max="100"
                       class="form-control"
                       v-model="percents.p5"
-                    /></td>
+                    />
+                  </td>
                 </tr>
                 <tr>
                   <td>General Operations Management</td>
@@ -2521,7 +2561,8 @@
                       max="100"
                       class="form-control"
                       v-model="percents.p6"
-                    /></td>
+                    />
+                  </td>
                 </tr>
                 <tr>
                   <td>Shift Changeover</td>
@@ -2552,7 +2593,8 @@
                       max="100"
                       class="form-control"
                       v-model="percents.p7"
-                    /></td>
+                    />
+                  </td>
                 </tr>
 
               </tbody>
@@ -2587,7 +2629,8 @@
                       class="form-control"
                       v-model="form.total_percent"
                       required
-                    /></th>
+                    />
+                  </th>
                 </tr>
               </tfoot>
             </table>
@@ -2805,23 +2848,23 @@ export default {
       document.getElementById('task5').value = val
     },
     'points.p1': function (val) {
-      this.percents.p1 = Math.ceil(val / 80 * 100);
+      this.percents.p1 = Math.ceil(val / 75 * 100);
       this.getTotal();
     },
     'points.p2': function (val) {
-      this.percents.p2 = Math.ceil(val / 30 * 100);
+      this.percents.p2 = Math.ceil(val / 25 * 100);
       this.getTotal();
     },
     'points.p3': function (val) {
-      this.percents.p3 = Math.ceil(val / 40 * 100);
+      this.percents.p3 = Math.ceil(val / 45 * 100);
       this.getTotal();
     },
     'points.p4': function (val) {
-      this.percents.p4 = Math.ceil(val / 40 * 100);
+      this.percents.p4 = Math.ceil(val / 50 * 100);
       this.getTotal();
     },
     'points.p5': function (val) {
-      this.percents.p5 = Math.ceil(val / 80 * 100);
+      this.percents.p5 = Math.ceil(val / 85 * 100);
       this.getTotal();
     },
     'points.p6': function (val) {
@@ -2991,11 +3034,11 @@ export default {
 
     },
     setPercents () {
-      this.percents.p1 = Math.ceil(this.points.p1 / 80 * 100);
-      this.percents.p2 = Math.ceil(this.points.p2 / 30 * 100);
-      this.percents.p3 = Math.ceil(this.points.p3 / 40 * 100);
-      this.percents.p4 = Math.ceil(this.points.p4 / 40 * 100);
-      this.percents.p5 = Math.ceil(this.points.p5 / 80 * 100);
+      this.percents.p1 = Math.ceil(this.points.p1 / 75 * 100);
+      this.percents.p2 = Math.ceil(this.points.p2 / 25 * 100);
+      this.percents.p3 = Math.ceil(this.points.p3 / 45 * 100);
+      this.percents.p4 = Math.ceil(this.points.p4 / 50 * 100);
+      this.percents.p5 = Math.ceil(this.points.p5 / 85 * 100);
       this.percents.p6 = Math.ceil(this.points.p6 / 50 * 100);
       this.percents.p7 = Math.ceil(this.points.p7 / 40 * 100);
     },
@@ -3227,5 +3270,8 @@ export default {
 }
 #mvr {
   display: none;
+}
+td {
+  text-align: left;
 }
 </style>
