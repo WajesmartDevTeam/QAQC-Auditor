@@ -2,10 +2,6 @@
   <div class="content">
     <div class="md-layout">
       <div class="md-layout-item md-size-100">
-        <!-- <div
-          class="card"
-          style="padding: 20px;"
-        > -->
 
         <md-card>
           <md-card-header data-background-color="orange">
@@ -136,7 +132,7 @@
                   </div>
                 </div>
                 <div>
-                  <h5 class="subtitle"><u>Scoring</u></h5>
+                  <h5 class="subtitle"><u>Grading Guide</u></h5>
                   <ol>
                     <li>Unacceptable</li>
                     <li>Fair</li>
@@ -144,6 +140,12 @@
                     <li>Good</li>
                     <li>Exceeds expectations</li>
                   </ol>
+
+                  <h5 class="subtitle"><u>Score Guide</u></h5>
+                  <ul class="d-flex justify-content-start" style="list-style: none;">
+                    <li>Yes = <span class="ml-1">5</span></li>
+                    <li class="ml-4">No = <span class="ml-1">1</span></li>
+                  </ul>
                 </div>
 
                 <table class="table table-bordered">
@@ -151,18 +153,18 @@
                     <th>Category</th>
                     <th>Question</th>
                     <th>Score</th>
-                    <!-- <th>Comments</th> -->
+                    
                   </thead>
                   <tbody>
                     <tr>
                       <td
                         class="rotate"
-                        rowspan="16"
+                        rowspan="15"
                       >Services</td>
                       <td>Are front of house supervisor(s) providing obvious leadership to
                         their team and crew</td>
                       <td
-                        id="4"
+                        id="6"
                         class="services"
                         data-name="Are front of house supervisor(s) providing obvious leadership to their team and crew"
                       >
@@ -180,19 +182,6 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-                      <!-- 
-                      <td
-                        id="5"
-                        class=""
-                        data-name="Are front of house supervisor(s) providing obvious leadership to their team and crew"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
                     <tr>
 
@@ -200,7 +189,7 @@
 
                       </td>
                       <td
-                        id="6"
+                        id="7"
                         class="services"
                         data-name="Are all front of house staff wearing name tags?"
                       >
@@ -212,26 +201,11 @@
                           name=""
                           v-model="services.s2"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="7"
-                        class=""
-                        data-name="Are all front of house staff wearing name tags?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
                       <td>Did cashier make eye contact and/or greet customer(s) on
@@ -249,32 +223,17 @@
                           name=""
                           v-model="services.s3"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="9"
-                        class=""
-                        data-name="Did cashier make eye contact and/or greet customer(s) on approach?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
                       <td>Were customers served within 3 minutes or were they courteously
-                        informed ofva realistic time frame to expect service</td>
+                        informed of a realistic time frame to expect service</td>
                       <td
-                        id="10"
+                        id="9"
                         class="services"
                         data-name="Were customers served within 3 minutes or were they courteously informed ofva realistic time frame to expect service"
                       >
@@ -286,26 +245,11 @@
                           name=""
                           v-model="services.s4"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="11"
-                        class=""
-                        data-name="Were customers served within 3 minutes or were they courteously informed ofva realistic time frame to expect service"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
                       <td> Are all orders entered into the POS and did all customers
@@ -313,7 +257,7 @@
 
                       </td>
                       <td
-                        id="12"
+                        id="10"
                         class="services"
                         data-name="Are all orders entered into the POS and did all customers receive a receipt for items purchased"
                       >
@@ -325,33 +269,18 @@
                           name=""
                           v-model="services.s5"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="13"
-                        class=""
-                        data-name="Are all orders entered into the POS and did all customers receive a receipt for items purchased"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
                       <td> Are all listed menu items available for the customer as and
                         when ordered?
                       </td>
                       <td
-                        id="14"
+                        id="11"
                         class="services"
                         data-name="Are all listed menu items available for the customer as and when ordered?"
                       >
@@ -369,27 +298,15 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="15"
-                        class=""
-                        data-name="Are all listed menu items available for the customer as and when ordered?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
                       <td>Did cashier suggest compliments to the customer’s original order
                         in order to upsell and improve on the customer’s experience and
                         are customers accepting these suggestions?</td>
                       <td
-                        id="16"
+                        id="12"
                         class="services"
                         data-name="Did cashier suggest compliments to the customer’s original order in order to upsell and improve on the customer’s experience and are  customers accepting these suggestions?"
                       >
@@ -401,34 +318,19 @@
                           name=""
                           v-model="services.s7"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="17"
-                        class=""
-                        data-name="Did cashier suggest compliments to the customer’s original order in order to upsell and improve on the customer’s experience and are  customers accepting these suggestions?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
-                      <td>Are all customers informed of the days special and recommended
-                        to try?</td>
+                      <td> Are customers getting full value for money by receiving
+                        appropriate portion of food ordered? </td>
                       <td
-                        id="18"
+                        id="13"
                         class="services"
-                        data-name="Are all customers informed of the days special and recommended to try?"
+                        data-name="Are customers getting full value for money by receiving appropriate portion of food ordered?"
                       >
                         <label
                           for=""
@@ -438,34 +340,19 @@
                           name=""
                           v-model="services.s8"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="19"
-                        class=""
-                        data-name="Are all customers informed of the days special and recommended to try?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
-                      <td> Are customers getting full value for money by receiving
-                        appropriate portion of food ordered? </td>
+                      <td>Are all customers thanked after service and encouraged to visit
+                        again?</td>
                       <td
-                        id="20"
+                        id="14"
                         class="services"
-                        data-name="Are customers getting full value for money by receiving appropriate portion of food ordered?"
+                        data-name="Are all customers thanked after service and encouraged to visit again?"
                       >
                         <label
                           for=""
@@ -475,34 +362,19 @@
                           name=""
                           v-model="services.s9"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="21"
-                        class=""
-                        data-name="Are customers getting full value for money by receiving appropriate portion of food ordered?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
-                      <td>Are all customers thanked after service and encouraged to visit
-                        again?</td>
+                      <td>Is the lobby cool and are A/Cs functioning at the desired
+                        temperature (18 deg C)</td>
                       <td
-                        id="22"
+                        id="15"
                         class="services"
-                        data-name="Are all customers thanked after service and encouraged to visit again?"
+                        data-name="Is the lobby cool and are A/Cs functioning at the desired  temperature (18 deg C)"
                       >
                         <label
                           for=""
@@ -512,34 +384,20 @@
                           name=""
                           v-model="services.s10"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="23"
-                        class=""
-                        data-name="Are all customers thanked after service and encouraged to visit again?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
-                      <td>Is the lobby cool and are A/Cs functioning at the desired
-                        temperature (18 deg C)</td>
+                      <td> Is the volume of the music appropriate? Are there any other
+                        sounds that could affect the customer’s experience of comfort at
+                        the restaurant? </td>
                       <td
-                        id="24"
+                        id="16"
                         class="services"
-                        data-name="Is the lobby cool and are A/Cs functioning at the desired  temperature (18 deg C)"
+                        data-name="Is the volume of the music appropriate? Are there any other sounds that could affect the customer’s experience of comfort at the restaurant?"
                       >
                         <label
                           for=""
@@ -549,37 +407,19 @@
                           name=""
                           v-model="services.s11"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="25"
-                        class=""
-                        data-name="Is the lobby cool and are A/Cs functioning at the desired  temperature (18 deg C)"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
-                      <td> Is the volume of the music appropriate? Are there any other
-                        sounds that could affect the customer’s experience of comfort at
-                        the restaurant? </td>
+                      <td> Is the TV tuned to the appropriate channel? </td>
                       <td
-                        id="26"
+                        id="17"
                         class="services"
-                        data-name="Is the volume of the music appropriate? Are there any other sounds that could affect the customer’s experience of comfort at the restaurant?"
-                      >
-                        <label
+                        data-name="Is the TV tuned to the appropriate channel?"
+                      > <label
                           for=""
                           class="label"
                         >Services</label><select
@@ -587,35 +427,20 @@
                           name=""
                           v-model="services.s12"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="27"
-                        class=""
-                        data-name="Is the volume of the music appropriate? Are there any other sounds that could affect the customer’s experience of comfort at the restaurant?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
-                      <td> Is the TV tuned to the appropriate channel? </td>
+                      <td> Is the restaurant’s phone handy (i.e. handled by a designated officer) and is it answered after max 3 rings? </td>
                       <td
-                        id="28"
+                        id="16"
                         class="services"
-                        data-name="Is the TV tuned to the appropriate channel?"
-                      > <label
+                        data-name="Is the restaurant’s phone handy (i.e. handled by a designated officer) and is it answered after max 3 rings? "
+                      >
+                        <label
                           for=""
                           class="label"
                         >Services</label><select
@@ -623,32 +448,18 @@
                           name=""
                           v-model="services.s13"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="29"
-                        class=""
-                        data-name="Is the TV tuned to the appropriate channel?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
-                      <td> Is the restaurant’s phone handy (i.e. handled by a designated officer) and is it answered after max 3 rings? </td>
+                      <td> Do customers generally appear happy or satisfied about the speed, quality of food and/ or service and /or their experience at this restaurant? </td>
                       <td
-                        id="30"
+                        id="17"
                         class="services"
-                        data-name="Is the restaurant’s phone handy (i.e. handled by a designated officer) and is it answered after max 3 rings? "
+                        data-name="Do customers generally appear happy or satisfied about the speed, quality of food and/ or service and /or their experience at this restaurant?"
                       >
                         <label
                           for=""
@@ -664,27 +475,15 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="31"
-                        class=""
-                        data-name="Is the restaurant’s phone handy (i.e. handled by a designated officer) and is it answered after max 3 rings? "
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
-                      <td> Do customers generally appear happy or satisfied about the speed, quality of food and/ or service and /or their experience at this restaurant? </td>
+                      <td> Did security guards welcome customers appropriately (at the parking lot and again at the entrance) and provide the needed guide </td>
                       <td
-                        id="32"
+                        id="18"
                         class="services"
-                        data-name="Do customers generally appear happy or satisfied about the speed, quality of food and/ or service and /or their experience at this restaurant?"
+                        data-name="Did security guards welcome customers appropriately (at the parking lot and again at the entrance) and provide the needed guide"
                       >
                         <label
                           for=""
@@ -694,73 +493,22 @@
                           name=""
                           v-model="services.s15"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="33"
-                        class=""
-                        data-name="Do customers generally appear happy or satisfied about the speed, quality of food and/ or service and /or their experience at this restaurant?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
-                    </tr>
-                    <tr>
-
-                      <td> Did security guards welcome customers appropriately (at the parking lot and again at the entrance) and provide the needed guide </td>
-                      <td
-                        id="34"
-                        class="services"
-                        data-name="Did security guards welcome customers appropriately (at the parking lot and again at the entrance) and provide the needed guide"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Services</label><select
-                          class="form-control"
-                          name=""
-                          v-model="services.s16"
-                        >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select></td>
-
-                      <!-- <td
-                        id="35"
-                        class=""
-                        data-name="Did security guards welcome customers appropriately (at the parking lot and again at the entrance) and provide the needed guide"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
                   </tbody>
+
                   <tbody>
                     <tr>
                       <td
                         class="rotate"
-                        rowspan="6"
+                        rowspan="5"
                       >Hosting</td>
                       <td>Are there 2 hosts in the restaurant lobby wearing a smile and
                         eager to serve</td>
                       <td
-                        id="36"
+                        id="19"
                         class="hosting"
                         data-name="Are there 2 hosts in the restaurant lobby wearing a smile and eager to serve"
                       >
@@ -772,33 +520,17 @@
                           name=""
                           v-model="hosting.s1"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="37"
-                        class=""
-                        data-name="Are there 2 hosts in the restaurant lobby wearing a smile and eager to serve"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Are customers asked if they enjoyed their meals and are all
                         negative feedback passed on to the shift manager immediately for
                         action? </td>
                       <td
-                        id="38"
+                        id="20"
                         class="hosting"
                         data-name="Are customers asked if they enjoyed their meals and are all negative feedback passed on to the shift manager immediately for action?"
                       >
@@ -810,32 +542,17 @@
                           name=""
                           v-model="hosting.s2"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="39"
-                        class=""
-                        data-name="Are customers asked if they enjoyed their meals and are all negative feedback passed on to the shift manager immediately for action?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
                       <td> Are host helping to ensure that customers are properly seated
                         especially during rush peak period? </td>
                       <td
-                        id="40"
+                        id="21"
                         class="hosting"
                         data-name=" Are host helping to ensure that customers are properly seated especially during rush peak period"
                       >
@@ -847,36 +564,20 @@
                           name=""
                           v-model="hosting.s3"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="41"
-                        class=""
-                        data-name=" Are host helping to ensure that customers are properly seated especially during rush peak period"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td> Are customers handed response cards and encouraged to fill
-                        them? </td>
+                    <tr>
+                      <td> Are host cheerful and pleasantly interacting and pleasantly
+                        interacting with customers
+                        in the restaurant? </td>
                       <td
-                        id="42"
+                        id="22"
                         class="hosting"
-                        data-name="Are customers handed response cards and encouraged to fill them? "
-                      >
-                        <label
+                        data-name=" Are host cheerful and pleasantly interacting and pleasantly interacting with customers in the restaurant?"
+                      > <label
                           for=""
                           class="label"
                         >Hosting</label><select
@@ -884,68 +585,17 @@
                           name=""
                           v-model="hosting.s4"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="43"
-                        class=""
-                        data-name="Are customers handed response cards and encouraged to fill them? "
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td> Are host cheerful and pleasantly interacting and pleasantly
-                        interacting with customers
-                        in the restaurant? </td>
-                      <td
-                        id="44"
-                        class="hosting"
-                        data-name=" Are host cheerful and pleasantly interacting and pleasantly interacting with customers in the restaurant?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Hosting</label><select
-                          class="form-control"
-                          name=""
-                          v-model="hosting.s5"
-                        >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select></td>
-
-                      <!-- <td
-                        id="45"
-                        class=""
-                        data-name=" Are host cheerful and pleasantly interacting and pleasantly interacting with customers in the restaurant?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
-                    </tr>
                     <tr>
 
                       <td> Are hosts cleaning up (tables and chairs) in a timely manner?
                       </td>
                       <td
-                        id="46"
+                        id="23"
                         class="hosting"
                         data-name=" Are hosts cleaning up (tables and chairs) in a timely manner?"
                       >
@@ -955,41 +605,25 @@
                         >Hosting</label><select
                           class="form-control"
                           name=""
-                          v-model="hosting.s6"
+                          v-model="hosting.s5"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="47"
-                        class=""
-                        data-name="Are hosts cleaning up (tables and chairs) in a timely manner?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-
                   </tbody>
+
                   <tbody>
                     <tr>
                       <td
                         class="rotate"
-                        rowspan="8"
+                        rowspan="9"
                       >Production Management</td>
                       <td>
                         Is fryer oil clean and hot ready for use?
                       </td>
                       <td
-                        id="48"
+                        id="24"
                         class="production_management"
                         data-name="Is fryer oil clean and hot ready for use?"
                       > <label
@@ -1000,34 +634,18 @@
                           name=""
                           v-model="production_management.s1"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="49"
-                        class=""
-                        data-name="Is fryer oil clean and hot ready for use?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
 
                     <tr>
-
                       <td>
                         Are current recipe cards posted in conspicuous area in the
                         kitchen?
                       </td>
                       <td
-                        id="50"
+                        id="25"
                         class="production_management"
                         data-name=" Are current recipe cards posted in conspicuous area in the kitchen?"
                       > <label
@@ -1038,32 +656,17 @@
                           name=""
                           v-model="production_management.s2"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="51"
-                        class=""
-                        data-name=" Are current recipe cards posted in conspicuous area in the kitchen?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Recipe & Progress Compliance: Observe several menu production
                         process to
                         see if recipe and/or processes are being followed </td>
                       <td
-                        id="52"
+                        id="26"
                         class="production_management"
                         data-name="Recipe & Progress Compliance: Observe several menu production process to see if recipe and/or processes are being followed "
                       > <label
@@ -1080,28 +683,16 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="53"
-                        class=""
-                        data-name="Recipe & Progress Compliance: Observe several menu production process to see if recipe and/or processes are being followed "
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Spice inventory: Check that all pre-mixed spices are available,
                         check the
                         condition of the pre –mixed spices and check that spices are
                         being used for production.
                       </td>
                       <td
-                        id="54"
+                        id="27"
                         class="production_management"
                         data-name=" Spice inventory: Check that all pre-mixed spices are available, check the condition of the pre –mixed spices and check that spices are being used for production."
                       > <label
@@ -1118,26 +709,14 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="55"
-                        class=""
-                        data-name=" Spice inventory: Check that all pre-mixed spices are available, check the condition of the pre –mixed spices and check that spices are being used for production."
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Are manager(s) involved or interested in the production
                         process? What is
                         their level of participation? </td>
                       <td
-                        id="56"
+                        id="28"
                         class="production_management"
                         data-name="Are manager(s) involved or interested in the production process? What is their level of participation"
                       > <label
@@ -1154,27 +733,14 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="57"
-                        class=""
-                        data-name="Are manager(s) involved or interested in the production process? What is their level of participation"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
 
                     <tr>
-
                       <td> Are all menu items available and replenished in a timely manner
                         (25% rule
                         applies)? </td>
                       <td
-                        id="58"
+                        id="29"
                         class="production_management"
                         data-name=" Are all menu items available and replenished in a timely manner (25% rule applies)?"
                       > <label
@@ -1191,27 +757,14 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="59"
-                        class=""
-                        data-name=" Are all menu items available and replenished in a timely manner (25% rule applies)?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
 
                     <tr>
-
                       <td> Are all pre-portioned products properly weighed for proper
                         portioning to
                         ensure that customer gets full value for money? </td>
                       <td
-                        id="60"
+                        id="30"
                         class="production_management"
                         data-name="Are all pre-portioned products properly weighed for proper portioning to ensure that customer gets full value for money?"
                       > <label
@@ -1222,32 +775,18 @@
                           name=""
                           v-model="production_management.s7"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="61"
-                        class=""
-                        data-name="Are all pre-portioned products properly weighed for proper portioning to ensure that customer gets full value for money?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
 
                       <td> Are proper records kept for production and transfer of products
                         between FOH
                         & BOH? </td>
                       <td
-                        id="62"
+                        id="31"
                         class="production_management"
                         data-name=" Are proper records kept for production and transfer of products between FOH & BOH?"
                       > <label
@@ -1258,39 +797,46 @@
                           name=""
                           v-model="production_management.s8"
                         >
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
+                        </select></td>
+                    </tr>
+
+                    <tr>
+                      <td> Is the sensory evalauation chart completed and up-to-date as at the time of inspection? Are entries done in right procedures? </td>
+                      <td
+                        id="32"
+                        class="production_management"
+                        data-name=" Is the sensory evalauation chart completed and up-to-date as at the time of inspection? Are entries done in right procedures?"
+                      > <label
+                          for=""
+                          class="label"
+                        >Production Management</label><select
+                          class="form-control"
+                          name=""
+                          v-model="production_management.s9"
+                        >
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="63"
-                        class=""
-                        data-name=" Are proper records kept for production and transfer of products between FOH & BOH?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
                   </tbody>
+
                   <tbody>
                     <tr>
                       <td
                         class="rotate"
-                        rowspan="8"
+                        rowspan="10"
                       >HACCP Compliance</td>
                       <td>
                         Are all equipment properly labelled with their correct
                         temperature limits?
-
                       </td>
                       <td
-                        id="64"
+                        id="33"
                         class="haccp_compliance"
                         data-name=" Are all equipment properly labelled with their correct temperature limits?"
                       > <label
@@ -1308,27 +854,15 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="65"
-                        class=""
-                        data-name=" Are all equipment properly labelled with their correct temperature limits?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Are all equipment functioning within their appropriate
                         temperature
                         limits/boundaries?
                       </td>
                       <td
-                        id="66"
+                        id="34"
                         class="haccp_compliance"
                         data-name="Are all equipment functioning within their appropriate temperature limits/boundaries?"
                       > <label
@@ -1346,27 +880,15 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="67"
-                        class=""
-                        data-name="Are all equipment functioning within their appropriate temperature limits/boundaries?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Are all materials stored according to HACCP standards i.e. to
                         avoid cross
                         contamination?
                       </td>
                       <td
-                        id="68"
+                        id="35"
                         class="haccp_compliance"
                         data-name="Are all materials stored according to HACCP standards i.e. to avoid cross contamination?"
                       > <label
@@ -1384,66 +906,37 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
+                    </tr>
 
-                      <!-- <td
-                        id="69"
-                        class=""
-                        data-name="Are all materials stored according to HACCP standards i.e. to avoid cross contamination?"
+                    <tr>
+                      <td>Are all food items stored in appropriate food grade containers and code dated?</td>
+                      <td
+                        id="36"
+                        class="haccp_compliance"
+                        data-name="Are all food items stored in appropriate food grade containers and code dated?"
                       > <label
                           for=""
                           class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
+                        >HACCP Compliance</label><select
+                          class="form-control"
+                          name=""
+                          v-model="haccp_compliance.s4"
+                        >
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
+                        </select></td>
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Are all work surfaces wiped with appropriate food grade
                         sanitizer prior to
                         use in the morning?
                       </td>
                       <td
-                        id="70"
+                        id="37"
                         class="haccp_compliance"
                         data-name="Are all work surfaces wiped with appropriate food grade sanitizer prior to use in the morning?"
                       > <label
-                          for=""
-                          class="label"
-                        >HACCP
-                          Compliance</label><select
-                          class="form-control"
-                          name=""
-                          v-model="haccp_compliance.s4"
-                        >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select></td>
-
-                      <!-- <td
-                        id="71"
-                        class=""
-                        data-name="Are all work surfaces wiped with appropriate food grade sanitizer prior to use in the morning?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
-                    </tr>
-                    <tr>
-
-                      <td> Are all kitchen crew wearing hair nets or hats? </td>
-                      <td
-                        id="72"
-                        class="haccp_compliance"
-                        data-name="Are all kitchen crew wearing hair nets or hats?"
-                      >
-                        <label
                           for=""
                           class="label"
                         >HACCP
@@ -1452,35 +945,19 @@
                           name=""
                           v-model="haccp_compliance.s5"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
+                    </tr>
 
-                      <!-- <td
-                        id="73"
-                        class=""
+                    <tr>
+                      <td> Are all kitchen crew wearing hair nets or hats? </td>
+                      <td
+                        id="38"
+                        class="haccp_compliance"
                         data-name="Are all kitchen crew wearing hair nets or hats?"
                       >
                         <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
-                    </tr>
-                    <tr>
-
-                      <td>Are all kitchen crew using a hand glove when handling fresh
-                        produce?</td>
-                      <td
-                        id="74"
-                        class="haccp_compliance"
-                        data-name="Are all kitchen crew using a hand glove when handling fresh produce?"
-                      > <label
                           for=""
                           class="label"
                         >HACCP
@@ -1489,35 +966,18 @@
                           name=""
                           v-model="haccp_compliance.s6"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="75"
-                        class=""
-                        data-name="Are all kitchen crew using a hand glove when handling fresh produce?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td>Did the managers have their temperature probes (thermometers)
-                        handy? Were
-                        they using
-                        them?</td>
+                    <tr>
+                      <td>Are all kitchen crew using a hand glove when handling fresh
+                        produce?</td>
                       <td
-                        id="76"
+                        id="39"
                         class="haccp_compliance"
-                        data-name="Did the managers have their temperature probes (thermometers) handy? Were they using them?"
+                        data-name="Are all kitchen crew using a hand glove when handling fresh produce?"
                       > <label
                           for=""
                           class="label"
@@ -1527,35 +987,20 @@
                           name=""
                           v-model="haccp_compliance.s7"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-                      <!-- 
-                      <td
-                        id="77"
-                        class=""
-                        data-name="Did the managers have their temperature probes (thermometers) handy? Were they using them?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td> Use probe to check the holding temperature of a few menu items
-                        on display.
-                        Where they
-                        within the appropriate holding temperature? </td>
+                    <tr>
+                      <td>Did the managers have their temperature probes (thermometers)
+                        handy? Were
+                        they using
+                        them?</td>
                       <td
-                        id="78"
+                        id="40"
                         class="haccp_compliance"
-                        data-name="Use probe to check the holding temperature of a few menu items on display. Where they within the appropriate holding temperature?"
+                        data-name="Did the managers have their temperature probes (thermometers) handy? Were they using them?"
                       > <label
                           for=""
                           class="label"
@@ -1565,26 +1010,62 @@
                           name=""
                           v-model="haccp_compliance.s8"
                         >
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
+                        </select></td>
+                    </tr>
+
+                    <tr>
+                      <td> Use probe to check the holding temperature of a few menu items
+                        on display.
+                        Where they
+                        within the appropriate holding temperature? </td>
+                      <td
+                        id="41"
+                        class="haccp_compliance"
+                        data-name="Use probe to check the holding temperature of a few menu items on display. Where they within the appropriate holding temperature?"
+                      > <label
+                          for=""
+                          class="label"
+                        >HACCP
+                          Compliance</label><select
+                          class="form-control"
+                          name=""
+                          v-model="haccp_compliance.s9"
+                        >
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
+                    </tr>
 
-                      <!-- <td
-                        id="79"
-                        class=""
-                        data-name="Use probe to check the holding temperature of a few menu items on display. Where they within the appropriate holding temperature?"
+                    <tr>
+                      <td> Is the cold room chart completed and up-to-date as at the time of inspection? Are entries done in right procedures?
+                      </td>
+                      <td
+                        id="42"
+                        class="haccp_compliance"
+                        data-name="Is the cold room chart completed and up-to-date as at the time of inspection? Are entries done in right procedures?"
                       > <label
                           for=""
                           class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
+                        >HACCP
+                          Compliance</label><select
+                          class="form-control"
+                          name=""
+                          v-model="haccp_compliance.s10"
+                        >
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select></td>
                     </tr>
                   </tbody>
+
                   <tbody>
                     <tr>
                       <td
@@ -1595,7 +1076,7 @@
                         shaven,
                         female well pedicure etc)? </td>
                       <td
-                        id="80"
+                        id="43"
                         class="hygiene"
                         data-name="Were all staff properly groomed (men clean shaven, female well pedicure etc)?"
                       > <label
@@ -1613,26 +1094,14 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="81"
-                        class=""
-                        data-name="Were all staff properly groomed (men clean shaven, female well pedicure etc)?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Were all staff properly dresses in clean, branded kjr or chef’s
                         uniforms?
                       </td>
                       <td
-                        id="82"
+                        id="44"
                         class="hygiene"
                         data-name=" Were all staff properly dresses in clean, branded kjr or chef’s  uniforms?"
                       > <label
@@ -1650,28 +1119,18 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="83"
-                        class=""
-                        data-name=" Were all staff properly dresses in clean, branded kjr or chef’s uniforms?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td> Check that the following areas are clean and free of
-                        grease/dirt or debris:
-                      </td>
+                    <tr>
+                      <td colspan="2" class="font-weight-bold">Check that the following areas are clean and free of grease/dirt or debris:</td>
+                    </tr>
+
+                    <tr>
+                      <td>All Equipment (Interior & Exterior)</td>
                       <td
-                        id="84"
+                        id="45"
                         class="hygiene"
-                        data-name="Check that the following areas are clean and free of grease/dirt or debris:"
+                        data-name="All Equipment (Interior & Exterior)"
                       > <label
                           for=""
                           class="label"
@@ -1687,26 +1146,14 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="85"
-                        class=""
-                        data-name="Check that the following areas are clean and free of grease/dirt or debris:"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td>All Equipment (Interior & Exterior)</td>
+                    <tr>
+                      <td>Cold room (Rack surfaces, wall & floor)</td>
                       <td
-                        id="86"
+                        id="46"
                         class="hygiene"
-                        data-name="All Equipment (Interior & Exterior)"
+                        data-name="Cold room (Rack surfaces, wall & floor)"
                       > <label
                           for=""
                           class="label"
@@ -1722,27 +1169,16 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="87"
-                        class=""
-                        data-name="All Equipment (Interior & Exterior)"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td>Cold room (Rack surfaces, wall & floor)</td>
+                    <tr>
+                      <td>Deep freezers (No ice buildup and kept clean)</td>
                       <td
-                        id="88"
+                        id="47"
                         class="hygiene"
-                        data-name="Cold room (Rack surfaces, wall & floor)"
-                      > <label
+                        data-name="Deep freezers (No ice buildup and kept clean)"
+                      >
+                        <label
                           for=""
                           class="label"
                         >Hygiene &
@@ -1757,26 +1193,14 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="89"
-                        class=""
-                        data-name="Cold room (Rack surfaces, wall & floor)"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td>Deep freezers (No ice buildup and kept clean)</td>
+                    <tr>
+                      <td>Extractor canopy grills (clean and no grease)</td>
                       <td
-                        id="90"
+                        id="48"
                         class="hygiene"
-                        data-name="Deep freezers (No ice buildup and kept clean)"
+                        data-name="Extractor canopy grills (clean and no grease)"
                       >
                         <label
                           for=""
@@ -1793,29 +1217,15 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="91"
-                        class=""
-                        data-name="Deep freezers (No ice buildup and kept clean)"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td>Extractor canopy grills (clean and no grease)</td>
+                    <tr>
+                      <td> Kitchen floor, corners, walls, ceilings </td>
                       <td
-                        id="92"
+                        id="49"
                         class="hygiene"
-                        data-name="Extractor canopy grills (clean and no grease)"
-                      >
-                        <label
+                        data-name="Kitchen floor, corners, walls, ceilings"
+                      > <label
                           for=""
                           class="label"
                         >Hygiene &
@@ -1830,27 +1240,14 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="93"
-                        class=""
-                        data-name="Extractor canopy grills (clean and no grease)"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td> Kitchen floor, corners, walls, ceilings </td>
+                    <tr>
+                      <td>Storage (floor, racks, smells)</td>
                       <td
-                        id="94"
+                        id="50"
                         class="hygiene"
-                        data-name="Kitchen floor, corners, walls, ceilings"
+                        data-name="Storage (floor, racks, smells)"
                       > <label
                           for=""
                           class="label"
@@ -1866,26 +1263,14 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="95"
-                        class=""
-                        data-name="Kitchen floor, corners, walls, ceilings"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td>Storage (floor, racks, smells)</td>
+                    <tr>
+                      <td> Lobby (floor & table surfaces + legs) </td>
                       <td
-                        id="96"
+                        id="51"
                         class="hygiene"
-                        data-name="Storage (floor, racks, smells)"
+                        data-name="Lobby (floor & table surfaces + legs)"
                       > <label
                           for=""
                           class="label"
@@ -1901,27 +1286,16 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="97"
-                        class=""
-                        data-name="Storage (floor, racks, smells)"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td> Lobby (floor & table surfaces + legs) </td>
+                    <tr>
+                      <td>Customer convenience</td>
                       <td
-                        id="98"
+                        id="52"
                         class="hygiene"
-                        data-name="Lobby (floor & table surfaces + legs)"
-                      > <label
+                        data-name="Customer convenience"
+                      >
+                        <label
                           for=""
                           class="label"
                         >Hygiene &
@@ -1930,34 +1304,18 @@
                           name=""
                           v-model="hygiene.s10"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="99"
-                        class=""
-                        data-name="Lobby (floor & table surfaces + legs)"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td>Customer convenience</td>
+                    <tr>
+                      <td>Staff changing room and toilet</td>
                       <td
-                        id="100"
+                        id="53"
                         class="hygiene"
-                        data-name="Customer convenience"
-                      >
-                        <label
+                        data-name="Staff changing room and toilet"
+                      > <label
                           for=""
                           class="label"
                         >Hygiene &
@@ -1966,33 +1324,17 @@
                           name=""
                           v-model="hygiene.s11"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="101"
-                        class=""
-                        data-name="Customer convenience"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td>Staff changing room and toilet</td>
+                    <tr>
+                      <td>Dump area</td>
                       <td
-                        id="102"
+                        id="54"
                         class="hygiene"
-                        data-name="Staff changing room and toilet"
+                        data-name="Dump area"
                       > <label
                           for=""
                           class="label"
@@ -2002,33 +1344,19 @@
                           name=""
                           v-model="hygiene.s12"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="103"
-                        class=""
-                        data-name="Staff changing room and toilet"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td>Dump area</td>
+                    <tr>
+                      <td>Grease trap and sink</td>
                       <td
-                        id="104"
+                        id="55"
                         class="hygiene"
-                        data-name="Dump area"
-                      > <label
+                        data-name="Grease trap and sink"
+                      >
+                        <label
                           for=""
                           class="label"
                         >Hygiene &
@@ -2037,32 +1365,18 @@
                           name=""
                           v-model="hygiene.s13"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="105"
-                        class=""
-                        data-name="Dump area"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td>Grease trap and sink</td>
+                    <tr>
+                      <td> Are kitchen crew imbibing the clean –as- you- go -culture?
+                      </td>
                       <td
-                        id="106"
+                        id="56"
                         class="hygiene"
-                        data-name="Grease trap and sink"
+                        data-name="Are kitchen crew imbibing the clean –as- you- go -culture?"
                       >
                         <label
                           for=""
@@ -2079,30 +1393,18 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="107"
-                        class=""
-                        data-name="Grease trap and sink"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td> Are kitchen crew imbibing the clean –as- you- go -culture?
+                    <tr>
+                      <td> Is restaurant entrance path cleaned regularly to reduce stains
+                        from
+                        incoming customers and improve and visual appeal?
                       </td>
                       <td
-                        id="108"
+                        id="57"
                         class="hygiene"
-                        data-name="Are kitchen crew imbibing the clean –as- you- go -culture?"
-                      >
-                        <label
+                        data-name="Is restaurant entrance path cleaned regularly to reduce stains from incoming customers and improve and visual appeal?"
+                      > <label
                           for=""
                           class="label"
                         >Hygiene &
@@ -2117,30 +1419,16 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="109"
-                        class=""
-                        data-name="Are kitchen crew imbibing the clean –as- you- go -culture?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td> Is restaurant entrance path cleaned regularly to reduce stains
-                        from
-                        incoming customers and improve and visual appeal?
+                    <tr>
+                      <td> Are toilets checked and cleaned regularly and are toiletries
+                        replenished?
                       </td>
                       <td
-                        id="110"
+                        id="58"
                         class="hygiene"
-                        data-name="Is restaurant entrance path cleaned regularly to reduce stains from incoming customers and improve and visual appeal?"
+                        data-name="Are toilets checked and cleaned regularly and are toiletries replenished?"
                       > <label
                           for=""
                           class="label"
@@ -2150,34 +1438,19 @@
                           name=""
                           v-model="hygiene.s16"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="111"
-                        class=""
-                        data-name=" Is restaurant entrance path cleaned regularly to reduce stains from incoming customers and improve and visual appeal?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td> Are toilets checked and cleaned regularly and are toiletries
-                        replenished?
-                      </td>
+                    <tr>
+                      <td>Is the restaurant environment (external) and back area clean,
+                        free from foul
+                        smell?</td>
                       <td
-                        id="112"
+                        id="59"
                         class="hygiene"
-                        data-name="Are toilets checked and cleaned regularly and are toiletries replenished?"
+                        data-name="Is the restaurant environment (external) and back area clean, free from foul smell?"
                       > <label
                           for=""
                           class="label"
@@ -2193,75 +1466,23 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="113"
-                        class=""
-                        data-name="Are toilets checked and cleaned regularly and are toiletries replenished?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
-
-                      <td>Is the restaurant environment (external) and back area clean,
-                        free from foul
-                        smell?</td>
-                      <td
-                        id="114"
-                        class="hygiene"
-                        data-name="Is the restaurant environment (external) and back area clean, free from foul smell?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Hygiene &
-                          Cleanliness</label><select
-                          class="form-control"
-                          name=""
-                          v-model="hygiene.s18"
-                        >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select></td>
-
-                      <!-- <td
-                        id="115"
-                        class=""
-                        data-name="Is the restaurant environment (external) and back area clean, free from foul smell?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
-                    </tr>
-
                   </tbody>
+
                   <tbody>
                     <tr>
                       <td
                         class="rotate"
                         rowspan="10"
                       > General Operations Management</td>
-                      <td>
-                        Did shift manager set any targets for the various sections of
-                        the restaurant for the
-                        day? Are these targets published somewhere in the restaurant?
-                        Are they consequential?
-                      </td>
+                      
+                      <td> Do crew appear motivated and working as a coherent team? </td>
                       <td
-                        id="116"
+                        id="60"
                         class="general_operations"
-                        data-name=" Did shift manager set any targets for the various sections of the restaurant for the day? Are these targets published somewhere in the restaurant? Are they consequential?"
-                      > <label
+                        data-name="Do crew appear motivated and working as a coherent team?"
+                      >
+                        <label
                           for=""
                           class="label"
                         >General
@@ -2270,32 +1491,17 @@
                           name=""
                           v-model="general_operations.s1"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="117"
-                        class=""
-                        data-name=" Did shift manager set any targets for the various sections of the restaurant for the day? Are these targets published somewhere in the restaurant? Are they consequential?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td> Do crew appear motivated and working as a coherent team? </td>
+                    <tr>
+                      <td> Is the noise level in the back of house acceptable? </td>
                       <td
-                        id="118"
+                        id="61"
                         class="general_operations"
-                        data-name="Do crew appear motivated and working as a coherent team?"
+                        data-name="Is the noise level in the back of house acceptable?"
                       >
                         <label
                           for=""
@@ -2306,35 +1512,20 @@
                           name=""
                           v-model="general_operations.s2"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="119"
-                        class=""
-                        data-name="Do crew appear motivated and working as a coherent team?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td> Is the noise level in the back of house acceptable? </td>
+                    <tr>
+                      <td> Are managers involved in receiving process? Are all receiving
+                        procedures
+                        followed to the letter? </td>
                       <td
-                        id="120"
+                        id="62"
                         class="general_operations"
-                        data-name="Is the noise level in the back of house acceptable?"
-                      >
-                        <label
+                        data-name="Are managers involved in receiving process? Are all receiving procedures followed to the letter?"
+                      > <label
                           for=""
                           class="label"
                         >General
@@ -2343,35 +1534,19 @@
                           name=""
                           v-model="general_operations.s3"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="121"
-                        class=""
-                        data-name="Is the noise level in the back of house acceptable?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
-                      <td> Are managers involved in receiving process? Are all receiving
-                        procedures
-                        followed to the letter? </td>
+                    <tr>
+                      <td> Does manager appear to have a strong control over the movement
+                        and
+                        activities of crew of crew especially in the back areas? </td>
                       <td
-                        id="122"
+                        id="63"
                         class="general_operations"
-                        data-name="Are managers involved in receiving process? Are all receiving procedures followed to the letter?"
+                        data-name=" Does manager appear to have a strong control over the movement and activities of crew of crew especially in the back areas?"
                       > <label
                           for=""
                           class="label"
@@ -2387,63 +1562,14 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
-
-                      <!-- <td
-                        id="123"
-                        class=""
-                        data-name=" Are managers involved in receiving process? Are all receiving procedures followed to the letter?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
+
                     <tr>
-
-                      <td> Does manager appear to have a strong control over the movement
-                        and
-                        activities of crew of crew especially in the back areas? </td>
-                      <td
-                        id="124"
-                        class="general_operations"
-                        data-name=" Does manager appear to have a strong control over the movement and activities of crew of crew especially in the back areas?"
-                      > <label
-                          for=""
-                          class="label"
-                        >General
-                          Operations Management</label><select
-                          class="form-control"
-                          name=""
-                          v-model="general_operations.s5"
-                        >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select></td>
-
-                      <!-- <td
-                        id="125"
-                        class=""
-                        data-name=" Does manager appear to have a strong control over the movement and activities of crew of crew especially in the back areas?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
-                    </tr>
-                    <tr>
-
                       <td> Is shift manager engaging in any form of control over material
                         usage and
                         production quantity? </td>
                       <td
-                        id="126"
+                        id="64"
                         class="general_operations"
                         data-name=" Is shift manager engaging in any form of control over material usage and production quantity? "
                       > <label
@@ -2453,34 +1579,19 @@
                           Operations Management</label><select
                           class="form-control"
                           name=""
-                          v-model="general_operations.s6"
+                          v-model="general_operations.s5"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="127"
-                        class=""
-                        data-name="Is shift manager engaging in any form of control over material usage and production quantity? "
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Are cashiers activities closely monitored by shift managers
                         and/or security
                         guards in the restaurant to prevent theft/fraud? </td>
                       <td
-                        id="128"
+                        id="65"
                         class="general_operations"
                         data-name="Are cashiers activities closely monitored by shift managers and/or security guards in the restaurant to prevent theft/fraud?"
                       > <label
@@ -2490,35 +1601,20 @@
                           Operations Management</label><select
                           class="form-control"
                           name=""
-                          v-model="general_operations.s7"
+                          v-model="general_operations.s6"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="129"
-                        class=""
-                        data-name="Are cashiers activities closely monitored by shift managers and/or security guards in the restaurant to prevent theft/fraud?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Is the Red book completed and up-to –date as at the time of
                         inspection? Are
                         entries accurate for the time inspected?
                       </td>
                       <td
-                        id="130"
+                        id="66"
                         class="general_operations"
                         data-name="  Is the Red book completed and up-to –date as at the time of inspection? Are entries accurate for the time inspected?"
                       > <label
@@ -2528,34 +1624,41 @@
                           Operations Management</label><select
                           class="form-control"
                           name=""
-                          v-model="general_operations.s8"
+                          v-model="general_operations.s7"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
+                    </tr>
 
-                      <!-- <td
-                        id="131"
-                        class=""
-                        data-name=" Is the Red book completed and up-to –date as at the time of inspection? Are entries accurate for the time inspected?"
+                    <tr>
+                      <td>
+                        Is the Green book completed and up-to-date as at the time of inspection? Are entries correct and communicates areas inspected real time?
+                      </td>
+                      <td
+                        id="67"
+                        class="general_operations"
+                        data-name=" Is the Green book completed and up-to-date as at the time of inspection? Are entries correct and communicates areas inspected real time?"
                       > <label
                           for=""
                           class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
+                        >General
+                          Operations Management</label><select
+                          class="form-control"
+                          name=""
+                          v-model="general_operations.s8"
+                        >
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
+                        </select></td>
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Are there idle customers occupying seating space unchecked by
                         management?
                       </td>
                       <td
-                        id="132"
+                        id="68"
                         class="general_operations"
                         data-name=" Are there idle customers occupying seating space unchecked by management?"
                       > <label
@@ -2567,30 +1670,15 @@
                           name=""
                           v-model="general_operations.s9"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="133"
-                        class=""
-                        data-name=" Are there idle customers occupying seating space unchecked by management?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Is shift manager actively walking the lobby? </td>
                       <td
-                        id="134"
+                        id="69"
                         class="general_operations"
                         data-name=" Is shift manager actively walking the lobby?"
                       >
@@ -2603,27 +1691,12 @@
                           name=""
                           v-model="general_operations.s10"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="135"
-                        class=""
-                        data-name="Is shift manager actively walking the lobby?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-
                   </tbody>
+
                   <tbody>
                     <tr>
                       <td
@@ -2634,7 +1707,7 @@
                         Did manager(s) and all staff arrive at and around 2.30pm?
                       </td>
                       <td
-                        id="136"
+                        id="70"
                         class="shift_changeovers"
                         data-name=" Did manager(s) and all staff arrive at and around 2.30pm?"
                       >
@@ -2647,33 +1720,17 @@
                           name=""
                           v-model="shift_changeovers.s1"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="137"
-                        class=""
-                        data-name="Did manager(s) and all staff arrive at and around 2.30pm?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Did managers print mid-day report? Did he/she oversee the
                         counting and
                         receipt of cash into the safe? </td>
                       <td
-                        id="138"
+                        id="71"
                         class="shift_changeovers"
                         data-name="Did managers print mid-day report? Did he/she oversee the counting and receipt of cash into the safe"
                       > <label
@@ -2685,30 +1742,15 @@
                           name=""
                           v-model="shift_changeovers.s2"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="139"
-                        class=""
-                        data-name="Did managers print mid-day report? Did he/she oversee the counting and receipt of cash into the safe"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Were there any service disruptions at shift changeover? </td>
                       <td
-                        id="140"
+                        id="72"
                         class="shift_changeovers"
                         data-name="Were there any service disruptions at shift changeover?"
                       >
@@ -2720,33 +1762,17 @@
                           name=""
                           v-model="shift_changeovers.s3"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-                      <!-- 
-                      <td
-                        id="141"
-                        class=""
-                        data-name="Were there any service disruptions at shift changeover?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Did section heads ensure re-stocking of all food, beverage and
                         consumables
                         prior to handover? </td>
                       <td
-                        id="142"
+                        id="73"
                         class="shift_changeovers"
                         data-name="Did section heads ensure re-stocking of all food, beverage and consumables prior to handover?"
                       > <label
@@ -2758,32 +1784,17 @@
                           name=""
                           v-model="shift_changeovers.s4"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="143"
-                        class=""
-                        data-name="Did section heads ensure re-stocking of all food, beverage and consumables prior to handover?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Did you witness proper documentary hand over of operations by
                         each section
                         head to incoming section head? </td>
                       <td
-                        id="144"
+                        id="74"
                         class="shift_changeovers"
                         data-name=" Did you witness proper documentary hand over of operations by each section head to incoming section head?"
                       > <label
@@ -2795,31 +1806,16 @@
                           name=""
                           v-model="shift_changeovers.s5"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="145"
-                        class=""
-                        data-name=" Did you witness proper documentary hand over of operations by each section head to incoming section head?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Were incoming crew briefed by both incoming and outgoing
                         managers? </td>
                       <td
-                        id="146"
+                        id="75"
                         class="shift_changeovers"
                         data-name="Were incoming crew briefed by both incoming and outgoing managers?"
                       > <label
@@ -2831,72 +1827,18 @@
                           name=""
                           v-model="shift_changeovers.s6"
                         >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
                         </select></td>
-
-                      <!-- <td
-                        id="147"
-                        class=""
-                        data-name="Were incoming crew briefed by both incoming and outgoing managers?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
                     </tr>
-                    <tr>
 
+                    <tr>
                       <td> Overall, did shift changeover appear to be organized and
                         orderly? </td>
                       <td
-                        id="148"
+                        id="76"
                         class="shift_changeovers"
                         data-name="Overall, did shift changeover appear to be organized and orderly?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Shift
-                          Changeover</label><select
-                          class="form-control"
-                          name=""
-                          v-model="shift_changeovers.s6"
-                        >
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select></td>
-
-                      <!-- <td
-                        id="149"
-                        class=""
-                        data-name="Overall, did shift changeover appear to be organized and orderly?"
-                      > <label
-                          for=""
-                          class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
-                    </tr>
-
-                    <tr>
-
-                      <td> Does outgoing manager(s) check each staff individually as part
-                        of a
-                        pre-security check process?
-                      </td>
-                      <td
-                        id="150"
-                        class="shift_changeovers"
-                        data-name="Does outgoing manager(s) check each staff individually as part of a pre-security check process?"
                       > <label
                           for=""
                           class="label"
@@ -2912,27 +1854,37 @@
                           <option value="4">4</option>
                           <option value="5">5</option>
                         </select></td>
+                    </tr>
 
-                      <!-- <td
-                        id="151"
-                        class=""
+                    <tr>
+                      <td> Does outgoing manager(s) check each staff individually as part
+                        of a
+                        pre-security check process?
+                      </td>
+                      <td
+                        id="77"
+                        class="shift_changeovers"
                         data-name="Does outgoing manager(s) check each staff individually as part of a pre-security check process?"
                       > <label
                           for=""
                           class="label"
-                        >Comment</label><input
-                          type="text"
-                          class="form-control border-0"
-                        /></td> -->
+                        >Shift
+                          Changeover</label><select
+                          class="form-control"
+                          name=""
+                          v-model="shift_changeovers.s8"
+                        >
+                          <option value="5">Yes</option>
+                          <option value="1">No</option>
+                        </select></td>
                     </tr>
-
                   </tbody>
                 </table>
 
                 <br>
                 <h5 class="subtitle">Comments</h5>
                 <div
-                  id="22"
+                  id="78"
                   class="form-group question"
                   data-name="The 5 top things this restaurant did very well"
                 >
@@ -2949,7 +1901,7 @@
                   </div>
                 </div>
                 <div
-                  id="23"
+                  id="79"
                   class="form-group question"
                   data-name="Food & Beverage Comments & Observations"
                 >
@@ -2967,7 +1919,7 @@
                   </div>
                 </div>
                 <div
-                  id="24"
+                  id="80"
                   class="form-group question"
                   data-name="General Comments & Observations"
                 >
@@ -2997,7 +1949,7 @@
                   <tbody>
                     <tr>
                       <td
-                        id="25"
+                        id="81"
                         data-name="task"
                       >
                         <label
@@ -3011,7 +1963,7 @@
                         >
                       </td>
                       <td
-                        id="26"
+                        id="82"
                         data-name="assignedTo"
                       >
                         <label
@@ -3024,15 +1976,6 @@
                           type="hidden"
                           name=""
                         >
-                        <!-- 
-                        <v-select
-                          class="form-control"
-                          v-model="tasks.task1"
-                          :options="all_users"
-                          label="name"
-                          :reduce="name => name.name"
-                        >
-                        </v-select> -->
                         <select
                           class="form-control"
                           id="us"
@@ -3050,7 +1993,7 @@
                         </select>
                       </td>
                       <td
-                        id="27"
+                        id="83"
                         data-name="dueDate"
                       >
                         <label
@@ -3068,7 +2011,7 @@
                     </tr>
                     <tr>
                       <td
-                        id="29"
+                        id="84"
                         data-name="task"
                       >
                         <label
@@ -3082,7 +2025,7 @@
                         >
                       </td>
                       <td
-                        id="30"
+                        id="85"
                         data-name="assignedTo"
                       >
                         <label
@@ -3095,15 +2038,6 @@
                           type="hidden"
                           name=""
                         >
-
-                        <!-- <v-select
-                          class="form-control"
-                          v-model="tasks.task2"
-                          :options="all_users"
-                          label="name"
-                          :reduce="name => name.name"
-                        >
-                        </v-select> -->
                         <select
                           class="form-control"
                           id="us2"
@@ -3121,7 +2055,7 @@
                         </select>
                       </td>
                       <td
-                        id="31"
+                        id="86"
                         data-name="dueDate"
                       >
                         <label
@@ -3139,7 +2073,7 @@
                     </tr>
                     <tr>
                       <td
-                        id="33"
+                        id="87"
                         data-name="task"
                       >
                         <label
@@ -3153,7 +2087,7 @@
                         >
                       </td>
                       <td
-                        id="34"
+                        id="88"
                         data-name="assignedTo"
                       >
                         <label
@@ -3166,15 +2100,6 @@
                           type="hidden"
                           name=""
                         >
-
-                        <!-- <v-select
-                          class="form-control"
-                          v-model="tasks.task3"
-                          :options="all_users"
-                          label="name"
-                          :reduce="name => name.name"
-                        >
-                        </v-select> -->
                         <select
                           class="form-control"
                           id="us3"
@@ -3192,7 +2117,7 @@
                         </select>
                       </td>
                       <td
-                        id="35"
+                        id="89"
                         data-name="dueDate"
                       >
                         <label
@@ -3210,7 +2135,7 @@
                     </tr>
                     <tr>
                       <td
-                        id="37"
+                        id="90"
                         data-name="task"
                       >
                         <label
@@ -3224,7 +2149,7 @@
                         >
                       </td>
                       <td
-                        id="38"
+                        id="91"
                         data-name="assignedTo"
                       >
                         <label
@@ -3237,15 +2162,6 @@
                           type="hidden"
                           name=""
                         >
-                        <!-- 
-                        <v-select
-                          class="form-control"
-                          v-model="tasks.task4"
-                          :options="all_users"
-                          label="name"
-                          :reduce="name => name.name"
-                        >
-                        </v-select> -->
                         <select
                           class="form-control"
                           id="us4"
@@ -3263,7 +2179,7 @@
                         </select>
                       </td>
                       <td
-                        id="39"
+                        id="92"
                         data-name="dueDate"
                       >
                         <label
@@ -3281,7 +2197,7 @@
                     </tr>
                     <tr>
                       <td
-                        id="41"
+                        id="93"
                         data-name="task"
                       >
                         <label
@@ -3295,7 +2211,7 @@
                         >
                       </td>
                       <td
-                        id="42"
+                        id="94"
                         data-name="assignedTo"
                       >
                         <label
@@ -3308,15 +2224,6 @@
                           type="hidden"
                           name=""
                         >
-
-                        <!-- <v-select
-                          class="form-control"
-                          v-model="tasks.task5"
-                          :options="all_users"
-                          label="name"
-                          :reduce="name => name.name"
-                        >
-                        </v-select> -->
                         <select
                           class="form-control"
                           id="us5"
@@ -3334,7 +2241,7 @@
                         </select>
                       </td>
                       <td
-                        id="43"
+                        id="95"
                         data-name="dueDate"
                       >
                         <label
@@ -3433,7 +2340,7 @@
                 <tr>
                   <td>Service</td>
                   <td
-                    id="6"
+                    id="96"
                     class="points"
                     data-name="points earned"
                   ><label
@@ -3447,7 +2354,7 @@
                     /></td>
                   <td class="possible">80</td>
                   <td
-                    id="7"
+                    id="97"
                     class="percent "
                     data-name="percent earned"
                   >
@@ -3464,7 +2371,7 @@
                 <tr>
                   <td>Hosting</td>
                   <td
-                    id="8"
+                    id="98"
                     class="points"
                     data-name="points earned"
                   ><label
@@ -3478,7 +2385,7 @@
                     /></td>
                   <td class="possible">30</td>
                   <td
-                    id="9"
+                    id="99"
                     class="percent "
                     data-name="percent earned"
                   >
@@ -3495,7 +2402,7 @@
                 <tr>
                   <td>Production Management</td>
                   <td
-                    id="10"
+                    id="100"
                     class="points"
                     data-name="points earned"
                   ><label
@@ -3509,7 +2416,7 @@
                     /></td>
                   <td class="possible">40</td>
                   <td
-                    id="11"
+                    id="101"
                     class="percent "
                     data-name="percent earned"
                   >
@@ -3526,7 +2433,7 @@
                 <tr>
                   <td>HACCP Compliance</td>
                   <td
-                    id="12"
+                    id="102"
                     class="points"
                     data-name="points earned"
                   ><label
@@ -3540,7 +2447,7 @@
                     /></td>
                   <td class="possible">40</td>
                   <td
-                    id="13"
+                    id="103"
                     class="percent "
                     data-name="percent earned"
                   >
@@ -3557,7 +2464,7 @@
                 <tr>
                   <td>Hygiene & Cleanliness</td>
                   <td
-                    id="14"
+                    id="104"
                     class="points"
                     data-name="points earned"
                   ><label
@@ -3571,7 +2478,7 @@
                     /></td>
                   <td class="possible">80</td>
                   <td
-                    id="15"
+                    id="105"
                     class="percent "
                     data-name="percent earned"
                   >
@@ -3588,7 +2495,7 @@
                 <tr>
                   <td>General Operations Management</td>
                   <td
-                    id="16"
+                    id="106"
                     class="points"
                     data-name="points earned"
                   ><label
@@ -3602,7 +2509,7 @@
                     /></td>
                   <td class="possible">50</td>
                   <td
-                    id="17"
+                    id="107"
                     class="percent "
                     data-name="percent earned"
                   >
@@ -3619,7 +2526,7 @@
                 <tr>
                   <td>Shift Changeover</td>
                   <td
-                    id="18"
+                    id="108"
                     class="points"
                     data-name="points earned"
                   ><label
@@ -3633,7 +2540,7 @@
                     /></td>
                   <td class="possible">40</td>
                   <td
-                    id="19"
+                    id="109"
                     class="percent "
                     data-name="percent earned"
                   >
@@ -3653,7 +2560,7 @@
                 <tr>
                   <th>TOTALS</th>
                   <th
-                    id="20"
+                    id="110"
                     class="points "
                     data-name="points earned"
                   ><label
@@ -3667,7 +2574,7 @@
                     /></th>
                   <th>360</th>
                   <th
-                    id="21"
+                    id="111"
                     class="percent"
                     data-name="percent earned"
                   >
@@ -3734,16 +2641,14 @@ export default {
         s12: "",
         s13: "",
         s14: "",
-        s15: "",
-        s16: ""
+        s15: ""
       },
       hosting: {
         s1: "",
         s2: "",
         s3: "",
         s4: "",
-        s5: "",
-        s6: ""
+        s5: ""
       },
       production_management: {
         s1: "",
@@ -3753,7 +2658,8 @@ export default {
         s5: "",
         s6: "",
         s7: "",
-        s8: ""
+        s8: "",
+        s9: ""
       },
       haccp_compliance: {
         s1: "",
@@ -3763,7 +2669,9 @@ export default {
         s5: "",
         s6: "",
         s7: "",
-        s8: ""
+        s8: "",
+        s9: "",
+        s10: ""
       },
       hygiene: {
         s1: "",
@@ -3782,8 +2690,7 @@ export default {
         s14: "",
         s15: "",
         s16: "",
-        s17: "",
-        s18: ""
+        s17: ""
       },
       general_operations: {
         s1: "",
