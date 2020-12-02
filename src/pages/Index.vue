@@ -286,7 +286,9 @@ html {
   color: #fff;
   z-index: 2000;
 }
-
+button {
+  z-index: 999;
+}
 button:hover {
   background: rgb(180, 179, 179);
   box-shadow: 1px 2px 4px rgb(180, 179, 179);

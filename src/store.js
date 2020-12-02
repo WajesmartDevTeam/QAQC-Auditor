@@ -71,8 +71,10 @@ export default new Vuex.Store({
                 Vue.prototype.$socket
                     .makeGetRequest(req)
                     .then(response => {
+                        response.data.forEach(x => {
+                            x.store_address = x.address + ', ' + x.location;
+                        })
                         commit("updateStores", response.data);
-                        // console.log(response.data);
                         resolve(response.data);
                     })
                     .catch(error => {

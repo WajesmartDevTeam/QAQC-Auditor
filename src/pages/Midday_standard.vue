@@ -66,9 +66,15 @@
                     for="staticEmail"
                     class="col-3 col-form-label"
                   >
-                    Restaurant/Location</label>
+                    Restaurant/ <br> Location</label>
                   <div class="col-9">
-                    <select
+                    <v-select
+                      v-model="form.store_id"
+                      :options="stores"
+                      label="store_address"
+                      :reduce="st => st.id"
+                    ></v-select>
+                    <!-- <select
                       class="form-control"
                       id="location"
                       v-model="form.store_id"
@@ -85,7 +91,7 @@
                         v-bind:value="store.id"
                       >{{store.address +", "+store.location}}</option>
 
-                    </select>
+                    </select> -->
                   </div>
                 </div>
                 <div
@@ -133,13 +139,21 @@
                 </div>
                 <div>
                   <h5 class="subtitle"><u>Grading Guide</u></h5>
-                  <ol>
-                    <li>Unacceptable</li>
+                  <ul
+                    style="list-style: none;"
+                    class="d-flex justify-content-between flex-wrap"
+                  >
+                    <li>1 = <span class="ml-1">Unacceptable</span></li>
+                    <li>2 = <span class="ml-1">Fair</span></li>
+                    <li>3 = <span class="ml-1">Satisfactory</span></li>
+                    <li>4 = <span class="ml-1">Good</span></li>
+                    <li>5= <span class="ml-1">Exceeds expectations</span></li>
+                    <!-- <li>Unacceptable</li>
                     <li>Fair</li>
                     <li>Satisfactory</li>
                     <li>Good</li>
-                    <li>Exceeds expectations</li>
-                  </ol>
+                    <li>Exceeds expectations</li> -->
+                  </ul>
 
                   <h5 class="subtitle"><u>Score Guide</u></h5>
                   <ul
@@ -2011,7 +2025,13 @@
                           type="hidden"
                           name=""
                         >
-                        <select
+                        <v-select
+                          v-model="tasks.task1"
+                          :options="all_users"
+                          label="name"
+                          :reduce="user => user.name"
+                        ></v-select>
+                        <!-- <select
                           class="form-control"
                           id="us"
                           v-model="tasks.task1"
@@ -2025,7 +2045,7 @@
                             v-for="(user, index) in all_users"
                             :key="index"
                           >{{user.name}}</option>
-                        </select>
+                        </select> -->
                       </td>
                       <td
                         id="83"
@@ -2073,7 +2093,13 @@
                           type="hidden"
                           name=""
                         >
-                        <select
+                        <v-select
+                          v-model="tasks.task2"
+                          :options="all_users"
+                          label="name"
+                          :reduce="user => user.name"
+                        ></v-select>
+                        <!-- <select
                           class="form-control"
                           id="us2"
                           v-model="tasks.task2"
@@ -2087,7 +2113,7 @@
                             v-for="(user, index) in all_users"
                             :key="index"
                           >{{user.name}}</option>
-                        </select>
+                        </select> -->
                       </td>
                       <td
                         id="86"
@@ -2135,7 +2161,13 @@
                           type="hidden"
                           name=""
                         >
-                        <select
+                        <v-select
+                          v-model="tasks.task3"
+                          :options="all_users"
+                          label="name"
+                          :reduce="user => user.name"
+                        ></v-select>
+                        <!-- <select
                           class="form-control"
                           id="us3"
                           v-model="tasks.task3"
@@ -2149,7 +2181,7 @@
                             v-for="(user, index) in all_users"
                             :key="index"
                           >{{user.name}}</option>
-                        </select>
+                        </select> -->
                       </td>
                       <td
                         id="89"
@@ -2197,7 +2229,13 @@
                           type="hidden"
                           name=""
                         >
-                        <select
+                        <v-select
+                          v-model="tasks.task4"
+                          :options="all_users"
+                          label="name"
+                          :reduce="user => user.name"
+                        ></v-select>
+                        <!-- <select
                           class="form-control"
                           id="us4"
                           v-model="tasks.task4"
@@ -2211,7 +2249,7 @@
                             v-for="(user, index) in all_users"
                             :key="index"
                           >{{user.name}}</option>
-                        </select>
+                        </select> -->
                       </td>
                       <td
                         id="92"
@@ -2259,7 +2297,13 @@
                           type="hidden"
                           name=""
                         >
-                        <select
+                        <v-select
+                          v-model="tasks.task5"
+                          :options="all_users"
+                          label="name"
+                          :reduce="user => user.name"
+                        ></v-select>
+                        <!-- <select
                           class="form-control"
                           id="us5"
                           v-model="tasks.task5"
@@ -2273,7 +2317,7 @@
                             v-for="(user, index) in all_users"
                             :key="index"
                           >{{user.name}}</option>
-                        </select>
+                        </select> -->
                       </td>
                       <td
                         id="95"
@@ -2646,12 +2690,7 @@
 </template>
 
 <script>
-import vSelect from 'vue-select'
-import 'vue-select/dist/vue-select.css';
 export default {
-  components: {
-    vSelect
-  },
   data () {
     return {
       username: "",
@@ -2880,6 +2919,7 @@ export default {
     submitForm () {
       let points = this.getTotal();
       let qa = [];
+      let vm = this;
       let taskplanner = [];
       var divs = document.querySelectorAll('.question').forEach(function (el) {
         let index = el.id;
@@ -2895,6 +2935,10 @@ export default {
         else {
           // ans = el.childNodes[1].value;
         }
+        if (index == 3) {
+          ans = vm.form.store_id;
+        }
+
         qa.push({
           questionno: index,
           questiontext: qtext,
@@ -2969,6 +3013,7 @@ export default {
       this.points = points;
       this.form.taskplanner = taskplanner;
       this.form.images = this.images;
+      // console.log(this.form)
       this.setPercents();
       this.getSum();
 

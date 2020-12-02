@@ -90,7 +90,14 @@
                   >Location
                     Visited</label>
                   <div class="col-9">
-                    <select
+                    <v-select
+                      v-model="form.store_id"
+                      :options="stores"
+                      title="select store visited"
+                      label="store_address"
+                      :reduce="st => st.id"
+                    ></v-select>
+                    <!-- <select
                       class="form-control"
                       id="location"
                       v-model="form.store_id"
@@ -106,7 +113,7 @@
                         :key="index"
                         v-bind:value="store.id"
                       >{{store.address +", "+store.location}}</option>
-                    </select>
+                    </select> -->
                   </div>
                 </div>
 
@@ -234,7 +241,8 @@
                           name="morning2"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="9"
                         class="question"
@@ -248,7 +256,8 @@
                           name="morning2"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="10"
                         class="question"
@@ -277,7 +286,8 @@
                           name="peak2"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="11"
                         class="question"
@@ -291,7 +301,8 @@
                           name="close2"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="11"
                         class="question"
@@ -305,7 +316,8 @@
                           name="close2"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="12"
                         class="question"
@@ -314,7 +326,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is the chair/table cleaned?</td>
@@ -420,7 +433,8 @@
                           name="morning4"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="17"
                         class="question"
@@ -434,7 +448,8 @@
                           name="morning4"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="18"
                         class="question"
@@ -463,7 +478,8 @@
                           name="peak4"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="19"
                         class="question"
@@ -477,7 +493,8 @@
                           name="close4"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="19"
                         class="question"
@@ -491,7 +508,8 @@
                           name="close4"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="20"
                         class="question"
@@ -500,7 +518,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
 
@@ -696,7 +715,8 @@
                           name="morning7"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="29"
                         class="question"
@@ -710,7 +730,8 @@
                           name="morning7"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="30"
                         class="question"
@@ -739,7 +760,8 @@
                           name="peak7"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="31"
                         class="question"
@@ -753,7 +775,8 @@
                           name="close7"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="31"
                         class="question"
@@ -767,7 +790,8 @@
                           name="close7"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="32"
                         class="question"
@@ -776,7 +800,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is the TV & sound system on/off and set appropraitely?</td>
@@ -793,7 +818,8 @@
                           name="morning8"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="33"
                         class="question"
@@ -807,7 +833,8 @@
                           name="morning8"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="34"
                         class="question"
@@ -851,7 +878,8 @@
                           name="close8"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
 
                       <td
                         id="35"
@@ -866,7 +894,8 @@
                           name="close8"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
 
                       <td
                         id="36"
@@ -876,7 +905,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is the lobby free of cobwebs/flies or any crawling insects?</td>
@@ -893,7 +923,8 @@
                           name="morning9"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="37"
                         class="question"
@@ -907,7 +938,8 @@
                           name="morning9"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="38"
                         class="question"
@@ -951,7 +983,8 @@
                           name="close9"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="39"
                         class="question"
@@ -965,7 +998,8 @@
                           name="close9"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
 
                       <td
                         id="40"
@@ -975,7 +1009,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
 
                   </tbody>
@@ -1001,7 +1036,8 @@
                           name="morning11"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="41"
                         class="question"
@@ -1015,7 +1051,8 @@
                           name="morning11"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="42"
                         class="question"
@@ -1059,7 +1096,8 @@
                           name="close11"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="43"
                         class="question"
@@ -1073,7 +1111,8 @@
                           name="close11"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
 
                       <td
                         id="44"
@@ -1083,7 +1122,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is the Counter tops/till machines cleaned and well arranged?
@@ -1101,7 +1141,8 @@
                           name="morning12"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="45"
                         class="question"
@@ -1115,7 +1156,8 @@
                           name="morning12"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="46"
                         class="question"
@@ -1159,7 +1201,8 @@
                           name="close12"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="47"
                         class="question"
@@ -1173,7 +1216,8 @@
                           name="close12"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
 
                       <td
                         id="48"
@@ -1183,7 +1227,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is the Menu boards cleaned daily?</td>
@@ -1384,7 +1429,8 @@
                           name="morning15"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="57"
                         class="question"
@@ -1398,7 +1444,8 @@
                           name="morning15"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="58"
                         class="question"
@@ -1442,7 +1489,8 @@
                           name="close15"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="59"
                         class="question"
@@ -1456,7 +1504,8 @@
                           name="close15"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
 
                       <td
                         id="60"
@@ -1466,7 +1515,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Are Carrier Bags/disposable cups/tumblers available for the day?
@@ -1484,7 +1534,8 @@
                           name="morning16"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="61"
                         class="question"
@@ -1498,7 +1549,8 @@
                           name="morning16"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="62"
                         class="question"
@@ -1542,7 +1594,8 @@
                           name="close16"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="63"
                         class="question"
@@ -1556,7 +1609,8 @@
                           name="close16"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
 
                       <td
                         id="64"
@@ -1566,7 +1620,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Are serviette available and well arranged?</td>
@@ -1674,7 +1729,8 @@
                           name="morning18"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="69"
                         class="question"
@@ -1688,7 +1744,8 @@
                           name="morning18"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="70"
                         class="question"
@@ -1732,7 +1789,8 @@
                           name="close18"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="71"
                         class="question"
@@ -1746,7 +1804,8 @@
                           name="close18"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="72"
                         class="question"
@@ -1755,7 +1814,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Are display cabinets cleaned on/off and regulated at the right
@@ -1773,7 +1833,8 @@
                           name="morning19"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="73"
                         class="question"
@@ -1787,7 +1848,8 @@
                           name="morning19"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="74"
                         class="question"
@@ -1831,7 +1893,8 @@
                           name="close19"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="75"
                         class="question"
@@ -1845,7 +1908,8 @@
                           name="close19"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="76"
                         class="question"
@@ -1854,7 +1918,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is coffee machine turned on and all materials and dispenser
@@ -1872,7 +1937,8 @@
                           name="morning20"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="77"
                         class="question"
@@ -1886,7 +1952,8 @@
                           name="morning20"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="78"
                         class="question"
@@ -1930,7 +1997,8 @@
                           name="close20"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="79"
                         class="question"
@@ -1944,7 +2012,8 @@
                           name="close20"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="80"
                         class="question"
@@ -1953,7 +2022,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is the chips dump well cleaned and heated ambient light turned
@@ -1971,7 +2041,8 @@
                           name="morning21"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="81"
                         class="question"
@@ -1985,7 +2056,8 @@
                           name="morning21"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="82"
                         class="question"
@@ -2029,7 +2101,8 @@
                           name="close21"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="83"
                         class="question"
@@ -2043,7 +2116,8 @@
                           name="close21"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="84"
                         class="question"
@@ -2052,7 +2126,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Has cash skimms been done from each register(Minimum twice per
@@ -2070,7 +2145,8 @@
                           name="morning22"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="85"
                         class="question"
@@ -2084,7 +2160,8 @@
                           name="morning22"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="86"
                         class="question"
@@ -2128,7 +2205,8 @@
                           name="close22"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="87"
                         class="question"
@@ -2142,7 +2220,8 @@
                           name="close22"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="88"
                         class="question"
@@ -2151,7 +2230,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is all packaging well stacked and arranged?</td>
@@ -2258,7 +2338,8 @@
                           name="morning24"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="93"
                         class="question"
@@ -2272,7 +2353,8 @@
                           name="morning24"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="94"
                         class="question"
@@ -2316,7 +2398,8 @@
                           name="close24"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="95"
                         class="question"
@@ -2330,7 +2413,8 @@
                           name="close24"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="96"
                         class="question"
@@ -2339,7 +2423,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                   </tbody>
 
@@ -2364,7 +2449,8 @@
                           name="morning25"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="97"
                         class="question"
@@ -2378,7 +2464,8 @@
                           name="morning25"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="98"
                         class="question"
@@ -2422,7 +2509,8 @@
                           name="close25"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="99"
                         class="question"
@@ -2436,7 +2524,8 @@
                           name="close25"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="100"
                         class="question"
@@ -2445,7 +2534,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is the Rotisserie Rational Machine cleaned and on/off for the
@@ -2463,7 +2553,8 @@
                           name="morning26"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="101"
                         class="question"
@@ -2477,7 +2568,8 @@
                           name="morning26"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="102"
                         class="question"
@@ -2521,7 +2613,8 @@
                           name="close26"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="103"
                         class="question"
@@ -2535,7 +2628,8 @@
                           name="close26"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="104"
                         class="question"
@@ -2544,7 +2638,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Has the oil check for the deep fryer been done for quality?</td>
@@ -2561,7 +2656,8 @@
                           name="morning27"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="105"
                         class="question"
@@ -2575,7 +2671,8 @@
                           name="morning27"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="106"
                         class="question"
@@ -2619,7 +2716,8 @@
                           name="close27"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="107"
                         class="question"
@@ -2633,7 +2731,8 @@
                           name="close27"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="108"
                         class="question"
@@ -2642,7 +2741,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is the extractor on/off and clear of all oil residue/build up?
@@ -2660,7 +2760,8 @@
                           name="morning28"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="109"
                         class="question"
@@ -2674,7 +2775,8 @@
                           name="morning28"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="110"
                         class="question"
@@ -2718,7 +2820,8 @@
                           name="close28"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="111"
                         class="question"
@@ -2732,7 +2835,8 @@
                           name="close28"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="112"
                         class="question"
@@ -2741,7 +2845,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
 
@@ -2759,7 +2864,8 @@
                           name="morning29"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="113"
                         class="question"
@@ -2773,7 +2879,8 @@
                           name="morning29"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="114"
                         class="question"
@@ -2817,7 +2924,8 @@
                           name="close29"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="115"
                         class="question"
@@ -2831,7 +2939,8 @@
                           name="close29"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="116"
                         class="question"
@@ -2840,7 +2949,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Was all food prepared sampled before it is passed to check for
@@ -2858,7 +2968,8 @@
                           name="morning30"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="117"
                         class="question"
@@ -2872,7 +2983,8 @@
                           name="morning30"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="118"
                         class="question"
@@ -2916,7 +3028,8 @@
                           name="close30"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="119"
                         class="question"
@@ -2930,7 +3043,8 @@
                           name="close30"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="120"
                         class="question"
@@ -2939,7 +3053,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Are the Cold room/freexer cleaned based on the cleaning
@@ -2957,7 +3072,8 @@
                           name="morning31"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="121"
                         class="question"
@@ -2971,7 +3087,8 @@
                           name="morning31"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="122"
                         class="question"
@@ -3015,7 +3132,8 @@
                           name="close31"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="123"
                         class="question"
@@ -3029,7 +3147,8 @@
                           name="close31"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="124"
                         class="question"
@@ -3038,7 +3157,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Are all the Lights in the different BOH sections working? and
@@ -3056,7 +3176,8 @@
                           name="morning32"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="125"
                         class="question"
@@ -3070,7 +3191,8 @@
                           name="morning32"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="126"
                         class="question"
@@ -3114,7 +3236,8 @@
                           name="close32"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="127"
                         class="question"
@@ -3128,7 +3251,8 @@
                           name="close32"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="128"
                         class="question"
@@ -3137,7 +3261,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Has all refuse been disposed timely enough(Hall full! Half
@@ -3155,7 +3280,8 @@
                           name="morning33"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="129"
                         class="question"
@@ -3169,7 +3295,8 @@
                           name="morning33"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="130"
                         class="question"
@@ -3213,7 +3340,8 @@
                           name="close33"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="131"
                         class="question"
@@ -3227,7 +3355,8 @@
                           name="close33"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="132"
                         class="question"
@@ -3236,7 +3365,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is the kitchen floors/Corridors swept and mopped?</td>
@@ -3253,7 +3383,8 @@
                           name="morning34"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="133"
                         class="question"
@@ -3267,7 +3398,8 @@
                           name="morning34"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="134"
                         class="question"
@@ -3311,7 +3443,8 @@
                           name="close34"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="135"
                         class="question"
@@ -3325,7 +3458,8 @@
                           name="close34"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="136"
                         class="question"
@@ -3334,7 +3468,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is staff changing/cloak room cleaned & lockers properly
@@ -3352,7 +3487,8 @@
                           name="morning35"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="137"
                         class="question"
@@ -3366,7 +3502,8 @@
                           name="morning35"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="138"
                         class="question"
@@ -3410,7 +3547,8 @@
                           name="close35"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="139"
                         class="question"
@@ -3424,7 +3562,8 @@
                           name="close35"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="140"
                         class="question"
@@ -3433,7 +3572,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
 
                   </tbody>
@@ -3459,7 +3599,8 @@
                           name="morning36"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="141"
                         class="question"
@@ -3473,7 +3614,8 @@
                           name="morning36"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="142"
                         class="question"
@@ -3517,7 +3659,8 @@
                           name="close36"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="143"
                         class="question"
@@ -3531,7 +3674,8 @@
                           name="close36"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="144"
                         class="question"
@@ -3540,7 +3684,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is CAYGO the order of the day?</td>
@@ -3736,7 +3881,8 @@
                           name="morning39"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="153"
                         class="question"
@@ -3750,7 +3896,8 @@
                           name="morning39"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="154"
                         class="question"
@@ -3794,7 +3941,8 @@
                           name="close39"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="155"
                         class="question"
@@ -3808,7 +3956,8 @@
                           name="close39"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="156"
                         class="question"
@@ -3817,7 +3966,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
 
@@ -3836,7 +3986,8 @@
                           name="morning40"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="157"
                         class="question"
@@ -3850,7 +4001,8 @@
                           name="morning40"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="158"
                         class="question"
@@ -3894,7 +4046,8 @@
                           name="close40"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="159"
                         class="question"
@@ -3908,7 +4061,8 @@
                           name="close40"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="160"
                         class="question"
@@ -3917,7 +4071,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Is the weekly staff schedules/roaster prepared in advanced and
@@ -3935,7 +4090,8 @@
                           name="morning41"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="161"
                         class="question"
@@ -3949,7 +4105,8 @@
                           name="morning41"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="162"
                         class="question"
@@ -3993,7 +4150,8 @@
                           name="close41"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="163"
                         class="question"
@@ -4007,7 +4165,8 @@
                           name="close41"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="164"
                         class="question"
@@ -4016,7 +4175,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Was there any material unavailability or shortage affecting the
@@ -4034,7 +4194,8 @@
                           name="morning42"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="165"
                         class="question"
@@ -4048,7 +4209,8 @@
                           name="morning42"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="166"
                         class="question"
@@ -4092,7 +4254,8 @@
                           name="close42"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="167"
                         class="question"
@@ -4106,7 +4269,8 @@
                           name="close42"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="168"
                         class="question"
@@ -4115,7 +4279,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Was the morning/Afternoon stock count carried out?</td>
@@ -4132,7 +4297,8 @@
                           name="morning43"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="169"
                         class="question"
@@ -4146,7 +4312,8 @@
                           name="morning43"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="170"
                         class="question"
@@ -4190,7 +4357,8 @@
                           name="close43"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="171"
                         class="question"
@@ -4204,7 +4372,8 @@
                           name="close43"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="172"
                         class="question"
@@ -4213,7 +4382,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Has the previous day's and shift control been carried out?</td>
@@ -4230,7 +4400,8 @@
                           name="morning44"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="173"
                         class="question"
@@ -4244,7 +4415,8 @@
                           name="morning44"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="174"
                         class="question"
@@ -4288,7 +4460,8 @@
                           name="close44"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="175"
                         class="question"
@@ -4302,7 +4475,8 @@
                           name="close44"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="176"
                         class="question"
@@ -4311,7 +4485,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Has the food cost report been done for the previous day?</td>
@@ -4328,7 +4503,8 @@
                           name="morning45"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="177"
                         class="question"
@@ -4342,7 +4518,8 @@
                           name="morning45"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="178"
                         class="question"
@@ -4386,7 +4563,8 @@
                           name="close45"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="179"
                         class="question"
@@ -4400,7 +4578,8 @@
                           name="close45"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="180"
                         class="question"
@@ -4409,7 +4588,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>All materials received via suppliers/transfers in the best
@@ -4427,7 +4607,8 @@
                           name="morning46"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="181"
                         class="question"
@@ -4441,7 +4622,8 @@
                           name="morning46"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="182"
                         class="question"
@@ -4485,7 +4667,8 @@
                           name="close46"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="183"
                         class="question"
@@ -4499,7 +4682,8 @@
                           name="close46"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="184"
                         class="question"
@@ -4508,7 +4692,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>Has morning/Afternoon cash sales been counted/verified and
@@ -4526,7 +4711,8 @@
                           name="morning47"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="185"
                         class="question"
@@ -4540,7 +4726,8 @@
                           name="morning47"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="186"
                         class="question"
@@ -4584,7 +4771,8 @@
                           name="close47"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="187"
                         class="question"
@@ -4598,7 +4786,8 @@
                           name="close47"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="188"
                         class="question"
@@ -4607,7 +4796,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>All equipment at the close of business inspected cleaned and
@@ -4625,7 +4815,8 @@
                           name="morning48"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="189"
                         class="question"
@@ -4639,7 +4830,8 @@
                           name="morning48"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="190"
                         class="question"
@@ -4683,7 +4875,8 @@
                           name="close48"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="191"
                         class="question"
@@ -4697,7 +4890,8 @@
                           name="close48"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="192"
                         class="question"
@@ -4706,7 +4900,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>How was the customer experience today in both shifts?</td>
@@ -4723,7 +4918,8 @@
                           name="morning49"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="193"
                         class="question"
@@ -4737,7 +4933,8 @@
                           name="morning49"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="194"
                         class="question"
@@ -4781,7 +4978,8 @@
                           name="close49"
                           id="inlineRadio1"
                           value="yes"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="195"
                         class="question"
@@ -4795,7 +4993,8 @@
                           name="close49"
                           id="inlineRadio1"
                           value="no"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="196"
                         class="question"
@@ -4804,7 +5003,8 @@
                         <label class="label">comment</label><input
                           type="text"
                           class="form-control border-0"
-                        /></td>
+                        />
+                      </td>
                     </tr>
 
                   </tbody>
@@ -4907,6 +5107,7 @@ export default {
   },
   methods: {
     submitForm () {
+      let vm = this;
       var html =
         '<img src="https://freefrontend.com/assets/img/css-loaders/css-fun-Little-loader.gif"/>';
 
@@ -4934,7 +5135,13 @@ export default {
         else {
           ans = el.childNodes[1].value;
         }
+
+
         let index = el.id;
+
+        if (index == 4) {
+          ans = vm.form.store_id;
+        }
         newForm.question_answer.push({
           questionno: index,
           questiontext: qtext,

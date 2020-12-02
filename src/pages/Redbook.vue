@@ -50,7 +50,14 @@ Use /* eslint-disable */
                   >Location
                     Visited</label>
                   <div class="col-xs-8">
-                    <select
+                    <v-select
+                      v-model="form.store_id"
+                      :options="stores"
+                      title="select store visited"
+                      label="store_address"
+                      :reduce="st => st.id"
+                    ></v-select>
+                    <!-- <select
                       class="form-control"
                       id="location"
                       v-model="form.store_id"
@@ -67,7 +74,7 @@ Use /* eslint-disable */
                         v-bind:value="store.id"
                       >{{store.address +", "+store.location}}</option>
 
-                    </select>
+                    </select> -->
                   </div>
                 </div>
                 <div
@@ -676,7 +683,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="39"
                         class="question"
@@ -688,7 +696,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="40"
                         class="question"
@@ -700,7 +709,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="41"
                         class="question"
@@ -712,7 +722,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="42"
                         class="question"
@@ -724,7 +735,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="43"
                         class="question"
@@ -736,7 +748,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -753,7 +766,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="45"
                         class="question"
@@ -766,7 +780,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="46"
                         class="question"
@@ -779,7 +794,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="47"
                         class="question"
@@ -792,7 +808,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="48"
                         class="question"
@@ -805,7 +822,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="49"
                         class="question"
@@ -818,7 +836,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -835,7 +854,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="51"
                         class="question"
@@ -848,7 +868,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="52"
                         class="question"
@@ -861,7 +882,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="53"
                         class="question"
@@ -874,7 +896,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="54"
                         class="question"
@@ -887,7 +910,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="55"
                         class="question"
@@ -900,7 +924,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -917,7 +942,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="57"
                         class="question"
@@ -930,7 +956,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="58"
                         class="question"
@@ -943,7 +970,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="59"
                         class="question"
@@ -956,7 +984,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="60"
                         class="question"
@@ -969,7 +998,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="61"
                         class="question"
@@ -982,7 +1012,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -999,7 +1030,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="63"
                         class="question"
@@ -1012,7 +1044,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="64"
                         class="question"
@@ -1025,7 +1058,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="65"
                         class="question"
@@ -1038,7 +1072,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="66"
                         class="question"
@@ -1051,7 +1086,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="67"
                         class="question"
@@ -1064,7 +1100,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
                     <tr>
                       <td>KITCHEN LOBBY CLEANLINESS OK?</td>
@@ -1080,7 +1117,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="69"
                         class="question"
@@ -1093,7 +1131,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="70"
                         class="question"
@@ -1106,7 +1145,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="71"
                         class="question"
@@ -1119,7 +1159,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="72"
                         class="question"
@@ -1132,7 +1173,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="73"
                         class="question"
@@ -1145,7 +1187,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                   </tbody>
@@ -1179,7 +1222,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="75"
                         class="question"
@@ -1192,7 +1236,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="76"
                         class="question"
@@ -1205,7 +1250,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="77"
                         class="question"
@@ -1218,7 +1264,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="78"
                         class="question"
@@ -1231,7 +1278,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="79"
                         class="question"
@@ -1244,7 +1292,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="80"
                         class="question"
@@ -1257,7 +1306,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -1274,7 +1324,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="82"
                         class="question"
@@ -1287,7 +1338,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="83"
                         class="question"
@@ -1300,7 +1352,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="84"
                         class="question"
@@ -1313,7 +1366,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="85"
                         class="question"
@@ -1326,7 +1380,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="86"
                         class="question"
@@ -1339,7 +1394,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="87"
                         class="question"
@@ -1352,7 +1408,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -1369,7 +1426,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="89"
                         class="question"
@@ -1382,7 +1440,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="90"
                         class="question"
@@ -1395,7 +1454,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="91"
                         class="question"
@@ -1408,7 +1468,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="92"
                         class="question"
@@ -1421,7 +1482,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="93"
                         class="question"
@@ -1434,7 +1496,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="94"
                         class="question"
@@ -1447,7 +1510,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                   </tbody>
@@ -1502,7 +1566,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="96"
                         class="question"
@@ -1515,7 +1580,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="97"
                         class="question"
@@ -1528,7 +1594,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="98"
                         class="question"
@@ -1541,7 +1608,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="99"
                         class="question"
@@ -1554,7 +1622,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="100"
                         class="question"
@@ -1567,7 +1636,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="101"
                         class="question"
@@ -1580,7 +1650,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="102"
                         class="question"
@@ -1594,7 +1665,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="103"
                         class="question"
@@ -1607,7 +1679,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="104"
                         class="question"
@@ -1620,7 +1693,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="105"
                         class="question"
@@ -1634,7 +1708,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="106"
                         class="question"
@@ -1648,7 +1723,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="107"
                         class="question"
@@ -1661,7 +1737,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -1678,7 +1755,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="109"
                         class="question"
@@ -1691,7 +1769,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="110"
                         class="question"
@@ -1704,7 +1783,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="111"
                         class="question"
@@ -1717,7 +1797,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="112"
                         class="question"
@@ -1730,7 +1811,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="113"
                         class="question"
@@ -1743,7 +1825,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="114"
                         class="question"
@@ -1756,7 +1839,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="115"
                         class="question"
@@ -1769,7 +1853,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="116"
                         class="question"
@@ -1782,7 +1867,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="117"
                         class="question"
@@ -1795,7 +1881,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="118"
                         class="question"
@@ -1809,7 +1896,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="119"
                         class="question"
@@ -1823,7 +1911,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="120"
                         class="question"
@@ -1836,7 +1925,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -1853,7 +1943,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="122"
                         class="question"
@@ -1866,7 +1957,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="123"
                         class="question"
@@ -1879,7 +1971,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="124"
                         class="question"
@@ -1892,7 +1985,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="125"
                         class="question"
@@ -1905,7 +1999,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="126"
                         class="question"
@@ -1918,7 +2013,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="127"
                         class="question"
@@ -1931,7 +2027,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="128"
                         class="question"
@@ -1944,7 +2041,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="129"
                         class="question"
@@ -1957,7 +2055,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="130"
                         class="question"
@@ -1970,7 +2069,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="131"
                         class="question"
@@ -1984,7 +2084,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="132"
                         class="question"
@@ -1998,7 +2099,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="133"
                         class="question"
@@ -2011,7 +2113,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -2028,7 +2131,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="135"
                         class="question"
@@ -2041,7 +2145,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="136"
                         class="question"
@@ -2054,7 +2159,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="137"
                         class="question"
@@ -2067,7 +2173,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="138"
                         class="question"
@@ -2081,7 +2188,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="139"
                         class="question"
@@ -2094,7 +2202,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="140"
                         class="question"
@@ -2107,7 +2216,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="141"
                         class="question"
@@ -2121,7 +2231,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="142"
                         class="question"
@@ -2134,7 +2245,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="143"
                         class="question"
@@ -2147,7 +2259,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="144"
                         class="question"
@@ -2161,7 +2274,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="145"
                         class="question"
@@ -2175,7 +2289,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="146"
                         class="question"
@@ -2188,7 +2303,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
                     <tr>
                       <td>FRESH VEGETABLES</td>
@@ -2204,7 +2320,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="148"
                         class="question"
@@ -2217,7 +2334,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="149"
                         class="question"
@@ -2231,7 +2349,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="150"
                         class="question"
@@ -2245,7 +2364,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="151"
                         class="question"
@@ -2259,7 +2379,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="152"
                         class="question"
@@ -2272,7 +2393,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="153"
                         class="question"
@@ -2285,7 +2407,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="154"
                         class="question"
@@ -2299,7 +2422,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="155"
                         class="question"
@@ -2312,7 +2436,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="156"
                         class="question"
@@ -2325,7 +2450,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="157"
                         class="question"
@@ -2339,7 +2465,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="158"
                         class="question"
@@ -2353,7 +2480,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="159"
                         class="question"
@@ -2367,7 +2495,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -2385,7 +2514,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="161"
                         class="question"
@@ -2399,7 +2529,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="162"
                         class="question"
@@ -2413,7 +2544,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="163"
                         class="question"
@@ -2427,7 +2559,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="164"
                         class="question"
@@ -2441,7 +2574,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="165"
                         class="question"
@@ -2454,7 +2588,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="166"
                         class="question"
@@ -2467,7 +2602,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="167"
                         class="question"
@@ -2480,7 +2616,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="168"
                         class="question"
@@ -2493,7 +2630,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="169"
                         class="question"
@@ -2506,7 +2644,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="170"
                         class="question"
@@ -2520,7 +2659,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="171"
                         class="question"
@@ -2534,7 +2674,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="172"
                         class="question"
@@ -2548,7 +2689,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -2565,7 +2707,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="174"
                         class="question"
@@ -2579,7 +2722,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="175"
                         class="question"
@@ -2593,7 +2737,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="176"
                         class="question"
@@ -2607,7 +2752,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="177"
                         class="question"
@@ -2621,7 +2767,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="178"
                         class="question"
@@ -2635,7 +2782,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="179"
                         class="question"
@@ -2649,7 +2797,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="180"
                         class="question"
@@ -2663,7 +2812,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="181"
                         class="question"
@@ -2677,7 +2827,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="182"
                         class="question"
@@ -2691,7 +2842,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control  grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="183"
                         class="question"
@@ -2704,7 +2856,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="184"
                         class="question"
@@ -2718,7 +2871,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="185"
                         class="question"
@@ -2732,7 +2886,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -2750,7 +2905,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="187"
                         class="question"
@@ -2764,7 +2920,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="188"
                         class="question"
@@ -2778,7 +2935,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="189"
                         class="question"
@@ -2792,7 +2950,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="190"
                         class="question"
@@ -2806,7 +2965,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="191"
                         class="question"
@@ -2820,7 +2980,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="192"
                         class="question"
@@ -2834,7 +2995,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="193"
                         class="question"
@@ -2848,7 +3010,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="194"
                         class="question"
@@ -2862,7 +3025,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="195"
                         class="question"
@@ -2876,7 +3040,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="196"
                         class="question"
@@ -2889,7 +3054,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="197"
                         class="question"
@@ -2902,7 +3068,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="198"
                         class="question"
@@ -2915,7 +3082,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -2933,7 +3101,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="200"
                         class="question"
@@ -2947,7 +3116,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="201"
                         class="question"
@@ -2961,7 +3131,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="202"
                         class="question"
@@ -2975,7 +3146,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="203"
                         class="question"
@@ -2989,7 +3161,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="204"
                         class="question"
@@ -3003,7 +3176,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="205"
                         class="question"
@@ -3017,7 +3191,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="206"
                         class="question"
@@ -3031,7 +3206,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="207"
                         class="question"
@@ -3044,7 +3220,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="208"
                         class="question"
@@ -3057,7 +3234,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="209"
                         class="question"
@@ -3071,7 +3249,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="210"
                         class="question"
@@ -3085,7 +3264,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="211"
                         class="question"
@@ -3098,7 +3278,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -3116,7 +3297,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="213"
                         class="question"
@@ -3129,7 +3311,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="214"
                         class="question"
@@ -3143,7 +3326,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control  grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="215"
                         class="question"
@@ -3157,7 +3341,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="216"
                         class="question"
@@ -3170,7 +3355,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="217"
                         class="question"
@@ -3183,7 +3369,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="218"
                         class="question"
@@ -3197,7 +3384,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="219"
                         class="question"
@@ -3211,7 +3399,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="220"
                         class="question"
@@ -3225,7 +3414,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="221"
                         class="question"
@@ -3239,7 +3429,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="222"
                         class="question"
@@ -3252,7 +3443,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="223"
                         class="question"
@@ -3266,7 +3458,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="224"
                         class="question"
@@ -3280,7 +3473,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                     <tr>
@@ -3297,7 +3491,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="226"
                         class="question"
@@ -3310,7 +3505,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="227"
                         class="question"
@@ -3323,7 +3519,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="228"
                         class="question"
@@ -3336,7 +3533,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="229"
                         class="question"
@@ -3350,7 +3548,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="230"
                         class="question"
@@ -3363,7 +3562,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="231"
                         class="question"
@@ -3376,7 +3576,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="232"
                         class="question"
@@ -3390,7 +3591,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="233"
                         class="question"
@@ -3403,7 +3605,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="234"
                         class="question"
@@ -3416,7 +3619,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="235"
                         class="question"
@@ -3430,7 +3634,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="236"
                         class="question"
@@ -3444,7 +3649,8 @@ Use /* eslint-disable */
                           type="text"
                           class="form-control grey"
                           disabled
-                        ></td>
+                        >
+                      </td>
                       <td
                         id="237"
                         class="question"
@@ -3457,7 +3663,8 @@ Use /* eslint-disable */
                         <input
                           type="text"
                           class="form-control"
-                        ></td>
+                        >
+                      </td>
                     </tr>
 
                   </tbody>
@@ -3643,6 +3850,7 @@ export default {
 
   methods: {
     submitForm () {
+      let vm = this;
       // var html =
       //   '<img src="https://freefrontend.com/assets/img/css-loaders/css-fun-Little-loader.gif"/>';
 
@@ -3687,7 +3895,9 @@ export default {
         if (ans == undefined) {
           // console.log(index)
         }
-
+        if (index == 2) {
+          ans = vm.form.store_id;
+        }
 
 
         newForm.question_answer.push({

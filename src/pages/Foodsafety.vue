@@ -44,7 +44,14 @@
                 >
                   <label class="col-4 col-form-label">Shop</label>
                   <div class="col-8">
-                    <select
+                    <v-select
+                      v-model="form.store_id"
+                      :options="stores"
+                      title="select store visited"
+                      label="store_address"
+                      :reduce="st => st.id"
+                    ></v-select>
+                    <!-- <select
                       class="form-control"
                       id="location"
                       v-model="form.store_id"
@@ -60,7 +67,7 @@
                         v-bind:value="store.id"
                       >{{store.address +", "+store.location}}</option>
 
-                    </select>
+                    </select> -->
                   </div>
                 </div>
                 <div
@@ -175,7 +182,8 @@
                       <input
                         type="text"
                         class="form-control"
-                      ></div>
+                      >
+                    </div>
                   </div>
                   <div class="row container">
                     <p class="col-md-1 col-sm-1 col-xs-1">b.</p>
@@ -4326,7 +4334,8 @@
                         disabled
                         class="form-control"
                         v-model="scores.scoreA"
-                      ></p>
+                      >
+                    </p>
                     <p
                       id="131"
                       class="score subtitle question question-hygiene"
@@ -4340,7 +4349,8 @@
                         disabled
                         class="form-control"
                         v-model="percents.A"
-                      ></p>
+                      >
+                    </p>
                   </div>
 
                 </div>
@@ -5293,7 +5303,8 @@
                         disabled
                         class="form-control"
                         v-model="scores.scoreB"
-                      ></p>
+                      >
+                    </p>
                     <p
                       id="161"
                       class="house-keeping subtitle question question-house"
@@ -5307,7 +5318,8 @@
                         disabled
                         class="form-control"
                         v-model="percents.B"
-                      ></p>
+                      >
+                    </p>
                   </div>
                 </div>
                 <hr>
@@ -5973,7 +5985,8 @@
                       >Remarks</label><input
                         type="text"
                         class="form-control"
-                      ></div>
+                      >
+                    </div>
                   </div>
                   <div class="row container">
                     <p class="col-md-1 col-sm-1 col-xs-1">k.</p>
@@ -6125,7 +6138,8 @@
                         disabled
                         class="form-control"
                         v-model="scores.scoreC"
-                      ></p>
+                      >
+                    </p>
                     <p
                       id="187"
                       class="recipe subtitle question question-recipe"
@@ -6140,7 +6154,8 @@
                         disabled
                         class="form-control"
                         v-model="percents.C"
-                      ></p>
+                      >
+                    </p>
                   </div>
                 </div>
 
@@ -7481,7 +7496,8 @@
                         disabled
                         class="form-control"
                         v-model="percents.D"
-                      ></p>
+                      >
+                    </p>
                   </div>
                 </div>
                 <hr>
@@ -8323,7 +8339,8 @@
                       disabled
                       class="form-control"
                       v-model="totalScore"
-                    ></p>
+                    >
+                  </p>
                   <p
                     id="250"
                     class="subtitle question question-total"
@@ -8334,7 +8351,8 @@
                       disabled
                       class="form-control"
                       v-model="totalPercent"
-                    ></p>
+                    >
+                  </p>
                 </div>
 
               </div>
@@ -8440,6 +8458,7 @@ export default {
   },
   methods: {
     submitForm () {
+      let vm = this;
       var html =
         '<img src="https://thumbs.gfycat.com/AchingSpeedyArmyworm-size_restricted.gif"/>';
 
@@ -8493,7 +8512,12 @@ export default {
         if (ans == undefined) {
           ans = ' '
         }
+
         let index = el.id;
+
+        if (index == 2) {
+          ans = vm.form.store_id;
+        }
         newForm.question_answer.push({
           questionno: index,
           questiontext: qtext,
