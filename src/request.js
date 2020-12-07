@@ -90,6 +90,8 @@ export default {
             foodsafety: "krss",
             greenbook: "kdo",
             redbook: "redbook",
+            amvrimage: 'amvrfeedback/images',
+            midmvrimage: 'midamvfeedback/images'
         };
 
         if (request.params !== undefined) {
@@ -109,15 +111,16 @@ export default {
         } else {
             var request_url = request.url;
         }
+        if (request.formData) {
+            request.headers = {
+                'Content-Type': 'multipart/form-data'
+            }
+        }
+        var config = {};
 
         if (request.headers !== undefined) {
-            var config = {
-                headers: request.headers
-            };
-        } else {
-            var config = {};
+            config.headers = request.headers;
         }
-
         var data = request.data !== undefined ? request.data : "";
 
         console.log(

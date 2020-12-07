@@ -13,6 +13,7 @@
           </md-card-header>
           <md-card-content>
             <form
+              enctype="multipart/form-data"
               id="Am-StandardOperation"
               role="form"
               v-on:submit.prevent="submitForm"
@@ -1957,7 +1958,7 @@
                 >
                   <div
                     style="position:relative"
-                    v-for="(imag, index) in images"
+                    v-for="(imag, index) in photos"
                     v-bind:key="index"
                   >
                     <span
@@ -1976,11 +1977,13 @@
 
                 </div>
                 <div>
-                  <small class="text-warning">* Maximum of 5 images</small> <br><small class="text-warning">* Maximum of 10MB image size</small><br>
+                  <small class="text-warning">* Maximum of 4 images</small> <br><small class="text-warning">* Maximum of 5MB image size</small><br>
                   <small class="text-warning">* Only JPEG, JPG and PNG allowed </small>
                   <input
                     accept="image/jpg, image/jpeg, image/png"
                     id="img_url"
+                    ref="files"
+                    multiple
                     @change="onFileChange"
                     type="file"
                     class="form-control"
@@ -2276,6 +2279,7 @@
 </template>
 
 <script>
+import axios from "axios"
 export default {
   data () {
     return {
@@ -2293,6 +2297,7 @@ export default {
       image: false,
       stores: [],
       images: [],
+      photos: [],
       store_manager: "",
       opening_procedures: {
         s1: "",
@@ -2383,8 +2388,7 @@ export default {
         store_id: "",
         total_percent: "",
         question_answer: [],
-        taskplanner: [],
-        images: []
+        taskplanner: []
       },
       myMSALObj: null,
       msalConfig: {
@@ -2576,9 +2580,9 @@ export default {
       this.form.question_answer = qa;
       this.points = points;
       this.form.taskplanner = taskplanner;
-      this.form.images = this.images;
 
       // console.log(this.form)
+
       this.setPercents();
       this.getSum();
 
@@ -2723,8 +2727,9 @@ export default {
       this.$socket
         .makePostRequest(req)
         .then(response => {
-          this.$swal.fire("Success", response.data.message, "success");
-          location.reload();
+          console.log(response)
+          this.submitImages(response.data.form_id)
+
         })
         .catch(error => {
           this.$swal.fire("Error", error.message, "error");
@@ -2734,16 +2739,16 @@ export default {
 
     onFileChange (e) {
       if (this.images.length > 4) {
-        this.$swal.fire("Warning", "Maximum of 5 images allowed", "warning");
+        this.$swal.fire("Warning", "Maximum of 4 images allowed", "warning");
         return;
       }
-      var files = e.target.files || e.dataTransfer.files;
+      var files = this.$refs.files.files;
 
       if (!files.length) return;
       else {
         var fsize = (files[0].size / (1024 * 1024)).toFixed(2);
-        if (!(fsize <= 10)) {
-          this.$swal.fire("Warning", "Maximum image size allowed is 10MB", "warning");
+        if (!(fsize <= 5)) {
+          this.$swal.fire("Warning", "Maximum image size allowed is 5MB", "warning");
           return;
         }
         else {
@@ -2753,20 +2758,63 @@ export default {
     },
     createImage (files) {
       for (let i = 0; i < files.length; i++) {
+        this.images.push(files[i]);
         var image = new Image();
         var reader = new FileReader();
 
         reader.onload = e => {
           let image = { "image": e.target.result }
-          this.images.push(image);
+          this.photos.push(image);
         };
         reader.readAsDataURL(files[i]);
       }
 
 
     },
+
     removeImage (index) {
       this.images.splice(index, 1);
+      this.photos.splice(index, 1);
+    },
+    async submitImages (id) {
+      // console.log(this.images)
+      let formData = new FormData();
+      formData.append('form_id', id);
+      for (var i = 0; i < this.images.length; i++) {
+        let file = this.images[i];
+        let count = i + 1;
+        // formData.append('image' + count + '', file);
+        formData.append('image', file);
+        await this.postImage(formData, count);
+        formData.delete('image');
+      }
+
+    },
+    postImage (formData, count) {
+      let req = {
+        what: "amvrimage",
+        formData: true,
+        data: formData
+      }
+      this.$socket
+        .makePostRequest(req)
+        .then(res => {
+          if (res.type == 'amvrimage') {
+            console.log(res);
+            if (this.images.length == count) {
+              this.$swal.fire("Success", "Form created", "success")
+                .then(() => {
+                  location.reload();
+                });
+            }
+
+          }
+
+        })
+        .catch(error => {
+          console.log(error);
+          this.$swal.fire("Error", error.message, "error");
+        });
     },
     async acquireTokenPopupAndCallMSGraph (task) {
 
@@ -2774,7 +2822,6 @@ export default {
       // console.log(task)
       try {
         let tokenResponse = this.$store.getters.msalToken
-
         this.callMSGraphPost("https://graph.microsoft.com/v1.0/planner/tasks", tokenResponse.accessToken, task, (data) => {
           // console.log(data)
         });
