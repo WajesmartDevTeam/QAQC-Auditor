@@ -8545,10 +8545,7 @@ export default {
         .catch(error => {
           console.log(error);
           this.$swal.fire("Error", error.message, "error");
-          this.form = {
-            store_id: "",
-            question_answer: []
-          }
+          this.form.question_answer = [];
         });
 
 

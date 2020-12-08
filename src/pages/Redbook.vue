@@ -442,7 +442,7 @@ Use /* eslint-disable */
                 <div
                   id="26"
                   class="form-group col-sm-6 col-md-4 question"
-                  data-name="Yesterday Diesel levl Closing"
+                  data-name="Yesterday Diesel level Closing"
                 >
                   <label
                     for="inputPassword"
@@ -519,7 +519,7 @@ Use /* eslint-disable */
                   class="form-group col-sm-6 question"
                   data-name="Diesel Bin Card Reading"
                 >
-                  <label class="col-xs-4 col-form-label">Diesel Bin Card Reading</label>
+                  <label class="col-xs-4 col-form-label">Diesel Bin Card Reading(Litrs)</label>
                   <div class="col-xs-8">
                     <input
                       type="text"
@@ -533,7 +533,7 @@ Use /* eslint-disable */
                   class="form-group col-sm-6 question"
                   data-name="Diesel Bin Card Reading(Added)"
                 >
-                  <label class="col-xs-4 col-form-label">Added</label>
+                  <label class="col-xs-4 col-form-label">Added(Litrs)</label>
                   <div class="col-xs-8">
                     <input
                       type="text"
@@ -661,17 +661,18 @@ Use /* eslint-disable */
                 <table class="mb-3 table table-bordered">
                   <thead>
                     <th></th>
-                    <th>At Opening</th>
+                    <th>First Prod.</th>
                     <th>10:00am</th>
-                    <th>12 Noon</th>
+                    <th>12Noon</th>
                     <th>3:00pm</th>
                     <th>6:00pm</th>
                     <th>Closing</th>
+                    <th>Remark</th>
                   </thead>
 
                   <tbody>
                     <tr>
-                      <td>COLD ROOM<sup>0</sup>C</td>
+                      <td>COLD ROOM</td>
                       <td
                         id="38"
                         class="question"
@@ -679,7 +680,7 @@ Use /* eslint-disable */
                       ><label
                           for=""
                           class="label"
-                        >at opening</label>
+                        >first prod</label>
                         <input
                           type="text"
                           class="form-control"
@@ -750,33 +751,32 @@ Use /* eslint-disable */
                           class="form-control"
                         >
                       </td>
-                    </tr>
-
-                    <tr>
-                      <td>ROAST CHICKEN FOG<sup>0</sup>C</td>
                       <td
                         id="44"
                         class="question"
-                        data-name="ROAST CHICKEN FOG"
-                      >
-                        <label
+                        data-name="COLD ROOM"
+                      ><label
                           for=""
                           class="label"
-                        >at opening</label>
+                        >remark</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
+                    </tr>
+
+                    <tr>
+                      <td>1/4 Chicken</td>
                       <td
                         id="45"
                         class="question"
-                        data-name="ROAST CHICKEN FOG"
+                        data-name="1/4 Chicken"
                       >
                         <label
                           for=""
                           class="label"
-                        >10:00am</label>
+                        >first prod</label>
                         <input
                           type="text"
                           class="form-control"
@@ -785,12 +785,12 @@ Use /* eslint-disable */
                       <td
                         id="46"
                         class="question"
-                        data-name="ROAST CHICKEN FOG"
+                        data-name="1/4 Chicken"
                       >
                         <label
                           for=""
                           class="label"
-                        >12 noon</label>
+                        >10:00am</label>
                         <input
                           type="text"
                           class="form-control"
@@ -799,12 +799,12 @@ Use /* eslint-disable */
                       <td
                         id="47"
                         class="question"
-                        data-name="ROAST CHICKEN FOG"
+                        data-name="1/4 Chicken"
                       >
                         <label
                           for=""
                           class="label"
-                        >3:00pm</label>
+                        >12 noon</label>
                         <input
                           type="text"
                           class="form-control"
@@ -813,12 +813,12 @@ Use /* eslint-disable */
                       <td
                         id="48"
                         class="question"
-                        data-name="ROAST CHICKEN FOG"
+                        data-name="1/4 Chicken"
                       >
                         <label
                           for=""
                           class="label"
-                        >6:00pm</label>
+                        >3:00pm</label>
                         <input
                           type="text"
                           class="form-control"
@@ -827,30 +827,26 @@ Use /* eslint-disable */
                       <td
                         id="49"
                         class="question"
-                        data-name="ROAST CHICKEN FOG"
+                        data-name="1/4 Chicken"
                       >
                         <label
                           for=""
                           class="label"
-                        >closing</label>
+                        >6:00pm</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
-                    </tr>
-
-                    <tr>
-                      <td>SOUPS TEMP KJR<sup>0</sup>C</td>
                       <td
                         id="50"
                         class="question"
-                        data-name="SOUPS TEMP KJR"
+                        data-name="1/4 Chicken"
                       >
                         <label
                           for=""
                           class="label"
-                        >at opening</label>
+                        >closing</label>
                         <input
                           type="text"
                           class="form-control"
@@ -859,26 +855,30 @@ Use /* eslint-disable */
                       <td
                         id="51"
                         class="question"
-                        data-name="SOUPS TEMP KJR"
+                        data-name="1/4 Chicken"
                       >
                         <label
                           for=""
                           class="label"
-                        >10:00am</label>
+                        >remark</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
+                    </tr>
+
+                    <tr>
+                      <td>Chinese Rice</td>
                       <td
                         id="52"
                         class="question"
-                        data-name="SOUPS TEMP KJR"
+                        data-name="Chinese Rice"
                       >
                         <label
                           for=""
                           class="label"
-                        >12 noon</label>
+                        >first prod</label>
                         <input
                           type="text"
                           class="form-control"
@@ -887,12 +887,12 @@ Use /* eslint-disable */
                       <td
                         id="53"
                         class="question"
-                        data-name="SOUPS TEMP KJR"
+                        data-name="Chinese Rice"
                       >
                         <label
                           for=""
                           class="label"
-                        >3:00pm</label>
+                        >10:00am</label>
                         <input
                           type="text"
                           class="form-control"
@@ -901,12 +901,12 @@ Use /* eslint-disable */
                       <td
                         id="54"
                         class="question"
-                        data-name="SOUPS TEMP KJR"
+                        data-name="Chinese Rice"
                       >
                         <label
                           for=""
                           class="label"
-                        >6:00pm</label>
+                        >12 noon</label>
                         <input
                           type="text"
                           class="form-control"
@@ -915,30 +915,26 @@ Use /* eslint-disable */
                       <td
                         id="55"
                         class="question"
-                        data-name="SOUPS TEMP KJR"
+                        data-name="Chinese Rice"
                       >
                         <label
                           for=""
                           class="label"
-                        >closing</label>
+                        >3:00pm</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
-                    </tr>
-
-                    <tr>
-                      <td>LOBBY A/C<sup>0</sup>C</td>
                       <td
                         id="56"
                         class="question"
-                        data-name="LOBBY A/C"
+                        data-name="Chinese Rice"
                       >
                         <label
                           for=""
                           class="label"
-                        >at opening</label>
+                        >6:00pm</label>
                         <input
                           type="text"
                           class="form-control"
@@ -947,12 +943,12 @@ Use /* eslint-disable */
                       <td
                         id="57"
                         class="question"
-                        data-name="LOBBY A/C"
+                        data-name="Chinese Rice"
                       >
                         <label
                           for=""
                           class="label"
-                        >10:00am</label>
+                        >closing</label>
                         <input
                           type="text"
                           class="form-control"
@@ -961,54 +957,12 @@ Use /* eslint-disable */
                       <td
                         id="58"
                         class="question"
-                        data-name="LOBBY A/C"
+                        data-name="Chinese Rice"
                       >
                         <label
                           for=""
                           class="label"
-                        >12 noon</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="59"
-                        class="question"
-                        data-name="LOBBY A/C"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >3:00pm</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="60"
-                        class="question"
-                        data-name="LOBBY A/C"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >6:00pm</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="61"
-                        class="question"
-                        data-name="LOBBY A/C"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >closing</label>
+                        >remark</label>
                         <input
                           type="text"
                           class="form-control"
@@ -1017,16 +971,58 @@ Use /* eslint-disable */
                     </tr>
 
                     <tr>
-                      <td>CONVENIENCIES OK?</td>
+                      <td>Other Proteins</td>
                       <td
-                        id="62"
+                        id="59"
                         class="question"
-                        data-name="CONVENIENCIES OK?"
+                        data-name="Other Proteins"
                       >
                         <label
                           for=""
                           class="label"
-                        >at opening</label>
+                        >first prod</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="60"
+                        class="question"
+                        data-name="Other Proteins"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >10:00am</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="61"
+                        class="question"
+                        data-name="Other Proteins"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >12 noon</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="62"
+                        class="question"
+                        data-name="Other Proteins"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >3:00pm</label>
                         <input
                           type="text"
                           class="form-control"
@@ -1035,12 +1031,12 @@ Use /* eslint-disable */
                       <td
                         id="63"
                         class="question"
-                        data-name="CONVENIENCIES OK?"
+                        data-name="Other Proteins"
                       >
                         <label
                           for=""
                           class="label"
-                        >10:00am</label>
+                        >6:00pm</label>
                         <input
                           type="text"
                           class="form-control"
@@ -1049,49 +1045,7 @@ Use /* eslint-disable */
                       <td
                         id="64"
                         class="question"
-                        data-name="CONVENIENCIES OK?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >12 noon</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="65"
-                        class="question"
-                        data-name="CONVENIENCIES OK?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >3:00pm</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="66"
-                        class="question"
-                        data-name="CONVENIENCIES OK?"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >6:00pm</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="67"
-                        class="question"
-                        data-name="CONVENIENCIES OK?"
+                        data-name="Other Proteins"
                       >
                         <label
                           for=""
@@ -1102,27 +1056,42 @@ Use /* eslint-disable */
                           class="form-control"
                         >
                       </td>
-                    </tr>
-                    <tr>
-                      <td>KITCHEN LOBBY CLEANLINESS OK?</td>
                       <td
-                        id="68"
+                        id="65"
                         class="question"
-                        data-name="KITCHEN LOBBY CLEANLINESS OK?"
+                        data-name="Other Proteins"
                       >
                         <label
                           for=""
                           class="label"
-                        >at opening</label>
+                        >remark</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Pastries</td>
+                      <td
+                        id="66"
+                        class="question"
+                        data-name="Pastries"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >first prod</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="69"
+                        id="67"
                         class="question"
-                        data-name="KITCHEN LOBBY CLEANLINESS OK?"
+                        data-name="Pastries"
                       >
                         <label
                           for=""
@@ -1134,9 +1103,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="70"
+                        id="68"
                         class="question"
-                        data-name="KITCHEN LOBBY CLEANLINESS OK?"
+                        data-name="Pastries"
                       >
                         <label
                           for=""
@@ -1148,9 +1117,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="71"
+                        id="69"
                         class="question"
-                        data-name="KITCHEN LOBBY CLEANLINESS OK?"
+                        data-name="Pastries"
                       >
                         <label
                           for=""
@@ -1162,9 +1131,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="72"
+                        id="70"
                         class="question"
-                        data-name="KITCHEN LOBBY CLEANLINESS OK?"
+                        data-name="Pastries"
                       >
                         <label
                           for=""
@@ -1176,14 +1145,331 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="73"
+                        id="71"
                         class="question"
-                        data-name="KITCHEN LOBBY CLEANLINESS OK?"
+                        data-name="Pastries"
                       >
                         <label
                           for=""
                           class="label"
                         >closing</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="72"
+                        class="question"
+                        data-name="Pastries"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >remark</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Beans/Yam Pottage</td>
+                      <td
+                        id="73"
+                        class="question"
+                        data-name="Beans/Yam Pottage"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >first prod</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="74"
+                        class="question"
+                        data-name="Beans/Yam Pottage"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >10:00am</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="75"
+                        class="question"
+                        data-name="Beans/Yam Pottage"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >12 noon</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="76"
+                        class="question"
+                        data-name="Beans/Yam Pottage"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >3:00pm</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="77"
+                        class="question"
+                        data-name="Beans/Yam Pottage"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >6:00pm</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="78"
+                        class="question"
+                        data-name="Beans/Yam Pottage"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >closing</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="79"
+                        class="question"
+                        data-name="Beans/Yam Pottage"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >remark</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Soup</td>
+                      <td
+                        id="80"
+                        class="question"
+                        data-name="Soup"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >first prod</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="81"
+                        class="question"
+                        data-name="Soup"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >10:00am</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="82"
+                        class="question"
+                        data-name="Soup"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >12 noon</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="83"
+                        class="question"
+                        data-name="Soup"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >3:00pm</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="84"
+                        class="question"
+                        data-name="Soup"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >6:00pm</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="85"
+                        class="question"
+                        data-name="Soup"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >closing</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="86"
+                        class="question"
+                        data-name="Soup"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >remark</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>K-Sauce/Asun</td>
+                      <td
+                        id="87"
+                        class="question"
+                        data-name="K-Sauce/Asun"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >first prod</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="88"
+                        class="question"
+                        data-name="K-Sauce/Asun"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >10:00am</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="89"
+                        class="question"
+                        data-name="K-Sauce/Asun"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >12 noon</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="90"
+                        class="question"
+                        data-name="K-Sauce/Asun"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >3:00pm</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="91"
+                        class="question"
+                        data-name="K-Sauce/Asun"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >6:00pm</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="92"
+                        class="question"
+                        data-name="K-Sauce/Asun"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >closing</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="93"
+                        class="question"
+                        data-name="K-Sauce/Asun"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >remark</label>
                         <input
                           type="text"
                           class="form-control"
@@ -1200,120 +1486,19 @@ Use /* eslint-disable */
                     <th></th>
                     <th>At Opening</th>
                     <th>10:00am</th>
-                    <th>12 Noon</th>
+                    <th>12Noon</th>
                     <th>3:00pm</th>
                     <th>6:00pmn</th>
-                    <th>CLosing</th>
-                    <th>Remarks</th>
+                    <th>Closing</th>
+                    <th>Remark</th>
                   </thead>
 
                   <tbody>
-                    <tr>
-                      <td>FRONT PARKING LOT</td>
-                      <td
-                        id="74"
-                        class="question"
-                        data-name="FRONT PARKING LOT"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >at opening</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="75"
-                        class="question"
-                        data-name="FRONT PARKING LOT"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >10:00am</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="76"
-                        class="question"
-                        data-name="FRONT PARKING LOT"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >12 noon</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="77"
-                        class="question"
-                        data-name="FRONT PARKING LOT"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >3:00pm</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="78"
-                        class="question"
-                        data-name="FRONT PARKING LOT"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >6:00pm</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="79"
-                        class="question"
-                        data-name="FRONT PARKING LOT"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >closing</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="80"
-                        class="question"
-                        data-name="FRONT PARKING LOT"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >remarks</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                    </tr>
 
                     <tr>
                       <td>TV/MUSIC OK</td>
                       <td
-                        id="81"
+                        id="94"
                         class="question"
                         data-name="TV/MUSIC OK"
                       >
@@ -1327,7 +1512,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="82"
+                        id="95"
                         class="question"
                         data-name="TV/MUSIC OK"
                       >
@@ -1341,7 +1526,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="83"
+                        id="96"
                         class="question"
                         data-name="TV/MUSIC OK"
                       >
@@ -1355,7 +1540,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="84"
+                        id="97"
                         class="question"
                         data-name="TV/MUSIC OK"
                       >
@@ -1369,7 +1554,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="85"
+                        id="98"
                         class="question"
                         data-name="TV/MUSIC OK"
                       >
@@ -1383,7 +1568,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="86"
+                        id="99"
                         class="question"
                         data-name="TV/MUSIC OK"
                       >
@@ -1397,14 +1582,14 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="87"
+                        id="100"
                         class="question"
                         data-name="TV/MUSIC OK"
                       >
                         <label
                           for=""
                           class="label"
-                        >remarks</label>
+                        >remark</label>
                         <input
                           type="text"
                           class="form-control"
@@ -1415,7 +1600,7 @@ Use /* eslint-disable */
                     <tr>
                       <td>COUNTER SERVICE TIME UNDER 3MINS</td>
                       <td
-                        id="88"
+                        id="101"
                         class="question"
                         data-name="COUNTER SERVICE TIME UNDER 3MINS"
                       >
@@ -1429,7 +1614,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="89"
+                        id="102"
                         class="question"
                         data-name="COUNTER SERVICE TIME UNDER 3MINS"
                       >
@@ -1443,7 +1628,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="90"
+                        id="103"
                         class="question"
                         data-name="COUNTER SERVICE TIME UNDER 3MINS"
                       >
@@ -1457,7 +1642,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="91"
+                        id="104"
                         class="question"
                         data-name="COUNTER SERVICE TIME UNDER 3MINS"
                       >
@@ -1471,7 +1656,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="92"
+                        id="105"
                         class="question"
                         data-name="COUNTER SERVICE TIME UNDER 3MINS"
                       >
@@ -1485,7 +1670,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="93"
+                        id="106"
                         class="question"
                         data-name="COUNTER SERVICE TIME UNDER 3MINS"
                       >
@@ -1499,14 +1684,14 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="94"
+                        id="107"
                         class="question"
                         data-name="COUNTER SERVICE TIME UNDER 3MINS"
                       >
                         <label
                           for=""
                           class="label"
-                        >remarks</label>
+                        >remark</label>
                         <input
                           type="text"
                           class="form-control"
@@ -1521,43 +1706,41 @@ Use /* eslint-disable */
                   <thead>
                     <th></th>
                     <th>RECV</th>
-                    <th>COLD STORE TEMP</th>
+                    <th>OUTER COLD ROOM TEMP</th>
                     <th>THAWING TEMP</th>
-                    <th>COLD ROOM TEMP</th>
+                    <th>INNER COLD ROOM TEMP</th>
                     <th>MARINATION TEMP</th>
-                    <th>PORTION TIME</th>
                     <th>FRYING TEMP</th>
                     <th>COOKING TEMP</th>
                     <th>HOLDING TEMP</th>
                     <th>DISPLAY COUNTER TEMP</th>
-                    <th>COOLERS TEMP</th>
+                    <th>CHILLER TEMP</th>
                     <th>ICE CREAM SOFT SERV TEMP</th>
                     <th>DEEP FREEZER TEMP</th>
                   </thead>
                   <thead>
                     <th></th>
-                    <th>Temp+5<sup>0</sup>C</th>
-                    <th>0-5<sup>0</sup>C</th>
-                    <th>0-5<sup>0</sup>C</th>
-                    <th>-18-5<sup>0</sup>C to -23<sup>0</sup>C</th>
-                    <th>0-5<sup>0</sup>C</th>
-                    <th>45 mins</th>
-                    <th>+120<sup>0</sup>C</th>
-                    <th>+75<sup>0</sup>C</th>
-                    <th>+60<sup>0</sup>C</th>
-                    <th>+60<sup>0</sup>C</th>
-                    <th>+5<sup>0</sup>C</th>
-                    <th>-12<sup>0</sup>C</th>
-                    <th>-18<sup>0</sup>C</th>
+                    <th>+5<sup>0</sup>c</th>
+                    <th>0-5<sup>0</sup>c</th>
+                    <th>0-5<sup>0</sup>c</th>
+                    <th>-18-5<sup>0</sup>c to -23<sup>0</sup>c</th>
+                    <th>0-5<sup>0</sup>c</th>
+                    <th>+120<sup>0</sup>c</th>
+                    <th>+75<sup>0</sup>c</th>
+                    <th>+60<sup>0</sup>c</th>
+                    <th>+60<sup>0</sup>c</th>
+                    <th>+5<sup>0</sup>c</th>
+                    <th>-12<sup>0</sup>c</th>
+                    <th>-18<sup>0</sup>c</th>
                   </thead>
 
                   <tbody>
                     <tr>
-                      <td>CHICKEN</td>
+                      <td>CHICKEN, TURKEY</td>
                       <td
-                        id="95"
+                        id="108"
                         class="question"
-                        data-name="CHICKEN"
+                        data-name="CHICKEN, TURKEY"
                       >
                         <label
                           for=""
@@ -1569,23 +1752,23 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="96"
+                        id="109"
                         class="question"
-                        data-name="CHICKEN"
+                        data-name="CHICKEN, TURKEY"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD STORE TEMP</label>
+                        >OUTER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="97"
+                        id="110"
                         class="question"
-                        data-name="CHICKEN"
+                        data-name="CHICKEN, TURKEY"
                       >
                         <label
                           for=""
@@ -1597,23 +1780,23 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="98"
+                        id="111"
                         class="question"
-                        data-name="CHICKEN"
+                        data-name="CHICKEN, TURKEY"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD ROOM TEMP</label>
+                        >INNER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="99"
+                        id="112"
                         class="question"
-                        data-name="CHICKEN"
+                        data-name="CHICKEN, TURKEY"
                       >
                         <label
                           for=""
@@ -1624,24 +1807,11 @@ Use /* eslint-disable */
                           class="form-control"
                         >
                       </td>
+
                       <td
-                        id="100"
+                        id="113"
                         class="question"
-                        data-name="CHICKEN"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >PORTION TIME</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="101"
-                        class="question"
-                        data-name="CHICKEN"
+                        data-name="CHICKEN, TURKEY"
                       >
                         <label
                           for=""
@@ -1653,9 +1823,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="102"
+                        id="114"
                         class="question"
-                        data-name="CHICKEN"
+                        data-name="CHICKEN, TURKEY"
                       >
                         <label
                           for=""
@@ -1668,9 +1838,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="103"
+                        id="115"
                         class="question"
-                        data-name="CHICKEN"
+                        data-name="CHICKEN, TURKEY"
                       >
                         <label
                           for=""
@@ -1682,9 +1852,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="104"
+                        id="116"
                         class="question"
-                        data-name="CHICKEN"
+                        data-name="CHICKEN, TURKEY"
                       >
                         <label
                           for=""
@@ -1696,14 +1866,14 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="105"
+                        id="117"
                         class="question"
-                        data-name="CHICKEN"
+                        data-name="CHICKEN, TURKEY"
                       >
                         <label
                           for=""
                           class="label"
-                        >COOLERS TEMP</label>
+                        >CHILLERS TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -1711,9 +1881,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="106"
+                        id="118"
                         class="question"
-                        data-name="CHICKEN"
+                        data-name="CHICKEN, TURKEY"
                       >
                         <label
                           for=""
@@ -1726,9 +1896,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="107"
+                        id="119"
                         class="question"
-                        data-name="CHICKEN"
+                        data-name="CHICKEN, TURKEY"
                       >
                         <label
                           for=""
@@ -1744,7 +1914,7 @@ Use /* eslint-disable */
                     <tr>
                       <td>BEEF, SHARKI GOAT MEAT</td>
                       <td
-                        id="108"
+                        id="120"
                         class="question"
                         data-name="BEEF, SHARKI GOAT MEAT"
                       >
@@ -1758,21 +1928,21 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="109"
+                        id="121"
                         class="question"
                         data-name="BEEF, SHARKI GOAT MEAT"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD STORE TEMP</label>
+                        >OUTER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="110"
+                        id="122"
                         class="question"
                         data-name="BEEF, SHARKI GOAT MEAT"
                       >
@@ -1786,21 +1956,21 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="111"
+                        id="123"
                         class="question"
                         data-name="BEEF, SHARKI GOAT MEAT"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD ROOM TEMP</label>
+                        >INNER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="112"
+                        id="124"
                         class="question"
                         data-name="BEEF, SHARKI GOAT MEAT"
                       >
@@ -1813,22 +1983,9 @@ Use /* eslint-disable */
                           class="form-control"
                         >
                       </td>
+
                       <td
-                        id="113"
-                        class="question"
-                        data-name="BEEF, SHARKI GOAT MEAT"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >PORTION TIME</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="114"
+                        id="125"
                         class="question"
                         data-name="BEEF, SHARKI GOAT MEAT"
                       >
@@ -1842,7 +1999,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="115"
+                        id="126"
                         class="question"
                         data-name="BEEF, SHARKI GOAT MEAT"
                       >
@@ -1856,7 +2013,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="116"
+                        id="127"
                         class="question"
                         data-name="BEEF, SHARKI GOAT MEAT"
                       >
@@ -1870,7 +2027,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="117"
+                        id="128"
                         class="question"
                         data-name="BEEF, SHARKI GOAT MEAT"
                       >
@@ -1884,14 +2041,14 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="118"
+                        id="129"
                         class="question"
                         data-name="BEEF, SHARKI GOAT MEAT"
                       >
                         <label
                           for=""
                           class="label"
-                        >COOLERS TEMP</label>
+                        >CHILLERS TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -1899,7 +2056,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="119"
+                        id="130"
                         class="question"
                         data-name="BEEF, SHARKI GOAT MEAT"
                       >
@@ -1914,7 +2071,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="120"
+                        id="131"
                         class="question"
                         data-name="BEEF, SHARKI GOAT MEAT"
                       >
@@ -1932,7 +2089,7 @@ Use /* eslint-disable */
                     <tr>
                       <td>FISH</td>
                       <td
-                        id="121"
+                        id="132"
                         class="question"
                         data-name="FISH"
                       >
@@ -1946,21 +2103,21 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="122"
+                        id="133"
                         class="question"
                         data-name="FISH"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD STORE TEMP</label>
+                        >OUTER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="123"
+                        id="134"
                         class="question"
                         data-name="FISH"
                       >
@@ -1974,21 +2131,21 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="124"
+                        id="135"
                         class="question"
                         data-name="FISH"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD ROOM TEMP</label>
+                        >INNER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="125"
+                        id="136"
                         class="question"
                         data-name="FISH"
                       >
@@ -2001,22 +2158,9 @@ Use /* eslint-disable */
                           class="form-control"
                         >
                       </td>
+
                       <td
-                        id="126"
-                        class="question"
-                        data-name="FISH"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >PORTION TIME</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="127"
+                        id="137"
                         class="question"
                         data-name="FISH"
                       >
@@ -2030,7 +2174,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="128"
+                        id="138"
                         class="question"
                         data-name="FISH"
                       >
@@ -2044,7 +2188,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="129"
+                        id="139"
                         class="question"
                         data-name="FISH"
                       >
@@ -2058,7 +2202,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="130"
+                        id="140"
                         class="question"
                         data-name="FISH"
                       >
@@ -2072,14 +2216,14 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="131"
+                        id="141"
                         class="question"
                         data-name="FISH"
                       >
                         <label
                           for=""
                           class="label"
-                        >COOLERS TEMP</label>
+                        >CHILLERS TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -2087,7 +2231,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="132"
+                        id="142"
                         class="question"
                         data-name="FISH"
                       >
@@ -2102,7 +2246,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="133"
+                        id="143"
                         class="question"
                         data-name="FISH"
                       >
@@ -2120,7 +2264,7 @@ Use /* eslint-disable */
                     <tr>
                       <td>FRENCH FRIES</td>
                       <td
-                        id="134"
+                        id="144"
                         class="question"
                         data-name="FRENCH FRIES"
                       >
@@ -2134,21 +2278,21 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="135"
+                        id="145"
                         class="question"
                         data-name="FRENCH FRIES"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD STORE TEMP</label>
+                        >OUTER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="136"
+                        id="146"
                         class="question"
                         data-name="FRENCH FRIES"
                       >
@@ -2162,21 +2306,21 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="137"
+                        id="147"
                         class="question"
                         data-name="FRENCH FRIES"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD ROOM TEMP</label>
+                        >INNER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="138"
+                        id="148"
                         class="question"
                         data-name="FRENCH FRIES"
                       >
@@ -2190,22 +2334,9 @@ Use /* eslint-disable */
                           disabled
                         >
                       </td>
+
                       <td
-                        id="139"
-                        class="question"
-                        data-name="FRENCH FRIES"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >PORTION TIME</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="140"
+                        id="149"
                         class="question"
                         data-name="FRENCH FRIES"
                       >
@@ -2219,7 +2350,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="141"
+                        id="150"
                         class="question"
                         data-name="FRENCH FRIES"
                       >
@@ -2234,7 +2365,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="142"
+                        id="151"
                         class="question"
                         data-name="FRENCH FRIES"
                       >
@@ -2248,7 +2379,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="143"
+                        id="152"
                         class="question"
                         data-name="FRENCH FRIES"
                       >
@@ -2262,14 +2393,14 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="144"
+                        id="153"
                         class="question"
                         data-name="FRENCH FRIES"
                       >
                         <label
                           for=""
                           class="label"
-                        >COOLERS TEMP</label>
+                        >CHILLERS TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -2277,7 +2408,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="145"
+                        id="154"
                         class="question"
                         data-name="FRENCH FRIES"
                       >
@@ -2292,7 +2423,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="146"
+                        id="155"
                         class="question"
                         data-name="FRENCH FRIES"
                       >
@@ -2309,7 +2440,7 @@ Use /* eslint-disable */
                     <tr>
                       <td>FRESH VEGETABLES</td>
                       <td
-                        id="147"
+                        id="156"
                         class="question"
                         data-name="FRESH VEGETABLES"
                       >
@@ -2323,21 +2454,21 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="148"
+                        id="157"
                         class="question"
                         data-name="FRESH VEGETABLES"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD STORE TEMP</label>
+                        >OUTER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="149"
+                        id="158"
                         class="question"
                         data-name="FRESH VEGETABLES"
                       >
@@ -2352,14 +2483,14 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="150"
+                        id="159"
                         class="question"
                         data-name="FRESH VEGETABLES"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD ROOM TEMP</label>
+                        >INNER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -2367,7 +2498,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="151"
+                        id="160"
                         class="question"
                         data-name="FRESH VEGETABLES"
                       >
@@ -2381,22 +2512,9 @@ Use /* eslint-disable */
                           disabled
                         >
                       </td>
+
                       <td
-                        id="152"
-                        class="question"
-                        data-name="FRESH VEGETABLES"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >PORTION TIME</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="153"
+                        id="161"
                         class="question"
                         data-name="FRESH VEGETABLES"
                       >
@@ -2410,7 +2528,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="154"
+                        id="162"
                         class="question"
                         data-name="FRESH VEGETABLES"
                       >
@@ -2425,7 +2543,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="155"
+                        id="163"
                         class="question"
                         data-name="FRESH VEGETABLES"
                       >
@@ -2439,7 +2557,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="156"
+                        id="164"
                         class="question"
                         data-name="FRESH VEGETABLES"
                       >
@@ -2453,14 +2571,14 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="157"
+                        id="165"
                         class="question"
                         data-name="FRESH VEGETABLES"
                       >
                         <label
                           for=""
                           class="label"
-                        >COOLERS TEMP</label>
+                        >CHILLERS TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -2468,7 +2586,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="158"
+                        id="166"
                         class="question"
                         data-name="FRESH VEGETABLES"
                       >
@@ -2483,7 +2601,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="159"
+                        id="167"
                         class="question"
                         data-name="FRESH VEGETABLES"
                       >
@@ -2502,7 +2620,7 @@ Use /* eslint-disable */
                     <tr>
                       <td>RICE/FLOUR/OIL</td>
                       <td
-                        id="160"
+                        id="168"
                         class="question"
                         data-name="RICE/FLOUR/OIL"
                       >
@@ -2517,122 +2635,6 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="161"
-                        class="question"
-                        data-name="RICE/FLOUR/OIL"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >COLD STORE TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
-                      <td
-                        id="162"
-                        class="question"
-                        data-name="RICE/FLOUR/OIL"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >THAWING TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
-                      <td
-                        id="163"
-                        class="question"
-                        data-name="RICE/FLOUR/OIL"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >COLD ROOM TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
-                      <td
-                        id="164"
-                        class="question"
-                        data-name="RICE/FLOUR/OIL"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >MARINATION TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
-                      <td
-                        id="165"
-                        class="question"
-                        data-name="RICE/FLOUR/OIL"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >PORTION TIME</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="166"
-                        class="question"
-                        data-name="RICE/FLOUR/OIL"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >FRYING TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="167"
-                        class="question"
-                        data-name="RICE/FLOUR/OIL"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >COOKING TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="168"
-                        class="question"
-                        data-name="RICE/FLOUR/OIL"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >HOLDING TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
                         id="169"
                         class="question"
                         data-name="RICE/FLOUR/OIL"
@@ -2640,10 +2642,11 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >DISPLAY COUNTER TEMP</label>
+                        >OUTER COLD ROOM TEMP</label>
                         <input
                           type="text"
-                          class="form-control"
+                          class="form-control grey"
+                          disabled
                         >
                       </td>
                       <td
@@ -2654,7 +2657,7 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >COOLERS TEMP</label>
+                        >THAWING TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -2669,7 +2672,7 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >ICE CREAM SOFT SERV TEMP</label>
+                        >INNER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -2678,6 +2681,108 @@ Use /* eslint-disable */
                       </td>
                       <td
                         id="172"
+                        class="question"
+                        data-name="RICE/FLOUR/OIL"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >MARINATION TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+
+                      <td
+                        id="173"
+                        class="question"
+                        data-name="RICE/FLOUR/OIL"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >FRYING TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="174"
+                        class="question"
+                        data-name="RICE/FLOUR/OIL"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >COOKING TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="175"
+                        class="question"
+                        data-name="RICE/FLOUR/OIL"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >HOLDING TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="176"
+                        class="question"
+                        data-name="RICE/FLOUR/OIL"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >DISPLAY COUNTER TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="177"
+                        class="question"
+                        data-name="RICE/FLOUR/OIL"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >CHILLERS TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="178"
+                        class="question"
+                        data-name="RICE/FLOUR/OIL"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >ICE CREAM SOFT SERV TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="179"
                         class="question"
                         data-name="RICE/FLOUR/OIL"
                       >
@@ -2694,11 +2799,11 @@ Use /* eslint-disable */
                     </tr>
 
                     <tr>
-                      <td>BEVERAGES/MINERAL</td>
+                      <td>CHEESE</td>
                       <td
-                        id="173"
+                        id="180"
                         class="question"
-                        data-name="BEVERAGES/MINERAL"
+                        data-name="CHEESE"
                       >
                         <label
                           for=""
@@ -2710,24 +2815,23 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="174"
+                        id="181"
                         class="question"
-                        data-name="BEVERAGES/MINERAL"
+                        data-name="CHEESE"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD STORE TEMP</label>
+                        >OUTER COLD ROOM TEMP</label>
                         <input
                           type="text"
-                          class="form-control grey"
-                          disabled
+                          class="form-control "
                         >
                       </td>
                       <td
-                        id="175"
+                        id="182"
                         class="question"
-                        data-name="BEVERAGES/MINERAL"
+                        data-name="CHEESE"
                       >
                         <label
                           for=""
@@ -2735,29 +2839,27 @@ Use /* eslint-disable */
                         >THAWING TEMP</label>
                         <input
                           type="text"
-                          class="form-control grey"
-                          disabled
+                          class="form-control "
                         >
                       </td>
                       <td
-                        id="176"
+                        id="183"
                         class="question"
-                        data-name="BEVERAGES/MINERAL"
+                        data-name="CHEESE"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD ROOM TEMP</label>
+                        >INNER COLD ROOM TEMP</label>
                         <input
                           type="text"
-                          class="form-control grey"
-                          disabled
+                          class="form-control "
                         >
                       </td>
                       <td
-                        id="177"
+                        id="184"
                         class="question"
-                        data-name="BEVERAGES/MINERAL"
+                        data-name="CHEESE"
                       >
                         <label
                           for=""
@@ -2769,25 +2871,11 @@ Use /* eslint-disable */
                           disabled
                         >
                       </td>
+
                       <td
-                        id="178"
+                        id="185"
                         class="question"
-                        data-name="BEVERAGES/MINERAL"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >PORTION TIME</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
-                      <td
-                        id="179"
-                        class="question"
-                        data-name="BEVERAGES/MINERAL"
+                        data-name="CHEESE"
                       >
                         <label
                           for=""
@@ -2800,9 +2888,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="180"
+                        id="186"
                         class="question"
-                        data-name="BEVERAGES/MINERAL"
+                        data-name="CHEESE"
                       >
                         <label
                           for=""
@@ -2815,9 +2903,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="181"
+                        id="187"
                         class="question"
-                        data-name="BEVERAGES/MINERAL"
+                        data-name="CHEESE"
                       >
                         <label
                           for=""
@@ -2830,9 +2918,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="182"
+                        id="188"
                         class="question"
-                        data-name="BEVERAGES/MINERAL"
+                        data-name="CHEESE"
                       >
                         <label
                           for=""
@@ -2845,23 +2933,23 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="183"
+                        id="189"
                         class="question"
-                        data-name="BEVERAGES/MINERAL"
+                        data-name="CHEESE"
                       >
                         <label
                           for=""
                           class="label"
-                        >COOLERS TEMP</label>
+                        >CHILLERS TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="184"
+                        id="190"
                         class="question"
-                        data-name="BEVERAGES/MINERAL"
+                        data-name="CHEESE"
                       >
                         <label
                           for=""
@@ -2874,9 +2962,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="185"
+                        id="191"
                         class="question"
-                        data-name="BEVERAGES/MINERAL"
+                        data-name="CHEESE"
                       >
                         <label
                           for=""
@@ -2884,104 +2972,13 @@ Use /* eslint-disable */
                         >DEEP FREEZER TEMP</label>
                         <input
                           type="text"
-                          class="form-control grey"
-                          disabled
+                          class="form-control"
                         >
                       </td>
                     </tr>
 
                     <tr>
                       <td>ICE CREAM</td>
-                      <td
-                        id="186"
-                        class="question"
-                        data-name="ICE CREAM"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >RECV</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
-                      <td
-                        id="187"
-                        class="question"
-                        data-name="ICE CREAM"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >COLD STORE TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
-                      <td
-                        id="188"
-                        class="question"
-                        data-name="ICE CREAM"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >THAWING TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
-                      <td
-                        id="189"
-                        class="question"
-                        data-name="ICE CREAM"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >COLD ROOM TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
-                      <td
-                        id="190"
-                        class="question"
-                        data-name="ICE CREAM"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >MARINATION TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
-                      <td
-                        id="191"
-                        class="question"
-                        data-name="ICE CREAM"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >PORTION TIME</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
                       <td
                         id="192"
                         class="question"
@@ -2990,7 +2987,7 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >FRYING TEMP</label>
+                        >RECV</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -3005,7 +3002,7 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >COOKING TEMP</label>
+                        >OUTER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -3020,7 +3017,7 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >HOLDING TEMP</label>
+                        >THAWING TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -3035,7 +3032,7 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >DISPLAY COUNTER TEMP</label>
+                        >INNER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -3050,14 +3047,90 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >COOLERS TEMP</label>
+                        >MARINATION TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+
+                      <td
+                        id="197"
+                        class="question"
+                        data-name="ICE CREAM"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >FRYING TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="198"
+                        class="question"
+                        data-name="ICE CREAM"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >COOKING TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="199"
+                        class="question"
+                        data-name="ICE CREAM"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >HOLDING TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="200"
+                        class="question"
+                        data-name="ICE CREAM"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >DISPLAY COUNTER TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="201"
+                        class="question"
+                        data-name="ICE CREAM"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >CHILLERS TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="197"
+                        id="202"
                         class="question"
                         data-name="ICE CREAM"
                       >
@@ -3071,7 +3144,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="198"
+                        id="203"
                         class="question"
                         data-name="ICE CREAM"
                       >
@@ -3087,11 +3160,11 @@ Use /* eslint-disable */
                     </tr>
 
                     <tr>
-                      <td>BREAD/PASTRY</td>
+                      <td>PASTRY</td>
                       <td
-                        id="199"
+                        id="204"
                         class="question"
-                        data-name="BREAD/PASTRY"
+                        data-name="PASTRY"
                       >
                         <label
                           for=""
@@ -3104,14 +3177,14 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="200"
+                        id="205"
                         class="question"
-                        data-name="BREAD/PASTRY"
+                        data-name="PASTRY"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD STORE TEMP</label>
+                        >OUTER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -3119,9 +3192,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="201"
+                        id="206"
                         class="question"
-                        data-name="BREAD/PASTRY"
+                        data-name="PASTRY"
                       >
                         <label
                           for=""
@@ -3134,14 +3207,14 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="202"
+                        id="207"
                         class="question"
-                        data-name="BREAD/PASTRY"
+                        data-name="PASTRY"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD ROOM TEMP</label>
+                        >INNER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -3149,9 +3222,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="203"
+                        id="208"
                         class="question"
-                        data-name="BREAD/PASTRY"
+                        data-name="PASTRY"
                       >
                         <label
                           for=""
@@ -3163,25 +3236,11 @@ Use /* eslint-disable */
                           disabled
                         >
                       </td>
+
                       <td
-                        id="204"
+                        id="209"
                         class="question"
-                        data-name="BREAD/PASTRY"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >PORTION TIME</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
-                      <td
-                        id="205"
-                        class="question"
-                        data-name="BREAD/PASTRY"
+                        data-name="PASTRY"
                       >
                         <label
                           for=""
@@ -3194,9 +3253,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="206"
+                        id="210"
                         class="question"
-                        data-name="BREAD/PASTRY"
+                        data-name="PASTRY"
                       >
                         <label
                           for=""
@@ -3209,9 +3268,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="207"
+                        id="211"
                         class="question"
-                        data-name="BREAD/PASTRY"
+                        data-name="PASTRY"
                       >
                         <label
                           for=""
@@ -3223,9 +3282,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="208"
+                        id="212"
                         class="question"
-                        data-name="BREAD/PASTRY"
+                        data-name="PASTRY"
                       >
                         <label
                           for=""
@@ -3237,14 +3296,14 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="209"
+                        id="213"
                         class="question"
-                        data-name="BREAD/PASTRY"
+                        data-name="PASTRY"
                       >
                         <label
                           for=""
                           class="label"
-                        >COOLERS TEMP</label>
+                        >CHILLERS TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -3252,9 +3311,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="210"
+                        id="214"
                         class="question"
-                        data-name="BREAD/PASTRY"
+                        data-name="PASTRY"
                       >
                         <label
                           for=""
@@ -3267,9 +3326,9 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="211"
+                        id="215"
                         class="question"
-                        data-name="BREAD/PASTRY"
+                        data-name="PASTRY"
                       >
                         <label
                           for=""
@@ -3285,7 +3344,7 @@ Use /* eslint-disable */
                     <tr>
                       <td>SALADS/SANDWICH</td>
                       <td
-                        id="212"
+                        id="216"
                         class="question"
                         data-name="SALADS/SANDWICH"
                       >
@@ -3300,21 +3359,22 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="213"
+                        id="217"
                         class="question"
                         data-name="SALADS/SANDWICH"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD STORE TEMP</label>
+                        >OUTER COLD ROOM TEMP</label>
                         <input
                           type="text"
-                          class="form-control"
+                          class="form-control grey"
+                          disabled
                         >
                       </td>
                       <td
-                        id="214"
+                        id="218"
                         class="question"
                         data-name="SALADS/SANDWICH"
                       >
@@ -3329,64 +3389,6 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="215"
-                        class="question"
-                        data-name="SALADS/SANDWICH"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >COLD ROOM TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
-                      <td
-                        id="216"
-                        class="question"
-                        data-name="SALADS/SANDWICH"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >MARINATION TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="217"
-                        class="question"
-                        data-name="SALADS/SANDWICH"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >PORTION TIME</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="218"
-                        class="question"
-                        data-name="SALADS/SANDWICH"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >FRYING TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control grey"
-                          disabled
-                        >
-                      </td>
-                      <td
                         id="219"
                         class="question"
                         data-name="SALADS/SANDWICH"
@@ -3394,7 +3396,7 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >COOKING TEMP</label>
+                        >INNER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -3409,13 +3411,14 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >HOLDING TEMP</label>
+                        >MARINATION TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
                           disabled
                         >
                       </td>
+
                       <td
                         id="221"
                         class="question"
@@ -3424,7 +3427,7 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >DISPLAY COUNTER TEMP</label>
+                        >FRYING TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -3439,14 +3442,58 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >COOLERS TEMP</label>
+                        >COOKING TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="223"
+                        class="question"
+                        data-name="SALADS/SANDWICH"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >HOLDING TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="224"
+                        class="question"
+                        data-name="SALADS/SANDWICH"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >DISPLAY COUNTER TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="223"
+                        id="225"
+                        class="question"
+                        data-name="SALADS/SANDWICH"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >CHILLERS TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="226"
                         class="question"
                         data-name="SALADS/SANDWICH"
                       >
@@ -3461,7 +3508,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="224"
+                        id="227"
                         class="question"
                         data-name="SALADS/SANDWICH"
                       >
@@ -3480,7 +3527,7 @@ Use /* eslint-disable */
                     <tr>
                       <td>BURGER PATTY</td>
                       <td
-                        id="225"
+                        id="228"
                         class="question"
                         data-name="BURGER PATTY"
                       >
@@ -3494,21 +3541,21 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="226"
+                        id="229"
                         class="question"
                         data-name="BURGER PATTY"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD STORE TEMP</label>
+                        >OUTER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="227"
+                        id="230"
                         class="question"
                         data-name="BURGER PATTY"
                       >
@@ -3522,21 +3569,21 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="228"
+                        id="231"
                         class="question"
                         data-name="BURGER PATTY"
                       >
                         <label
                           for=""
                           class="label"
-                        >COLD ROOM TEMP</label>
+                        >INNER COLD ROOM TEMP</label>
                         <input
                           type="text"
                           class="form-control"
                         >
                       </td>
                       <td
-                        id="229"
+                        id="232"
                         class="question"
                         data-name="BURGER PATTY"
                       >
@@ -3550,22 +3597,9 @@ Use /* eslint-disable */
                           disabled
                         >
                       </td>
+
                       <td
-                        id="230"
-                        class="question"
-                        data-name="BURGER PATTY"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >PORTION TIME</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="231"
+                        id="233"
                         class="question"
                         data-name="BURGER PATTY"
                       >
@@ -3579,7 +3613,7 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="232"
+                        id="234"
                         class="question"
                         data-name="BURGER PATTY"
                       >
@@ -3594,34 +3628,6 @@ Use /* eslint-disable */
                         >
                       </td>
                       <td
-                        id="233"
-                        class="question"
-                        data-name="BURGER PATTY"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >HOLDING TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
-                        id="234"
-                        class="question"
-                        data-name="BURGER PATTY"
-                      >
-                        <label
-                          for=""
-                          class="label"
-                        >DISPLAY COUNTER TEMP</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                        >
-                      </td>
-                      <td
                         id="235"
                         class="question"
                         data-name="BURGER PATTY"
@@ -3629,7 +3635,7 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >COOLERS TEMP</label>
+                        >HOLDING TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -3644,7 +3650,7 @@ Use /* eslint-disable */
                         <label
                           for=""
                           class="label"
-                        >ICE CREAM SOFT SERV TEMP</label>
+                        >DISPLAY COUNTER TEMP</label>
                         <input
                           type="text"
                           class="form-control grey"
@@ -3655,6 +3661,214 @@ Use /* eslint-disable */
                         id="237"
                         class="question"
                         data-name="BURGER PATTY"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >CHILLERS TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="238"
+                        class="question"
+                        data-name="BURGER PATTY"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >ICE CREAM SOFT SERV TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="239"
+                        class="question"
+                        data-name="BURGER PATTY"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >DEEP FREEZER TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>SAUSAGE/HOTDOG</td>
+                      <td
+                        id="240"
+                        class="question"
+                        data-name="SAUSAGE/HOTDOG"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >RECV</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="241"
+                        class="question"
+                        data-name="SAUSAGE/HOTDOG"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >OUTER COLD ROOM TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="242"
+                        class="question"
+                        data-name="SAUSAGE/HOTDOG"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >THAWING TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="243"
+                        class="question"
+                        data-name="SAUSAGE/HOTDOG"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >INNER COLD ROOM TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="244"
+                        class="question"
+                        data-name="SAUSAGE/HOTDOG"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >MARINATION TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+
+                      <td
+                        id="245"
+                        class="question"
+                        data-name="SAUSAGE/HOTDOG"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >FRYING TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="246"
+                        class="question"
+                        data-name="SAUSAGE/HOTDOG"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >COOKING TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="247"
+                        class="question"
+                        data-name="SAUSAGE/HOTDOG"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >HOLDING TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="248"
+                        class="question"
+                        data-name="SAUSAGE/HOTDOG"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >DISPLAY COUNTER TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="249"
+                        class="question"
+                        data-name="SAUSAGE/HOTDOG"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >CHILLERS TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        >
+                      </td>
+                      <td
+                        id="250"
+                        class="question"
+                        data-name="SAUSAGE/HOTDOG"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >ICE CREAM SOFT SERV TEMP</label>
+                        <input
+                          type="text"
+                          class="form-control grey"
+                          disabled
+                        >
+                      </td>
+                      <td
+                        id="251"
+                        class="question"
+                        data-name="SAUSAGE/HOTDOG"
                       >
                         <label
                           for=""
@@ -3672,7 +3886,7 @@ Use /* eslint-disable */
                 </table>
 
                 <div
-                  id="238"
+                  id="252"
                   class="form-group col-sm-6 col-md-4 question"
                   data-name="Closing Time"
                 >
@@ -3690,7 +3904,7 @@ Use /* eslint-disable */
                     Stock</label>
                   <div
                     class="col-xs-8 question"
-                    id="239"
+                    id="253"
                     data-name="Closing Stock"
                   >
                     <label
@@ -3718,7 +3932,7 @@ Use /* eslint-disable */
                     Verify</label>
                   <div
                     class="col-xs-8 question"
-                    id="240"
+                    id="254"
                     data-name="Closing Stock"
                   >
                     <label
@@ -3734,7 +3948,7 @@ Use /* eslint-disable */
                 </div>
 
                 <div
-                  id="241"
+                  id="255"
                   class="form-group col-sm-6 question"
                   data-name="Gen. Off Time"
                 >
@@ -3749,7 +3963,7 @@ Use /* eslint-disable */
                 </div>
 
                 <div
-                  id="242"
+                  id="256"
                   class="form-group col-sm-6 question"
                   data-name="Remarks"
                 >
@@ -3763,7 +3977,7 @@ Use /* eslint-disable */
                 </div>
 
                 <div
-                  id="243"
+                  id="257"
                   class="form-group col-sm-6 question"
                   data-name="Audit"
                 >
@@ -3777,7 +3991,7 @@ Use /* eslint-disable */
                   </div>
                 </div>
                 <div
-                  id="244"
+                  id="258"
                   class="form-group col-sm-6 question"
                   data-name="Closing Manager"
                 >
@@ -3925,10 +4139,7 @@ export default {
         })
         .catch(error => {
           console.log(error);
-          this.form = {
-            store_id: "",
-            question_answer: []
-          }
+          this.form.question_answer = [];
           this.$swal.fire("Error", error.message, "error");
 
         });
