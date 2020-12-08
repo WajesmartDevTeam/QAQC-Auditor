@@ -4760,10 +4760,9 @@
                 <div
                   id="206"
                   class="form-group row question"
-                  data-name="Shift Manager(am) Name"
+                  data-name="A.M Shift Manager Name"
                 >
-                  <label class="col-2 col-form-label">Shift
-                    Manager(am) Name </label>
+                  <label class="col-2 col-form-label">A.M Shift Manager Name </label>
                   <div class="col-10">
                     <input
                       type="text"
@@ -4775,10 +4774,9 @@
                 <div
                   id="207"
                   class="form-group row question"
-                  data-name="Shift Manager(Afternoon) Name "
+                  data-name="P.M Shift Manager Name "
                 >
-                  <label class="col-2 col-form-label">Shift
-                    Manager(Afternoon) Name </label>
+                  <label class="col-2 col-form-label">P.M Shift Manager Name </label>
                   <div class="col-10">
                     <input
                       type="text"
