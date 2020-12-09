@@ -1589,26 +1589,12 @@
                         />
                       </td>
                     </tr>
-
-                  </tbody>
-
-                  <thead>
-                    <th>KITCHEN(BOH, FRY STATION & PASTRY) </th>
-                    <th>Yes</th>
-                    <th>No</th>
-                    <th>Yes</th>
-                    <th>No</th>
-
-                    <th>Comments/Remarks</th>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td width="200">Is the Gas Burners, pressure and deep/open fryers clean and free of build up?
-                      </td>
+ <tr>
+                      <td>Is the counter tops/till machine clean?</td>
                       <td
                         id="71"
                         class="question"
-                        data-name="Is the Gas Burners, pressure and deep/open fryers clean and free of build up?"
+                        data-name="Is the counter tops/till machine clean"
                       >
                         <label
                           for=""
@@ -1622,7 +1608,7 @@
                       <td
                         id="71"
                         class="question"
-                        data-name="Is the Gas Burners, pressure and deep/open fryers clean and free of build up?"
+                        data-name="Is the counter tops/till machine clean"
                       >
                         <label
                           for=""
@@ -1636,7 +1622,7 @@
                       <td
                         id="72"
                         class="question"
-                        data-name="Is the Gas Burners, pressure and deep/open fryers clean and free of build up?"
+                        data-name="Is the counter tops/till machine clean"
                       >
                         <label
                           for=""
@@ -1650,7 +1636,7 @@
                       <td
                         id="72"
                         class="question"
-                        data-name="Is the Gas Burners, pressure and deep/open fryers clean and free of build up?"
+                        data-name="Is the counter tops/till machine clean"
                       >
                         <label
                           for=""
@@ -1665,7 +1651,7 @@
                       <td
                         id="73"
                         class="question"
-                        data-name="Is the Gas Burners, pressure and deep/open fryers clean and free of build up?"
+                        data-name="Is the counter tops/till machine clean"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -1673,12 +1659,12 @@
                         />
                       </td>
                     </tr>
-                    <tr>
-                      <td>Is the Dough moxer clean and free of build up?</td>
+                     <tr>
+                      <td>Are all packaging materials well arranged and spoons/forks wrapped?</td>
                       <td
                         id="74"
                         class="question"
-                        data-name="Is the Dough moxer clean and free of build up?"
+                        data-name="Are all packaging materials well arranged and spoons/forks wrapped?"
                       >
                         <label
                           for=""
@@ -1692,7 +1678,7 @@
                       <td
                         id="74"
                         class="question"
-                        data-name="Is the Dough moxer clean and free of build up?"
+                        data-name="Are all packaging materials well arranged and spoons/forks wrapped?"
                       >
                         <label
                           for=""
@@ -1706,7 +1692,7 @@
                       <td
                         id="75"
                         class="question"
-                        data-name="Is the Dough moxer clean and free of build up?"
+                        data-name="Are all packaging materials well arranged and spoons/forks wrapped?"
                       >
                         <label
                           for=""
@@ -1720,7 +1706,7 @@
                       <td
                         id="75"
                         class="question"
-                        data-name="Is the Dough moxer clean and free of build up?"
+                        data-name="Are all packaging materials well arranged and spoons/forks wrapped?"
                       >
                         <label
                           for=""
@@ -1735,7 +1721,7 @@
                       <td
                         id="76"
                         class="question"
-                        data-name="Is the Dough moxer clean and free of build up?"
+                        data-name="Are all packaging materials well arranged and spoons/forks wrapped?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -1744,11 +1730,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Has the Oil checks been done using the Oil Tester?</td>
+                      <td>Is the Menu board clean and cobweb free?</td>
                       <td
                         id="77"
                         class="question"
-                        data-name="Has the Oil checks been done using the Oil Tester?"
+                        data-name="Is the Menu board clean and cobweb free?"
                       >
                         <label
                           for=""
@@ -1762,7 +1748,7 @@
                       <td
                         id="77"
                         class="question"
-                        data-name="Has the Oil checks been done using the Oil Tester?"
+                        data-name="Is the Menu board clean and cobweb free?"
                       >
                         <label
                           for=""
@@ -1776,7 +1762,7 @@
                       <td
                         id="78"
                         class="question"
-                        data-name="Has the Oil checks been done using the Oil Tester?"
+                        data-name="Is the Menu board clean and cobweb free?"
                       >
                         <label
                           for=""
@@ -1790,7 +1776,7 @@
                       <td
                         id="78"
                         class="question"
-                        data-name="Has the Oil checks been done using the Oil Tester?"
+                        data-name="Is the Menu board clean and cobweb free?"
                       >
                         <label
                           for=""
@@ -1805,7 +1791,7 @@
                       <td
                         id="79"
                         class="question"
-                        data-name="Has the Oil checks been done using the Oil Tester?"
+                        data-name="Is the Menu board clean and cobweb free?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -1813,13 +1799,13 @@
                         />
                       </td>
                     </tr>
-                    <tr>
-                      <td>Are all production oven clean and free of grease build up?
+                     <tr>
+                      <td>Are the FOH chiller working and attaining temperature between 1-4 degrees?
                       </td>
                       <td
                         id="80"
                         class="question"
-                        data-name="Are all production oven clean and free of grease build up?"
+                        data-name="Are the FOH chiller working and attaining temperature between 1-4 degrees?"
                       >
                         <label
                           for=""
@@ -1833,7 +1819,7 @@
                       <td
                         id="80"
                         class="question"
-                        data-name="Are all production oven clean and free of grease build up?"
+                        data-name="Are the FOH chiller working and attaining temperature between 1-4 degrees?"
                       >
                         <label
                           for=""
@@ -1847,7 +1833,7 @@
                       <td
                         id="81"
                         class="question"
-                        data-name="Are all production oven clean and free of grease build up?"
+                        data-name="Are the FOH chiller working and attaining temperature between 1-4 degrees?"
                       >
                         <label
                           for=""
@@ -1861,7 +1847,7 @@
                       <td
                         id="81"
                         class="question"
-                        data-name="Are all production oven clean and free of grease build up?"
+                        data-name="Are the FOH chiller working and attaining temperature between 1-4 degrees?"
                       >
                         <label
                           for=""
@@ -1876,7 +1862,7 @@
                       <td
                         id="82"
                         class="question"
-                        data-name="Are all production oven clean and free of grease build up?"
+                        data-name="Are the FOH chiller working and attaining temperature between 1-4 degrees?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -1884,13 +1870,13 @@
                         />
                       </td>
                     </tr>
-                    <tr>
+                      <tr>
 
-                      <td>Is the Extractor clean and free of Oil residue/build up?</td>
+                      <td>Has the Tables been buzzed after customer's meal?</td>
                       <td
                         id="83"
                         class="question"
-                        data-name="Is the Extractor clean and free of Oil residue/build up?"
+                        data-name="Has the Tables been buzzed after customer's meal?"
                       >
                         <label
                           for=""
@@ -1904,7 +1890,7 @@
                       <td
                         id="83"
                         class="question"
-                        data-name="Is the Extractor clean and free of Oil residue/build up?"
+                        data-name="Has the Tables been buzzed after customer's meal?"
                       >
                         <label
                           for=""
@@ -1918,7 +1904,7 @@
                       <td
                         id="84"
                         class="question"
-                        data-name="Is the Extractor clean and free of Oil residue/build up?"
+                        data-name="Has the Tables been buzzed after customer's meal?"
                       >
                         <label
                           for=""
@@ -1932,7 +1918,7 @@
                       <td
                         id="84"
                         class="question"
-                        data-name="Is the Extractor clean and free of Oil residue/build up?"
+                        data-name="Has the Tables been buzzed after customer's meal?"
                       >
                         <label
                           for=""
@@ -1947,7 +1933,7 @@
                       <td
                         id="85"
                         class="question"
-                        data-name="Is the Extractor clean and free of Oil residue/build up?"
+                        data-name="Has the Tables been buzzed after customer's meal?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -1956,11 +1942,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Are all induction burners clean free of moisture and oil build up?</td>
+                      <td>Is all cleaning materials and chemicals out of sight and safely stored away?</td>
                       <td
                         id="86"
                         class="question"
-                        data-name="Are all induction burners clean free of moisture and oil build up?"
+                        data-name="Is all cleaning materials and chemicals out of sight and safely stored away?"
                       >
                         <label
                           for=""
@@ -1974,7 +1960,7 @@
                       <td
                         id="86"
                         class="question"
-                        data-name="Are all induction burners clean free of moisture and oil build up?"
+                        data-name="Is all cleaning materials and chemicals out of sight and safely stored away?"
                       >
                         <label
                           for=""
@@ -1988,7 +1974,7 @@
                       <td
                         id="87"
                         class="question"
-                        data-name="Are all induction burners clean free of moisture and oil build up?"
+                        data-name="Is all cleaning materials and chemicals out of sight and safely stored away?"
                       >
                         <label
                           for=""
@@ -2002,7 +1988,7 @@
                       <td
                         id="87"
                         class="question"
-                        data-name="Are all induction burners clean free of moisture and oil build up?"
+                        data-name="Is all cleaning materials and chemicals out of sight and safely stored away?"
                       >
                         <label
                           for=""
@@ -2017,7 +2003,7 @@
                       <td
                         id="88"
                         class="question"
-                        data-name="Are all induction burners clean free of moisture and oil build up?"
+                        data-name="Is all cleaning materials and chemicals out of sight and safely stored away?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2025,12 +2011,12 @@
                         />
                       </td>
                     </tr>
-                    <tr>
-                      <td>Is there a Sanitizer Solution available in the Kithcen?</td>
+                     <tr>
+                      <td>Is the Ice cream/cake Display clean and free of residue?</td>
                       <td
                         id="89"
                         class="question"
-                        data-name="Is there a Sanitizer Solution available in the Kithcen?"
+                        data-name="Is the Ice cream/cake Display clean and free of residue?"
                       >
                         <label
                           for=""
@@ -2044,7 +2030,7 @@
                       <td
                         id="89"
                         class="question"
-                        data-name="Is there a Sanitizer Solution available in the Kithcen?"
+                        data-name="Is the Ice cream/cake Display clean and free of residue?"
                       >
                         <label
                           for=""
@@ -2058,7 +2044,7 @@
                       <td
                         id="90"
                         class="question"
-                        data-name="Is there a Sanitizer Solution available in the Kithcen?"
+                        data-name="Is the Ice cream/cake Display clean and free of residue?"
                       >
                         <label
                           for=""
@@ -2072,7 +2058,7 @@
                       <td
                         id="90"
                         class="question"
-                        data-name="Is there a Sanitizer Solution available in the Kithcen?"
+                        data-name="Is the Ice cream/cake Display clean and free of residue?"
                       >
                         <label
                           for=""
@@ -2087,7 +2073,7 @@
                       <td
                         id="91"
                         class="question"
-                        data-name="Is there a Sanitizer Solution available in the Kithcen?"
+                        data-name="Is the Ice cream/cake Display clean and free of residue?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2095,12 +2081,12 @@
                         />
                       </td>
                     </tr>
-                    <tr>
-                      <td>Is the 3 bucket system in place and practiced?</td>
+                     <tr>
+                      <td>Is the cold slab clean and free of residue?</td>
                       <td
                         id="92"
                         class="question"
-                        data-name="Is the 3 bucket system in place and practiced?"
+                        data-name="Is the cold slab clean and free of residue?"
                       >
                         <label
                           for=""
@@ -2114,7 +2100,7 @@
                       <td
                         id="92"
                         class="question"
-                        data-name="Is the 3 bucket system in place and practiced?"
+                        data-name="Is the cold slab clean and free of residue?"
                       >
                         <label
                           for=""
@@ -2128,7 +2114,7 @@
                       <td
                         id="93"
                         class="question"
-                        data-name="Is the 3 bucket system in place and practiced?"
+                        data-name="Is the cold slab clean and free of residue?"
                       >
                         <label
                           for=""
@@ -2142,7 +2128,7 @@
                       <td
                         id="93"
                         class="question"
-                        data-name="Is the 3 bucket system in place and practiced?"
+                        data-name="Is the cold slab clean and free of residue?"
                       >
                         <label
                           for=""
@@ -2157,7 +2143,7 @@
                       <td
                         id="94"
                         class="question"
-                        data-name="Is the 3 bucket system in place and practiced?"
+                        data-name="Is the cold slab clean and free of residue?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2165,12 +2151,12 @@
                         />
                       </td>
                     </tr>
-                    <tr>
-                      <td>Is the Cold room/freezers working and attaining temp between -10 to -23 degrees?</td>
+                     <tr>
+                      <td>Is the Coffee machine working and clean?</td>
                       <td
                         id="95"
                         class="question"
-                        data-name="Is the Cold room/freezers working and attaining temp between -10 to -23 degrees?"
+                        data-name="Is the Coffee machine working and clean?"
                       >
                         <label
                           for=""
@@ -2184,7 +2170,7 @@
                       <td
                         id="95"
                         class="question"
-                        data-name="Is the Cold room/freezers working and attaining temp between -10 to -23 degrees?"
+                        data-name="Is the Coffee machine working and clean?"
                       >
                         <label
                           for=""
@@ -2198,7 +2184,7 @@
                       <td
                         id="96"
                         class="question"
-                        data-name="Is the Cold room/freezers working and attaining temp between -10 to -23 degrees?"
+                        data-name="Is the Coffee machine working and clean?"
                       >
                         <label
                           for=""
@@ -2212,7 +2198,7 @@
                       <td
                         id="96"
                         class="question"
-                        data-name="Is the Cold room/freezers working and attaining temp between -10 to -23 degrees?"
+                        data-name="Is the Coffee machine working and clean?"
                       >
                         <label
                           for=""
@@ -2227,7 +2213,7 @@
                       <td
                         id="97"
                         class="question"
-                        data-name="Is the Cold room/freezers working and attaining temp between -10 to -23 degrees?"
+                        data-name="Is the Coffee machine working and clean?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2236,11 +2222,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Has the cold room/freezer been cleaned as per daily schedule?</td>
+                      <td>Is the Dough Pizza press clean and free of residue?</td>
                       <td
                         id="98"
                         class="question"
-                        data-name="Has the cold room/freezer been cleaned as per daily schedule?"
+                        data-name="Is the Dough Pizza press clean and free of residue?"
                       >
                         <label
                           for=""
@@ -2254,7 +2240,7 @@
                       <td
                         id="98"
                         class="question"
-                        data-name="Has the cold room/freezer been cleaned as per daily schedule?"
+                        data-name="Is the Dough Pizza press clean and free of residue?"
                       >
                         <label
                           for=""
@@ -2268,7 +2254,7 @@
                       <td
                         id="99"
                         class="question"
-                        data-name="Has the cold room/freezer been cleaned as per daily schedule?"
+                        data-name="Is the Dough Pizza press clean and free of residue?"
                       >
                         <label
                           for=""
@@ -2282,7 +2268,7 @@
                       <td
                         id="99"
                         class="question"
-                        data-name="Has the cold room/freezer been cleaned as per daily schedule?"
+                        data-name="Is the Dough Pizza press clean and free of residue?"
                       >
                         <label
                           for=""
@@ -2297,7 +2283,7 @@
                       <td
                         id="100"
                         class="question"
-                        data-name="Has the cold room/freezer been cleaned as per daily schedule?"
+                        data-name="Is the Dough Pizza press clean and free of residue?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2305,12 +2291,12 @@
                         />
                       </td>
                     </tr>
-                    <tr>
-                      <td>Have all materials in the Cold room/freezer been Code Dated?</td>
+                     <tr>
+                      <td>Is the front hood extractor for Pizza clean and free of build up?</td>
                       <td
                         id="101"
                         class="question"
-                        data-name="Have all materials in the Cold room/freezer been  Code Dated?"
+                        data-name="Is the front hood extractor for Pizza clean and free of build up?"
                       >
                         <label
                           for=""
@@ -2324,7 +2310,7 @@
                       <td
                         id="101"
                         class="question"
-                        data-name="Have all materials in the Cold room/freezer been  Code Dated?"
+                        data-name="Is the front hood extractor for Pizza clean and free of build up?"
                       >
                         <label
                           for=""
@@ -2338,7 +2324,7 @@
                       <td
                         id="102"
                         class="question"
-                        data-name="Have all materials in the Cold room/freezer been  Code Dated?"
+                        data-name="Is the front hood extractor for Pizza clean and free of build up?"
                       >
                         <label
                           for=""
@@ -2352,7 +2338,7 @@
                       <td
                         id="102"
                         class="question"
-                        data-name="Have all materials in the Cold room/freezer been  Code Dated?"
+                        data-name="Is the front hood extractor for Pizza clean and free of build up?"
                       >
                         <label
                           for=""
@@ -2367,7 +2353,7 @@
                       <td
                         id="103"
                         class="question"
-                        data-name="Have all materials in the Cold room/freezer been  Code Dated?"
+                        data-name="Is the front hood extractor for Pizza clean and free of build up?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2375,12 +2361,12 @@
                         />
                       </td>
                     </tr>
-                    <tr>
-                      <td>Are all food grade containers/basket clean labelled or code dated?</td>
+                      <tr>
+                      <td>Are all Pizza baking tools and utensils cleaned/sanitized and neatly stored?</td>
                       <td
                         id="104"
                         class="question"
-                        data-name="Are all food grade containers/basket clean labelled or code dated?"
+                        data-name="Are all Pizza baking tools and utensils cleaned/sanitized and neatly stored?"
                       >
                         <label
                           for=""
@@ -2394,7 +2380,7 @@
                       <td
                         id="104"
                         class="question"
-                        data-name="Are all food grade containers/basket clean labelled or code dated?"
+                        data-name="Are all Pizza baking tools and utensils cleaned/sanitized and neatly stored?"
                       >
                         <label
                           for=""
@@ -2408,7 +2394,7 @@
                       <td
                         id="105"
                         class="question"
-                        data-name="Are all food grade containers/basket clean labelled or code dated?"
+                        data-name="Are all Pizza baking tools and utensils cleaned/sanitized and neatly stored?"
                       >
                         <label
                           for=""
@@ -2422,7 +2408,7 @@
                       <td
                         id="105"
                         class="question"
-                        data-name="Are all food grade containers/basket clean labelled or code dated?"
+                        data-name="Are all Pizza baking tools and utensils cleaned/sanitized and neatly stored?"
                       >
                         <label
                           for=""
@@ -2437,7 +2423,7 @@
                       <td
                         id="106"
                         class="question"
-                        data-name="Are all food grade containers/basket clean labelled or code dated?"
+                        data-name="Are all Pizza baking tools and utensils cleaned/sanitized and neatly stored?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2446,11 +2432,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Is the Kitchen floor swept and mopped as per the daily schedule?</td>
+                      <td>Are the Pizza Packaging boxes well arranged and free of dirt or potential hazard?</td>
                       <td
                         id="107"
                         class="question"
-                        data-name="Is the Kitchen floor swept and mopped as per the daily schedule?"
+                        data-name="Are the Pizza Packaging boxes well arranged and free of dirt or potential hazard?"
                       >
                         <label
                           for=""
@@ -2464,7 +2450,7 @@
                       <td
                         id="107"
                         class="question"
-                        data-name="Is the Kitchen floor swept and mopped as per the daily schedule?"
+                        data-name="Are the Pizza Packaging boxes well arranged and free of dirt or potential hazard?"
                       >
                         <label
                           for=""
@@ -2478,7 +2464,7 @@
                       <td
                         id="108"
                         class="question"
-                        data-name="Is the Kitchen floor swept and mopped as per the daily schedule?"
+                        data-name="Are the Pizza Packaging boxes well arranged and free of dirt or potential hazard?"
                       >
                         <label
                           for=""
@@ -2492,7 +2478,7 @@
                       <td
                         id="108"
                         class="question"
-                        data-name="Is the Kitchen floor swept and mopped as per the daily schedule?"
+                        data-name="Are the Pizza Packaging boxes well arranged and free of dirt or potential hazard?"
                       >
                         <label
                           for=""
@@ -2507,7 +2493,7 @@
                       <td
                         id="109"
                         class="question"
-                        data-name="Is the Kitchen floor swept and mopped as per the daily schedule?"
+                        data-name="Are the Pizza Packaging boxes well arranged and free of dirt or potential hazard?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2515,12 +2501,25 @@
                         />
                       </td>
                     </tr>
+                  </tbody>
+
+                  <thead>
+                    <th>KITCHEN(BOH, FRYER STATION & PASTRY) </th>
+                    <th>Yes</th>
+                    <th>No</th>
+                    <th>Yes</th>
+                    <th>No</th>
+
+                    <th>Comments/Remarks</th>
+                  </thead>
+                  <tbody>
                     <tr>
-                      <td>Is the Kitchen floor drains cleaned and cleared of build ups?</td>
+                      <td width="200">Is the Gas Burners, pressure and deep/open fryers clean and free of build up?
+                      </td>
                       <td
                         id="110"
                         class="question"
-                        data-name="Is the Kitchen floor drains cleaned and cleared of build ups?"
+                        data-name="Is the Gas Burners, pressure and deep/open fryers clean and free of build up?"
                       >
                         <label
                           for=""
@@ -2534,7 +2533,7 @@
                       <td
                         id="110"
                         class="question"
-                        data-name="Is the Kitchen floor drains cleaned and cleared of build ups?"
+                        data-name="Is the Gas Burners, pressure and deep/open fryers clean and free of build up?"
                       >
                         <label
                           for=""
@@ -2548,7 +2547,7 @@
                       <td
                         id="111"
                         class="question"
-                        data-name="Is the Kitchen floor drains cleaned and cleared of build ups?"
+                        data-name="Is the Gas Burners, pressure and deep/open fryers clean and free of build up?"
                       >
                         <label
                           for=""
@@ -2562,7 +2561,7 @@
                       <td
                         id="111"
                         class="question"
-                        data-name="Is the Kitchen floor drains cleaned and cleared of build ups?"
+                        data-name="Is the Gas Burners, pressure and deep/open fryers clean and free of build up?"
                       >
                         <label
                           for=""
@@ -2577,7 +2576,7 @@
                       <td
                         id="112"
                         class="question"
-                        data-name="Is the Kitchen floor drains cleaned and cleared of build ups?"
+                        data-name="Is the Gas Burners, pressure and deep/open fryers clean and free of build up?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2586,11 +2585,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Are all food items in the production floor placed on pallets? Elevated?</td>
+                      <td>Is the Dough mixer clean and free of build up?</td>
                       <td
                         id="113"
                         class="question"
-                        data-name="Are all food items in the production floor placed on pallets? Elevated?"
+                        data-name="Is the Dough mixer clean and free of build up?"
                       >
                         <label
                           for=""
@@ -2604,7 +2603,7 @@
                       <td
                         id="113"
                         class="question"
-                        data-name="Are all food items in the production floor placed on pallets? Elevated?"
+                        data-name="Is the Dough mixer clean and free of build up?"
                       >
                         <label
                           for=""
@@ -2618,7 +2617,7 @@
                       <td
                         id="114"
                         class="question"
-                        data-name="Are all food items in the production floor placed on pallets? Elevated?"
+                        data-name="Is the Dough mixer clean and free of build up?"
                       >
                         <label
                           for=""
@@ -2632,7 +2631,7 @@
                       <td
                         id="114"
                         class="question"
-                        data-name="Are all food items in the production floor placed on pallets? Elevated?"
+                        data-name="Is the Dough mixer clean and free of build up?"
                       >
                         <label
                           for=""
@@ -2647,7 +2646,7 @@
                       <td
                         id="115"
                         class="question"
-                        data-name="Are all food items in the production floor placed on pallets? Elevated?"
+                        data-name="Is the Dough mixer clean and free of build up?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2655,13 +2654,12 @@
                         />
                       </td>
                     </tr>
-
                     <tr>
-                      <td>Has the Kitchen wall Tiles been cleaned as per daily schedule?</td>
+                      <td>Has the Oil checks been done using the Oil Tester?</td>
                       <td
                         id="116"
                         class="question"
-                        data-name="Has the Kitchen wall Tiles been cleaned as per daily schedule?"
+                        data-name="Has the Oil checks been done using the Oil Tester?"
                       >
                         <label
                           for=""
@@ -2675,7 +2673,7 @@
                       <td
                         id="116"
                         class="question"
-                        data-name="Has the Kitchen wall Tiles been cleaned as per daily schedule?"
+                        data-name="Has the Oil checks been done using the Oil Tester?"
                       >
                         <label
                           for=""
@@ -2689,7 +2687,7 @@
                       <td
                         id="117"
                         class="question"
-                        data-name="Has the Kitchen wall Tiles been cleaned as per daily schedule?"
+                        data-name="Has the Oil checks been done using the Oil Tester?"
                       >
                         <label
                           for=""
@@ -2703,7 +2701,7 @@
                       <td
                         id="117"
                         class="question"
-                        data-name="Has the Kitchen wall Tiles been cleaned as per daily schedule?"
+                        data-name="Has the Oil checks been done using the Oil Tester?"
                       >
                         <label
                           for=""
@@ -2718,7 +2716,7 @@
                       <td
                         id="118"
                         class="question"
-                        data-name="Has the Kitchen wall Tiles been cleaned as per daily schedule?"
+                        data-name="Has the Oil checks been done using the Oil Tester?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2727,11 +2725,12 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Have all prepared food been sampled to check for quality, Taste and documented?</td>
+                      <td>Are all production oven clean and free of grease build up?
+                      </td>
                       <td
                         id="119"
                         class="question"
-                        data-name="Have all prepared food been sampled to check for quality, Taste and documented?"
+                        data-name="Are all production oven clean and free of grease build up?"
                       >
                         <label
                           for=""
@@ -2745,7 +2744,7 @@
                       <td
                         id="119"
                         class="question"
-                        data-name="Have all prepared food been sampled to check for quality, Taste and documented?"
+                        data-name="Are all production oven clean and free of grease build up?"
                       >
                         <label
                           for=""
@@ -2759,7 +2758,7 @@
                       <td
                         id="120"
                         class="question"
-                        data-name="Have all prepared food been sampled to check for quality, Taste and documented?"
+                        data-name="Are all production oven clean and free of grease build up?"
                       >
                         <label
                           for=""
@@ -2773,7 +2772,7 @@
                       <td
                         id="120"
                         class="question"
-                        data-name="Have all prepared food been sampled to check for quality, Taste and documented?"
+                        data-name="Are all production oven clean and free of grease build up?"
                       >
                         <label
                           for=""
@@ -2788,7 +2787,7 @@
                       <td
                         id="121"
                         class="question"
-                        data-name="Have all prepared food been sampled to check for quality, Taste and documented?"
+                        data-name="Are all production oven clean and free of grease build up?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2797,11 +2796,12 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Are all prepared products (RTE) being probed and recoeded real time?</td>
+
+                      <td>Is the Extractor clean and free of Oil residue/build up?</td>
                       <td
                         id="122"
                         class="question"
-                        data-name="Are all prepared products (RTE) being probed and recoeded real time?"
+                        data-name="Is the Extractor clean and free of Oil residue/build up?"
                       >
                         <label
                           for=""
@@ -2815,7 +2815,7 @@
                       <td
                         id="122"
                         class="question"
-                        data-name="Are all prepared products (RTE) being probed and recoeded real time?"
+                        data-name="Is the Extractor clean and free of Oil residue/build up?"
                       >
                         <label
                           for=""
@@ -2829,7 +2829,7 @@
                       <td
                         id="123"
                         class="question"
-                        data-name="Are all prepared products (RTE) being probed and recoeded real time?"
+                        data-name="Is the Extractor clean and free of Oil residue/build up?"
                       >
                         <label
                           for=""
@@ -2843,7 +2843,7 @@
                       <td
                         id="123"
                         class="question"
-                        data-name="Are all prepared products (RTE) being probed and recoeded real time?"
+                        data-name="Is the Extractor clean and free of Oil residue/build up?"
                       >
                         <label
                           for=""
@@ -2858,7 +2858,7 @@
                       <td
                         id="124"
                         class="question"
-                        data-name="Are all prepared products (RTE) being probed and recoeded real time?"
+                        data-name="Is the Extractor clean and free of Oil residue/build up?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2866,13 +2866,12 @@
                         />
                       </td>
                     </tr>
-
                     <tr>
-                      <td>Are all prepared products (RTE) being recorded in the movement book real time?</td>
+                      <td>Are all induction burners clean free of moisture and oil build up?</td>
                       <td
                         id="125"
                         class="question"
-                        data-name="Are all prepared products (RTE) being recorded in the movement book real time?"
+                        data-name="Are all induction burners clean free of moisture and oil build up?"
                       >
                         <label
                           for=""
@@ -2886,7 +2885,7 @@
                       <td
                         id="125"
                         class="question"
-                        data-name="Are all prepared products (RTE) being recorded in the movement book real time?"
+                        data-name="Are all induction burners clean free of moisture and oil build up?"
                       >
                         <label
                           for=""
@@ -2900,7 +2899,7 @@
                       <td
                         id="126"
                         class="question"
-                        data-name="Are all prepared products (RTE) being recorded in the movement book real time?"
+                        data-name="Are all induction burners clean free of moisture and oil build up?"
                       >
                         <label
                           for=""
@@ -2914,7 +2913,7 @@
                       <td
                         id="126"
                         class="question"
-                        data-name="Are all prepared products (RTE) being recorded in the movement book real time?"
+                        data-name="Are all induction burners clean free of moisture and oil build up?"
                       >
                         <label
                           for=""
@@ -2929,7 +2928,7 @@
                       <td
                         id="127"
                         class="question"
-                        data-name="Are all prepared products (RTE) being recorded in the movement book real time?"
+                        data-name="Are all induction burners clean free of moisture and oil build up?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -2938,11 +2937,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Have all refuse BIN been emptoied timely? (half full half empty)</td>
+                      <td>Is there a Sanitizer Solution available in the Kithcen?</td>
                       <td
                         id="128"
                         class="question"
-                        data-name="Have all refuse BIN been emptoied timely? (half full half empty)"
+                        data-name="Is there a Sanitizer Solution available in the Kithcen?"
                       >
                         <label
                           for=""
@@ -2956,7 +2955,7 @@
                       <td
                         id="128"
                         class="question"
-                        data-name="Have all refuse BIN been emptoied timely? (half full half empty)"
+                        data-name="Is there a Sanitizer Solution available in the Kithcen?"
                       >
                         <label
                           for=""
@@ -2970,7 +2969,7 @@
                       <td
                         id="129"
                         class="question"
-                        data-name="Have all refuse BIN been emptoied timely? (half full half empty)"
+                        data-name="Is there a Sanitizer Solution available in the Kithcen?"
                       >
                         <label
                           for=""
@@ -2984,7 +2983,7 @@
                       <td
                         id="129"
                         class="question"
-                        data-name="Have all refuse BIN been emptoied timely? (half full half empty)"
+                        data-name="Is there a Sanitizer Solution available in the Kithcen?"
                       >
                         <label
                           for=""
@@ -2999,7 +2998,7 @@
                       <td
                         id="130"
                         class="question"
-                        data-name="Have all refuse BIN been emptoied timely? (half full half empty)"
+                        data-name="Is there a Sanitizer Solution available in the Kithcen?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -3008,11 +3007,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Is the Pasturizer clean and free of residue?</td>
+                      <td>Is the 3 wash bucket system in place and practiced?</td>
                       <td
                         id="131"
                         class="question"
-                        data-name="Is the Pasturizer clean and free of residue?"
+                        data-name="Is the 3 wash bucket system in place and practiced?"
                       >
                         <label
                           for=""
@@ -3026,7 +3025,7 @@
                       <td
                         id="131"
                         class="question"
-                        data-name="Is the Pasturizer clean and free of residue?"
+                        data-name="Is the 3 wash bucket system in place and practiced?"
                       >
                         <label
                           for=""
@@ -3040,7 +3039,7 @@
                       <td
                         id="132"
                         class="question"
-                        data-name="Is the Pasturizer clean and free of residue?"
+                        data-name="Is the 3 wash bucket system in place and practiced?"
                       >
                         <label
                           for=""
@@ -3054,7 +3053,7 @@
                       <td
                         id="132"
                         class="question"
-                        data-name="Is the Pasturizer clean and free of residue?"
+                        data-name="Is the 3 wash bucket system in place and practiced?"
                       >
                         <label
                           for=""
@@ -3069,7 +3068,7 @@
                       <td
                         id="133"
                         class="question"
-                        data-name="Is the Pasturizer clean and free of residue?"
+                        data-name="Is the 3 wash bucket system in place and practiced?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -3078,11 +3077,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Is the blast freezer clean and working optimally?</td>
+                      <td>Is the Cold room/freezers working and attaining temp between -10 to -23 degrees?</td>
                       <td
                         id="134"
                         class="question"
-                        data-name="Is the blast freezer clean and working optimally?"
+                        data-name="Is the Cold room/freezers working and attaining temp between -10 to -23 degrees?"
                       >
                         <label
                           for=""
@@ -3096,7 +3095,7 @@
                       <td
                         id="134"
                         class="question"
-                        data-name="Is the blast freezer clean and working optimally?"
+                        data-name="Is the Cold room/freezers working and attaining temp between -10 to -23 degrees?"
                       >
                         <label
                           for=""
@@ -3110,7 +3109,7 @@
                       <td
                         id="135"
                         class="question"
-                        data-name="Is the blast freezer clean and working optimally?"
+                        data-name="Is the Cold room/freezers working and attaining temp between -10 to -23 degrees?"
                       >
                         <label
                           for=""
@@ -3124,7 +3123,7 @@
                       <td
                         id="135"
                         class="question"
-                        data-name="Is the blast freezer clean and working optimally?"
+                        data-name="Is the Cold room/freezers working and attaining temp between -10 to -23 degrees?"
                       >
                         <label
                           for=""
@@ -3139,7 +3138,7 @@
                       <td
                         id="136"
                         class="question"
-                        data-name="Is the blast freezer clean and working optimally?"
+                        data-name="Is the Cold room/freezers working and attaining temp between -10 to -23 degrees?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -3148,11 +3147,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Are all additional production equipment clean and working?</td>
+                      <td>Has the cold room/freezer been cleaned as per daily schedule?</td>
                       <td
                         id="137"
                         class="question"
-                        data-name="Are all additional production equipment clean and working?"
+                        data-name="Has the cold room/freezer been cleaned as per daily schedule?"
                       >
                         <label
                           for=""
@@ -3166,7 +3165,7 @@
                       <td
                         id="137"
                         class="question"
-                        data-name="Are all additional production equipment clean and working?"
+                        data-name="Has the cold room/freezer been cleaned as per daily schedule?"
                       >
                         <label
                           for=""
@@ -3180,7 +3179,7 @@
                       <td
                         id="138"
                         class="question"
-                        data-name="Are all additional production equipment clean and working?"
+                        data-name="Has the cold room/freezer been cleaned as per daily schedule?"
                       >
                         <label
                           for=""
@@ -3194,7 +3193,7 @@
                       <td
                         id="138"
                         class="question"
-                        data-name="Are all additional production equipment clean and working?"
+                        data-name="Has the cold room/freezer been cleaned as per daily schedule?"
                       >
                         <label
                           for=""
@@ -3209,7 +3208,7 @@
                       <td
                         id="139"
                         class="question"
-                        data-name="Are all additional production equipment clean and working?"
+                        data-name="Has the cold room/freezer been cleaned as per daily schedule?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -3218,11 +3217,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Are all cooking pots/pans in good condition and free from carbon build up?</td>
+                      <td>Have all materials in the Cold room/freezer been Code Dated?</td>
                       <td
                         id="140"
                         class="question"
-                        data-name="Are all cooking pots/pans in good condition and free from carbon build up?"
+                        data-name="Have all materials in the Cold room/freezer been  Code Dated?"
                       >
                         <label
                           for=""
@@ -3236,7 +3235,7 @@
                       <td
                         id="140"
                         class="question"
-                        data-name="Are all cooking pots/pans in good condition and free from carbon build up?"
+                        data-name="Have all materials in the Cold room/freezer been  Code Dated?"
                       >
                         <label
                           for=""
@@ -3250,7 +3249,7 @@
                       <td
                         id="141"
                         class="question"
-                        data-name="Are all cooking pots/pans in good condition and free from carbon build up?"
+                        data-name="Have all materials in the Cold room/freezer been  Code Dated?"
                       >
                         <label
                           for=""
@@ -3264,7 +3263,7 @@
                       <td
                         id="141"
                         class="question"
-                        data-name="Are all cooking pots/pans in good condition and free from carbon build up?"
+                        data-name="Have all materials in the Cold room/freezer been  Code Dated?"
                       >
                         <label
                           for=""
@@ -3279,7 +3278,7 @@
                       <td
                         id="142"
                         class="question"
-                        data-name="Are all cooking pots/pans in good condition and free from carbon build up?"
+                        data-name="Have all materials in the Cold room/freezer been  Code Dated?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -3288,11 +3287,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Is the Pizza oven clean, free of residue/build up?</td>
+                      <td>Are all food grade containers/basket clean labelled or code dated?</td>
                       <td
                         id="143"
                         class="question"
-                        data-name="Is the Pizza oven clean, free of residue/build up?"
+                        data-name="Are all food grade containers/basket clean labelled or code dated?"
                       >
                         <label
                           for=""
@@ -3306,7 +3305,7 @@
                       <td
                         id="143"
                         class="question"
-                        data-name="Is the Pizza oven clean, free of residue/build up?"
+                        data-name="Are all food grade containers/basket clean labelled or code dated?"
                       >
                         <label
                           for=""
@@ -3320,7 +3319,7 @@
                       <td
                         id="144"
                         class="question"
-                        data-name="Is the Pizza oven clean, free of residue/build up?"
+                        data-name="Are all food grade containers/basket clean labelled or code dated?"
                       >
                         <label
                           for=""
@@ -3334,7 +3333,7 @@
                       <td
                         id="144"
                         class="question"
-                        data-name="Is the Pizza oven clean, free of residue/build up?"
+                        data-name="Are all food grade containers/basket clean labelled or code dated?"
                       >
                         <label
                           for=""
@@ -3349,7 +3348,7 @@
                       <td
                         id="145"
                         class="question"
-                        data-name="Is the Pizza oven clean, free of residue/build up?"
+                        data-name="Are all food grade containers/basket clean labelled or code dated?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -3358,11 +3357,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Are the chopping Boards clean amd free of build up?</td>
+                      <td>Is the Kitchen floor swept and mopped as per the daily schedule?</td>
                       <td
                         id="146"
                         class="question"
-                        data-name="Are the chopping Boards clean amd free of build up?"
+                        data-name="Is the Kitchen floor swept and mopped as per the daily schedule?"
                       >
                         <label
                           for=""
@@ -3376,7 +3375,7 @@
                       <td
                         id="146"
                         class="question"
-                        data-name="Are the chopping Boards clean amd free of build up?"
+                        data-name="Is the Kitchen floor swept and mopped as per the daily schedule?"
                       >
                         <label
                           for=""
@@ -3390,7 +3389,7 @@
                       <td
                         id="147"
                         class="question"
-                        data-name="Are the chopping Boards clean amd free of build up?"
+                        data-name="Is the Kitchen floor swept and mopped as per the daily schedule?"
                       >
                         <label
                           for=""
@@ -3404,7 +3403,7 @@
                       <td
                         id="147"
                         class="question"
-                        data-name="Are the chopping Boards clean amd free of build up?"
+                        data-name="Is the Kitchen floor swept and mopped as per the daily schedule?"
                       >
                         <label
                           for=""
@@ -3419,7 +3418,7 @@
                       <td
                         id="148"
                         class="question"
-                        data-name="Are the chopping Boards clean amd free of build up?"
+                        data-name="Is the Kitchen floor swept and mopped as per the daily schedule?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -3428,11 +3427,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Are all WIP items placed in the chiller code Dated?</td>
+                      <td>Is the Kitchen floor drains cleaned and cleared of build ups?</td>
                       <td
                         id="149"
                         class="question"
-                        data-name="Are all WIP items placed in the chiller code Dated?"
+                        data-name="Is the Kitchen floor drains cleaned and cleared of build ups?"
                       >
                         <label
                           for=""
@@ -3446,7 +3445,7 @@
                       <td
                         id="149"
                         class="question"
-                        data-name="Are all WIP items placed in the chiller code Dated?"
+                        data-name="Is the Kitchen floor drains cleaned and cleared of build ups?"
                       >
                         <label
                           for=""
@@ -3460,7 +3459,7 @@
                       <td
                         id="150"
                         class="question"
-                        data-name="Are all WIP items placed in the chiller code Dated?"
+                        data-name="Is the Kitchen floor drains cleaned and cleared of build ups?"
                       >
                         <label
                           for=""
@@ -3474,7 +3473,7 @@
                       <td
                         id="150"
                         class="question"
-                        data-name="Are all WIP items placed in the chiller code Dated?"
+                        data-name="Is the Kitchen floor drains cleaned and cleared of build ups?"
                       >
                         <label
                           for=""
@@ -3489,7 +3488,7 @@
                       <td
                         id="151"
                         class="question"
-                        data-name="Are all WIP items placed in the chiller code Dated?"
+                        data-name="Is the Kitchen floor drains cleaned and cleared of build ups?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -3498,11 +3497,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Is the chiller working optimally and attaining a temp between 1-4 degrees celsius?</td>
+                      <td>Are all food items in the production floor placed on pallets? Elevated?</td>
                       <td
                         id="152"
                         class="question"
-                        data-name="Is the chiller working optimally and attaining a temp between 1-4 degrees celsius?"
+                        data-name="Are all food items in the production floor placed on pallets? Elevated?"
                       >
                         <label
                           for=""
@@ -3516,7 +3515,7 @@
                       <td
                         id="152"
                         class="question"
-                        data-name="Is the chiller working optimally and attaining a temp between 1-4 degrees celsius?"
+                        data-name="Are all food items in the production floor placed on pallets? Elevated?"
                       >
                         <label
                           for=""
@@ -3530,7 +3529,7 @@
                       <td
                         id="153"
                         class="question"
-                        data-name="Is the chiller working optimally and attaining a temp between 1-4 degrees celsius?"
+                        data-name="Are all food items in the production floor placed on pallets? Elevated?"
                       >
                         <label
                           for=""
@@ -3544,7 +3543,7 @@
                       <td
                         id="153"
                         class="question"
-                        data-name="Is the chiller working optimally and attaining a temp between 1-4 degrees celsius?"
+                        data-name="Are all food items in the production floor placed on pallets? Elevated?"
                       >
                         <label
                           for=""
@@ -3559,7 +3558,7 @@
                       <td
                         id="154"
                         class="question"
-                        data-name="Is the chiller working optimally and attaining a temp between 1-4 degrees celsius?"
+                        data-name="Are all food items in the production floor placed on pallets? Elevated?"
                       >
                         <label class="label">comment</label><input
                           type="text"
@@ -3567,12 +3566,13 @@
                         />
                       </td>
                     </tr>
+
                     <tr>
-                      <td>Is the extractor clean and free of Build up?</td>
+                      <td>Has the Kitchen wall Tiles been cleaned as per daily schedule?</td>
                       <td
                         id="155"
                         class="question"
-                        data-name="Is the extractor clean and free of Build up?"
+                        data-name="Has the Kitchen wall Tiles been cleaned as per daily schedule?"
                       >
                         <label
                           for=""
@@ -3586,7 +3586,7 @@
                       <td
                         id="155"
                         class="question"
-                        data-name="Is the extractor clean and free of Build up?"
+                        data-name="Has the Kitchen wall Tiles been cleaned as per daily schedule?"
                       >
                         <label
                           for=""
@@ -3600,7 +3600,7 @@
                       <td
                         id="156"
                         class="question"
-                        data-name="Is the extractor clean and free of Build up?"
+                        data-name="Has the Kitchen wall Tiles been cleaned as per daily schedule?"
                       >
                         <label
                           for=""
@@ -3614,7 +3614,7 @@
                       <td
                         id="156"
                         class="question"
-                        data-name="Is the extractor clean and free of Build up?"
+                        data-name="Has the Kitchen wall Tiles been cleaned as per daily schedule?"
                       >
                         <label
                           for=""
@@ -3628,6 +3628,917 @@
 
                       <td
                         id="157"
+                        class="question"
+                        data-name="Has the Kitchen wall Tiles been cleaned as per daily schedule?"
+                      >
+                        <label class="label">comment</label><input
+                          type="text"
+                          class="form-control border-0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Have all prepared food been sampled to check for quality, Taste and documented?</td>
+                      <td
+                        id="158"
+                        class="question"
+                        data-name="Have all prepared food been sampled to check for quality, Taste and documented?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am52"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="158"
+                        class="question"
+                        data-name="Have all prepared food been sampled to check for quality, Taste and documented?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am52"
+                          value="no"
+                        >
+                      </td>
+                      <td
+                        id="159"
+                        class="question"
+                        data-name="Have all prepared food been sampled to check for quality, Taste and documented?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm52"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="159"
+                        class="question"
+                        data-name="Have all prepared food been sampled to check for quality, Taste and documented?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm52"
+                          value="no"
+                        >
+                      </td>
+
+                      <td
+                        id="160"
+                        class="question"
+                        data-name="Have all prepared food been sampled to check for quality, Taste and documented?"
+                      >
+                        <label class="label">comment</label><input
+                          type="text"
+                          class="form-control border-0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Are all prepared products (RTE) being probed and recorded real time?</td>
+                      <td
+                        id="161"
+                        class="question"
+                        data-name="Are all prepared products (RTE) being probed and recorded real time?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am53"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="161"
+                        class="question"
+                        data-name="Are all prepared products (RTE) being probed and recorded real time?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am53"
+                          value="no"
+                        >
+                      </td>
+                      <td
+                        id="162"
+                        class="question"
+                        data-name="Are all prepared products (RTE) being probed and recorded real time?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm53"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="162"
+                        class="question"
+                        data-name="Are all prepared products (RTE) being probed and recorded real time?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm53"
+                          value="no"
+                        >
+                      </td>
+
+                      <td
+                        id="163"
+                        class="question"
+                        data-name="Are all prepared products (RTE) being probed and recorded real time?"
+                      >
+                        <label class="label">comment</label><input
+                          type="text"
+                          class="form-control border-0"
+                        />
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Are all prepared products (RTE) being recorded in the movement book real time?</td>
+                      <td
+                        id="164"
+                        class="question"
+                        data-name="Are all prepared products (RTE) being recorded in the movement book real time?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am54"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="164"
+                        class="question"
+                        data-name="Are all prepared products (RTE) being recorded in the movement book real time?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am54"
+                          value="no"
+                        >
+                      </td>
+                      <td
+                        id="165"
+                        class="question"
+                        data-name="Are all prepared products (RTE) being recorded in the movement book real time?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm54"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="165"
+                        class="question"
+                        data-name="Are all prepared products (RTE) being recorded in the movement book real time?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm54"
+                          value="no"
+                        >
+                      </td>
+
+                      <td
+                        id="167"
+                        class="question"
+                        data-name="Are all prepared products (RTE) being recorded in the movement book real time?"
+                      >
+                        <label class="label">comment</label><input
+                          type="text"
+                          class="form-control border-0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Have all refuse BIN been emptoied timely? (half full half empty)</td>
+                      <td
+                        id="168"
+                        class="question"
+                        data-name="Have all refuse BIN been emptoied timely? (half full half empty)"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am55"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="168"
+                        class="question"
+                        data-name="Have all refuse BIN been emptoied timely? (half full half empty)"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am55"
+                          value="no"
+                        >
+                      </td>
+                      <td
+                        id="169"
+                        class="question"
+                        data-name="Have all refuse BIN been emptoied timely? (half full half empty)"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm55"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="169"
+                        class="question"
+                        data-name="Have all refuse BIN been emptoied timely? (half full half empty)"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm55"
+                          value="no"
+                        >
+                      </td>
+
+                      <td
+                        id="170"
+                        class="question"
+                        data-name="Have all refuse BIN been emptoied timely? (half full half empty)"
+                      >
+                        <label class="label">comment</label><input
+                          type="text"
+                          class="form-control border-0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Is the Pasturizer clean and free of residue?</td>
+                      <td
+                        id="171"
+                        class="question"
+                        data-name="Is the Pasturizer clean and free of residue?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am56"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="171"
+                        class="question"
+                        data-name="Is the Pasturizer clean and free of residue?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am56"
+                          value="no"
+                        >
+                      </td>
+                      <td
+                        id="172"
+                        class="question"
+                        data-name="Is the Pasturizer clean and free of residue?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm56"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="172"
+                        class="question"
+                        data-name="Is the Pasturizer clean and free of residue?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm56"
+                          value="no"
+                        >
+                      </td>
+
+                      <td
+                        id="173"
+                        class="question"
+                        data-name="Is the Pasturizer clean and free of residue?"
+                      >
+                        <label class="label">comment</label><input
+                          type="text"
+                          class="form-control border-0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Is the blast freezer clean and working optimally?</td>
+                      <td
+                        id="174"
+                        class="question"
+                        data-name="Is the blast freezer clean and working optimally?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am57"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="174"
+                        class="question"
+                        data-name="Is the blast freezer clean and working optimally?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am57"
+                          value="no"
+                        >
+                      </td>
+                      <td
+                        id="175"
+                        class="question"
+                        data-name="Is the blast freezer clean and working optimally?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm57"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="175"
+                        class="question"
+                        data-name="Is the blast freezer clean and working optimally?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm57"
+                          value="no"
+                        >
+                      </td>
+
+                      <td
+                        id="176"
+                        class="question"
+                        data-name="Is the blast freezer clean and working optimally?"
+                      >
+                        <label class="label">comment</label><input
+                          type="text"
+                          class="form-control border-0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Are all additional production equipment clean and working?</td>
+                      <td
+                        id="177"
+                        class="question"
+                        data-name="Are all additional production equipment clean and working?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am58"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="177"
+                        class="question"
+                        data-name="Are all additional production equipment clean and working?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am58"
+                          value="no"
+                        >
+                      </td>
+                      <td
+                        id="178"
+                        class="question"
+                        data-name="Are all additional production equipment clean and working?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm58"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="178"
+                        class="question"
+                        data-name="Are all additional production equipment clean and working?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm58"
+                          value="no"
+                        >
+                      </td>
+
+                      <td
+                        id="179"
+                        class="question"
+                        data-name="Are all additional production equipment clean and working?"
+                      >
+                        <label class="label">comment</label><input
+                          type="text"
+                          class="form-control border-0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Are all cooking pots/pans in good condition and free from carbon build up?</td>
+                      <td
+                        id="180"
+                        class="question"
+                        data-name="Are all cooking pots/pans in good condition and free from carbon build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am59"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="180"
+                        class="question"
+                        data-name="Are all cooking pots/pans in good condition and free from carbon build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am59"
+                          value="no"
+                        >
+                      </td>
+                      <td
+                        id="181"
+                        class="question"
+                        data-name="Are all cooking pots/pans in good condition and free from carbon build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm59"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="181"
+                        class="question"
+                        data-name="Are all cooking pots/pans in good condition and free from carbon build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm59"
+                          value="no"
+                        >
+                      </td>
+
+                      <td
+                        id="182"
+                        class="question"
+                        data-name="Are all cooking pots/pans in good condition and free from carbon build up?"
+                      >
+                        <label class="label">comment</label><input
+                          type="text"
+                          class="form-control border-0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Is the Pizza oven clean, free of residue/build up?</td>
+                      <td
+                        id="183"
+                        class="question"
+                        data-name="Is the Pizza oven clean, free of residue/build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am60"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="183"
+                        class="question"
+                        data-name="Is the Pizza oven clean, free of residue/build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am60"
+                          value="no"
+                        >
+                      </td>
+                      <td
+                        id="184"
+                        class="question"
+                        data-name="Is the Pizza oven clean, free of residue/build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm60"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="184"
+                        class="question"
+                        data-name="Is the Pizza oven clean, free of residue/build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm60"
+                          value="no"
+                        >
+                      </td>
+
+                      <td
+                        id="185"
+                        class="question"
+                        data-name="Is the Pizza oven clean, free of residue/build up?"
+                      >
+                        <label class="label">comment</label><input
+                          type="text"
+                          class="form-control border-0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Are the chopping Boards clean amd free of build up?</td>
+                      <td
+                        id="186"
+                        class="question"
+                        data-name="Are the chopping Boards clean amd free of build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am61"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="186"
+                        class="question"
+                        data-name="Are the chopping Boards clean amd free of build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am61"
+                          value="no"
+                        >
+                      </td>
+                      <td
+                        id="187"
+                        class="question"
+                        data-name="Are the chopping Boards clean amd free of build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm61"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="187"
+                        class="question"
+                        data-name="Are the chopping Boards clean amd free of build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm61"
+                          value="no"
+                        >
+                      </td>
+
+                      <td
+                        id="188"
+                        class="question"
+                        data-name="Are the chopping Boards clean amd free of build up?"
+                      >
+                        <label class="label">comment</label><input
+                          type="text"
+                          class="form-control border-0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Are all WIP items placed in the chiller code Dated?</td>
+                      <td
+                        id="189"
+                        class="question"
+                        data-name="Are all WIP items placed in the chiller code Dated?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am62"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="189"
+                        class="question"
+                        data-name="Are all WIP items placed in the chiller code Dated?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am62"
+                          value="no"
+                        >
+                      </td>
+                      <td
+                        id="190"
+                        class="question"
+                        data-name="Are all WIP items placed in the chiller code Dated?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm62"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="190"
+                        class="question"
+                        data-name="Are all WIP items placed in the chiller code Dated?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm62"
+                          value="no"
+                        >
+                      </td>
+
+                      <td
+                        id="191"
+                        class="question"
+                        data-name="Are all WIP items placed in the chiller code Dated?"
+                      >
+                        <label class="label">comment</label><input
+                          type="text"
+                          class="form-control border-0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Is the chiller working optimally and attaining a temp between 1-4 degrees celsius?</td>
+                      <td
+                        id="192"
+                        class="question"
+                        data-name="Is the chiller working optimally and attaining a temp between 1-4 degrees celsius?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am63"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="192"
+                        class="question"
+                        data-name="Is the chiller working optimally and attaining a temp between 1-4 degrees celsius?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am63"
+                          value="no"
+                        >
+                      </td>
+                      <td
+                        id="193"
+                        class="question"
+                        data-name="Is the chiller working optimally and attaining a temp between 1-4 degrees celsius?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm63"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="193"
+                        class="question"
+                        data-name="Is the chiller working optimally and attaining a temp between 1-4 degrees celsius?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm63"
+                          value="no"
+                        >
+                      </td>
+
+                      <td
+                        id="194"
+                        class="question"
+                        data-name="Is the chiller working optimally and attaining a temp between 1-4 degrees celsius?"
+                      >
+                        <label class="label">comment</label><input
+                          type="text"
+                          class="form-control border-0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Is the extractor clean and free of Build up?</td>
+                      <td
+                        id="195"
+                        class="question"
+                        data-name="Is the extractor clean and free of Build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am64"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="195"
+                        class="question"
+                        data-name="Is the extractor clean and free of Build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >am</label> <input
+                          type="radio"
+                          name="am64"
+                          value="no"
+                        >
+                      </td>
+                      <td
+                        id="196"
+                        class="question"
+                        data-name="Is the extractor clean and free of Build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm64"
+                          value="yes"
+                        >
+                      </td>
+                      <td
+                        id="196"
+                        class="question"
+                        data-name="Is the extractor clean and free of Build up?"
+                      >
+                        <label
+                          for=""
+                          class="label"
+                        >pm</label> <input
+                          type="radio"
+                          name="pm64"
+                          value="no"
+                        >
+                      </td>
+
+                      <td
+                        id="197"
                         class="question"
                         data-name="Is the extractor clean and free of Build up?"
                       >
@@ -3653,7 +4564,7 @@
                     <tr>
                       <td width="200">Is the Shawarma griller and Toaster clean and free of build up?</td>
                       <td
-                        id="158"
+                        id="198"
                         class="question"
                         data-name="Is the Shawarma griller and Toaster clean and free of build up?"
                       >
@@ -3662,12 +4573,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am52"
+                          name="am65"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="158"
+                        id="198"
                         class="question"
                         data-name="Is the Shawarma griller and Toaster clean and free of build up?"
                       >
@@ -3676,12 +4587,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am52"
+                          name="am65"
                           value="no"
                         >
                       </td>
                       <td
-                        id="159"
+                        id="199"
                         class="question"
                         data-name="Is the Shawarma griller and Toaster clean and free of build up?"
                       >
@@ -3690,12 +4601,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm53"
+                          name="pm65"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="159"
+                        id="199"
                         class="question"
                         data-name="Is the Shawarma griller and Toaster clean and free of build up?"
                       >
@@ -3704,13 +4615,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm53"
+                          name="pm65"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="160"
+                        id="200"
                         class="question"
                         data-name="Is the Shawarma griller and Toaster clean and free of build up?"
                       >
@@ -3723,7 +4634,7 @@
                     <tr>
                       <td>Is the braine maire working and clean?</td>
                       <td
-                        id="161"
+                        id="201"
                         class="question"
                         data-name="Is the braine maire working and clean?"
                       ><label
@@ -3731,11 +4642,11 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am54"
+                          name="am66"
                           value="yes"
                         ></td>
                       <td
-                        id="161"
+                        id="201"
                         class="question"
                         data-name="Is the braine maire working and clean?"
                       ><label
@@ -3743,11 +4654,11 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am54"
+                          name="am66"
                           value="no"
                         ></td>
                       <td
-                        id="162"
+                        id="202"
                         class="question"
                         data-name="Is the braine maire working and clean?"
                       ><label
@@ -3755,11 +4666,11 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm54"
+                          name="pm66"
                           value="yes"
                         ></td>
                       <td
-                        id="162"
+                        id="202"
                         class="question"
                         data-name="Is the braine maire working and clean?"
                       ><label
@@ -3767,12 +4678,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm54"
+                          name="pm66"
                           value="no"
                         ></td>
 
                       <td
-                        id="163"
+                        id="203"
                         class="question"
                         data-name="Is the braine maire working and clean?"
                       ><label class="label">comment</label><input
@@ -3783,7 +4694,7 @@
                     <tr>
                       <td>Are all food items in the dry store placed on pallets?</td>
                       <td
-                        id="164"
+                        id="204"
                         class="question"
                         data-name="Are all food items in the dry store placed on pallets?"
                       ><label
@@ -3791,11 +4702,11 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am55"
+                          name="am67"
                           value="yes"
                         ></td>
                       <td
-                        id="164"
+                        id="204"
                         class="question"
                         data-name="Are all food items in the dry store placed on pallets?"
                       ><label
@@ -3803,11 +4714,11 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am55"
+                          name="am67"
                           value="no"
                         ></td>
                       <td
-                        id="165"
+                        id="205"
                         class="question"
                         data-name="Are all food items in the dry store placed on pallets?"
                       ><label
@@ -3815,11 +4726,11 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm55"
+                          name="pm67"
                           value="yes"
                         ></td>
                       <td
-                        id="165"
+                        id="205"
                         class="question"
                         data-name="Are all food items in the dry store placed on pallets?"
                       ><label
@@ -3827,12 +4738,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm55"
+                          name="pm67"
                           value="no"
                         ></td>
 
                       <td
-                        id="166"
+                        id="206"
                         class="question"
                         data-name="Are all food items in the dry store placed on pallets?"
                       ><label class="label">comment</label><input
@@ -3843,7 +4754,7 @@
                     <tr>
                       <td>Are all items in the Dry Store code Dated?</td>
                       <td
-                        id="167"
+                        id="207"
                         class="question"
                         data-name="Are all items in the Dry Store code Dated?"
                       >
@@ -3852,12 +4763,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am56"
+                          name="am68"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="167"
+                        id="207"
                         class="question"
                         data-name="Are all items in the Dry Store code Dated?"
                       >
@@ -3866,12 +4777,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am56"
+                          name="am68"
                           value="no"
                         >
                       </td>
                       <td
-                        id="168"
+                        id="208"
                         class="question"
                         data-name="Are all items in the Dry Store code Dated?"
                       >
@@ -3880,12 +4791,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm56"
+                          name="pm68"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="168"
+                        id="208"
                         class="question"
                         data-name="Are all items in the Dry Store code Dated?"
                       >
@@ -3894,13 +4805,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm56"
+                          name="pm68"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="169"
+                        id="209"
                         class="question"
                         data-name="Are all items in the Dry Store code Dated?"
                       >
@@ -3915,7 +4826,7 @@
                       <td>Is CAYGO the order of the Day?
                       </td>
                       <td
-                        id="170"
+                        id="210"
                         class="question"
                         data-name="Is CAYGO the order of the Day?"
                       >
@@ -3924,12 +4835,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am57"
+                          name="am69"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="170"
+                        id="210"
                         class="question"
                         data-name="Is CAYGO the order of the Day?"
                       >
@@ -3938,12 +4849,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am57"
+                          name="am69"
                           value="no"
                         >
                       </td>
                       <td
-                        id="171"
+                        id="211"
                         class="question"
                         data-name="Is CAYGO the order of the Day?"
                       >
@@ -3952,12 +4863,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm57"
+                          name="pm69"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="171"
+                        id="211"
                         class="question"
                         data-name="Is CAYGO the order of the Day?"
                       >
@@ -3966,13 +4877,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm57"
+                          name="pm69"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="172"
+                        id="212"
                         class="question"
                         data-name="Is CAYGO the order of the Day?"
                       >
@@ -3985,7 +4896,7 @@
                     <tr>
                       <td>Has the staff cloakroom and Toilet been clean as per the daily schedule?</td>
                       <td
-                        id="173"
+                        id="213"
                         class="question"
                         data-name="Has the staff cloakroom and Toilet been clean as per the daily schedule?"
                       >
@@ -3994,12 +4905,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am58"
+                          name="am70"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="173"
+                        id="213"
                         class="question"
                         data-name="Has the staff cloakroom and Toilet been clean as per the daily schedule?"
                       >
@@ -4008,12 +4919,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am58"
+                          name="am70"
                           value="no"
                         >
                       </td>
                       <td
-                        id="174"
+                        id="214"
                         class="question"
                         data-name="Has the staff cloakroom and Toilet been clean as per the daily schedule?"
                       >
@@ -4022,12 +4933,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm58"
+                          name="pm70"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="174"
+                        id="214"
                         class="question"
                         data-name="Has the staff cloakroom and Toilet been clean as per the daily schedule?"
                       >
@@ -4036,13 +4947,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm58"
+                          name="pm70"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="175"
+                        id="215"
                         class="question"
                         data-name="Has the staff cloakroom and Toilet been clean as per the daily schedule?"
                       >
@@ -4055,7 +4966,7 @@
                     <tr>
                       <td>Is the Handwashing Sink equipped with running water, Soap and Paper Towel?</td>
                       <td
-                        id="176"
+                        id="216"
                         class="question"
                         data-name="Is the Handwashing Sink equipped with running water, Soap and Paper Towel?"
                       >
@@ -4064,12 +4975,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am59"
+                          name="am71"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="176"
+                        id="216"
                         class="question"
                         data-name="Is the Handwashing Sink equipped with running water, Soap and Paper Towel?"
                       >
@@ -4078,12 +4989,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am59"
+                          name="am71"
                           value="no"
                         >
                       </td>
                       <td
-                        id="177"
+                        id="217"
                         class="question"
                         data-name="Is the Handwashing Sink equipped with running water, Soap and Paper Towel?"
                       >
@@ -4092,12 +5003,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm59"
+                          name="pm71"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="177"
+                        id="217"
                         class="question"
                         data-name="Is the Handwashing Sink equipped with running water, Soap and Paper Towel?"
                       >
@@ -4106,13 +5017,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm59"
+                          name="pm71"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="178"
+                        id="218"
                         class="question"
                         data-name="Is the Handwashing Sink equipped with running water, Soap and Paper Towel?"
                       >
@@ -4125,7 +5036,7 @@
                     <tr>
                       <td>Are Staff washing their Hands intermittently?</td>
                       <td
-                        id="179"
+                        id="219"
                         class="question"
                         data-name="Are Staff washing their Hands intermittently?"
                       >
@@ -4134,12 +5045,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am60"
+                          name="am72"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="179"
+                        id="219"
                         class="question"
                         data-name="Are Staff washing their Hands intermittently?"
                       >
@@ -4148,12 +5059,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am60"
+                          name="am72"
                           value="no"
                         >
                       </td>
                       <td
-                        id="180"
+                        id="220"
                         class="question"
                         data-name="Are Staff washing their Hands intermittently?"
                       >
@@ -4162,12 +5073,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm60"
+                          name="pm72"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="180"
+                        id="220"
                         class="question"
                         data-name="Are Staff washing their Hands intermittently?"
                       >
@@ -4176,13 +5087,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm60"
+                          name="pm72"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="181"
+                        id="221"
                         class="question"
                         data-name="Are Staff washing their Hands intermittently?"
                       >
@@ -4195,7 +5106,7 @@
                     <tr>
                       <td>Has the Grease Fat Trap been cleaned?(must be cleaned twice daily)</td>
                       <td
-                        id="182"
+                        id="222"
                         class="question"
                         data-name="Has the Grease Fat Trap been cleaned?(must be cleaned twice daily)"
                       >
@@ -4204,12 +5115,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am61"
+                          name="am73"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="182"
+                        id="222"
                         class="question"
                         data-name="Has the Grease Fat Trap been cleaned?(must be cleaned twice daily)"
                       >
@@ -4218,12 +5129,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am61"
+                          name="am73"
                           value="no"
                         >
                       </td>
                       <td
-                        id="183"
+                        id="223"
                         class="question"
                         data-name="Has the Grease Fat Trap been cleaned?(must be cleaned twice daily)"
                       >
@@ -4232,12 +5143,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm61"
+                          name="pm73"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="183"
+                        id="223"
                         class="question"
                         data-name="Has the Grease Fat Trap been cleaned?(must be cleaned twice daily)"
                       >
@@ -4246,13 +5157,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm61"
+                          name="pm73"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="184"
+                        id="224"
                         class="question"
                         data-name="Has the Grease Fat Trap been cleaned?(must be cleaned twice daily)"
                       >
@@ -4265,7 +5176,7 @@
                     <tr>
                       <td>Is the back area cleaned, free of algae and unwanted items?</td>
                       <td
-                        id="185"
+                        id="225"
                         class="question"
                         data-name="Is the back area cleaned, free of algae and unwanted items?"
                       >
@@ -4274,12 +5185,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am62"
+                          name="am74"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="185"
+                        id="225"
                         class="question"
                         data-name="Is the back area cleaned, free of algae and unwanted items?"
                       >
@@ -4288,12 +5199,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am62"
+                          name="am74"
                           value="no"
                         >
                       </td>
                       <td
-                        id="186"
+                        id="226"
                         class="question"
                         data-name="Is the back area cleaned, free of algae and unwanted items?"
                       >
@@ -4302,12 +5213,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm62"
+                          name="pm74"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="186"
+                        id="226"
                         class="question"
                         data-name="Is the back area cleaned, free of algae and unwanted items?"
                       >
@@ -4316,13 +5227,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm62"
+                          name="pm74"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="187"
+                        id="227"
                         class="question"
                         data-name="Is the back area cleaned, free of algae and unwanted items?"
                       >
@@ -4335,7 +5246,7 @@
                     <tr>
                       <td>Are all refuse being dumped neatly in the bin according to color code segregation?</td>
                       <td
-                        id="188"
+                        id="228"
                         class="question"
                         data-name="Are all refuse being dumped neatly in the bin according to color code segregation?"
                       >
@@ -4344,12 +5255,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am63"
+                          name="am75"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="188"
+                        id="228"
                         class="question"
                         data-name="Are all refuse being dumped neatly in the bin according to color code segregation?"
                       >
@@ -4358,12 +5269,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am63"
+                          name="am75"
                           value="no"
                         >
                       </td>
                       <td
-                        id="189"
+                        id="229"
                         class="question"
                         data-name="Are all refuse being dumped neatly in the bin according to color code segregation?"
                       >
@@ -4372,12 +5283,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm63"
+                          name="pm75"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="189"
+                        id="229"
                         class="question"
                         data-name="Are all refuse being dumped neatly in the bin according to color code segregation?"
                       >
@@ -4386,13 +5297,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm63"
+                          name="pm75"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="190"
+                        id="230"
                         class="question"
                         data-name="Are all refuse being dumped neatly in the bin according to color code segregation?"
                       >
@@ -4405,7 +5316,7 @@
                     <tr>
                       <td>Are all staff well groomed and dressed as per policy?</td>
                       <td
-                        id="191"
+                        id="231"
                         class="question"
                         data-name="Are all staff well groomed and dressed as per policy?"
                       >
@@ -4414,12 +5325,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am64"
+                          name="am76"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="191"
+                        id="231"
                         class="question"
                         data-name="Are all staff well groomed and dressed as per policy?"
                       >
@@ -4428,12 +5339,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am64"
+                          name="am76"
                           value="no"
                         >
                       </td>
                       <td
-                        id="192"
+                        id="232"
                         class="question"
                         data-name="Are all staff well groomed and dressed as per policy?"
                       >
@@ -4442,12 +5353,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm64"
+                          name="pm76"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="192"
+                        id="232"
                         class="question"
                         data-name="Are all staff well groomed and dressed as per policy?"
                       >
@@ -4456,13 +5367,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm64"
+                          name="pm76"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="193"
+                        id="233"
                         class="question"
                         data-name="Are all staff well groomed and dressed as per policy?"
                       >
@@ -4475,7 +5386,7 @@
                     <tr>
                       <td>Has the Morning/Afternoon stock count been carried out?</td>
                       <td
-                        id="194"
+                        id="234"
                         class="question"
                         data-name="Has the Morning/Afternoon stock count been carried out?"
                       >
@@ -4484,12 +5395,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am65"
+                          name="am77"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="194"
+                        id="234"
                         class="question"
                         data-name="Has the Morning/Afternoon stock count been carried out?"
                       >
@@ -4498,12 +5409,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am65"
+                          name="am77"
                           value="no"
                         >
                       </td>
                       <td
-                        id="195"
+                        id="235"
                         class="question"
                         data-name="Has the Morning/Afternoon stock count been carried out?"
                       >
@@ -4512,12 +5423,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm65"
+                          name="pm77"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="195"
+                        id="235"
                         class="question"
                         data-name="Has the Morning/Afternoon stock count been carried out?"
                       >
@@ -4526,13 +5437,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm65"
+                          name="pm77"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="196"
+                        id="236"
                         class="question"
                         data-name="Has the Morning/Afternoon stock count been carried out?"
                       >
@@ -4545,7 +5456,7 @@
                     <tr>
                       <td>Is there any material unavailability affetcing the day's Sales?</td>
                       <td
-                        id="197"
+                        id="237"
                         class="question"
                         data-name="Is there any material unavailability affetcing the day's Sales?"
                       >
@@ -4554,12 +5465,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am67"
+                          name="am78"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="197"
+                        id="237"
                         class="question"
                         data-name="Is there any material unavailability affetcing the day's Sales?"
                       >
@@ -4568,12 +5479,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am67"
+                          name="am78"
                           value="no"
                         >
                       </td>
                       <td
-                        id="198"
+                        id="238"
                         class="question"
                         data-name="Is there any material unavailability affetcing the day's Sales?"
                       >
@@ -4582,12 +5493,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm67"
+                          name="pm78"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="198"
+                        id="238"
                         class="question"
                         data-name="Is there any material unavailability affetcing the day's Sales?"
                       >
@@ -4596,13 +5507,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm67"
+                          name="pm78"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="199"
+                        id="239"
                         class="question"
                         data-name="Is there any material unavailability affetcing the day's Sales?"
                       >
@@ -4615,7 +5526,7 @@
                     <tr>
                       <td>Has the previous Day's controls been done?</td>
                       <td
-                        id="200"
+                        id="240"
                         class="question"
                         data-name="Has the previous Day's controls been done?"
                       >
@@ -4624,12 +5535,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am68"
+                          name="am79"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="200"
+                        id="240"
                         class="question"
                         data-name="Has the previous Day's controls been done?"
                       >
@@ -4638,12 +5549,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am68"
+                          name="am79"
                           value="no"
                         >
                       </td>
                       <td
-                        id="201"
+                        id="241"
                         class="question"
                         data-name="Has the previous Day's controls been done?"
                       >
@@ -4652,12 +5563,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm68"
+                          name="pm79"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="201"
+                        id="241"
                         class="question"
                         data-name="Has the previous Day's controls been done?"
                       >
@@ -4666,13 +5577,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm68"
+                          name="pm79"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="202"
+                        id="242"
                         class="question"
                         data-name="Has the previous Day's controls been done?"
                       >
@@ -4685,7 +5596,7 @@
                     <tr>
                       <td>Has the Food cost report been done for the previous Day?</td>
                       <td
-                        id="203"
+                        id="243"
                         class="question"
                         data-name="Has the Food cost report been done for the previous Day?"
                       >
@@ -4694,12 +5605,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am69"
+                          name="am80"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="203"
+                        id="243"
                         class="question"
                         data-name="Has the Food cost report been done for the previous Day?"
                       >
@@ -4708,12 +5619,12 @@
                           class="label"
                         >am</label> <input
                           type="radio"
-                          name="am69"
+                          name="am80"
                           value="no"
                         >
                       </td>
                       <td
-                        id="204"
+                        id="244"
                         class="question"
                         data-name="Has the Food cost report been done for the previous Day?"
                       >
@@ -4722,12 +5633,12 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm69"
+                          name="pm80"
                           value="yes"
                         >
                       </td>
                       <td
-                        id="204"
+                        id="244"
                         class="question"
                         data-name="Has the Food cost report been done for the previous Day?"
                       >
@@ -4736,13 +5647,13 @@
                           class="label"
                         >pm</label> <input
                           type="radio"
-                          name="pm69"
+                          name="pm80"
                           value="no"
                         >
                       </td>
 
                       <td
-                        id="205"
+                        id="245"
                         class="question"
                         data-name="Has the Food cost report been done for the previous Day?"
                       >
@@ -4758,7 +5669,7 @@
                 </table>
                 <br>
                 <div
-                  id="206"
+                  id="246"
                   class="form-group row question"
                   data-name="A.M Shift Manager Name"
                 >
@@ -4772,7 +5683,7 @@
                   </div>
                 </div>
                 <div
-                  id="207"
+                  id="247"
                   class="form-group row question"
                   data-name="P.M Shift Manager Name "
                 >
@@ -4918,7 +5829,7 @@ export default {
           // console.log(response.data.message);
 
           this.$swal.fire("Success", response.data.message, "success");
-          // location.reload();
+          location.reload();
         })
         .catch(error => {
           console.log(error);

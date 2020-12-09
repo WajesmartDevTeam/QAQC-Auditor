@@ -1721,10 +1721,10 @@ Use /* eslint-disable */
                   <thead>
                     <th></th>
                     <th>+5<sup>0</sup>c</th>
-                    <th>0-5<sup>0</sup>c</th>
-                    <th>0-5<sup>0</sup>c</th>
-                    <th>-18-5<sup>0</sup>c to -23<sup>0</sup>c</th>
-                    <th>0-5<sup>0</sup>c</th>
+                    <th>1-4<sup>0</sup>c</th>
+                    <th>1-4<sup>0</sup>c</th>
+                    <th>-18<sup>0</sup>c to -23<sup>0</sup>c</th>
+                    <th>1-4<sup>0</sup>c</th>
                     <th>+120<sup>0</sup>c</th>
                     <th>+75<sup>0</sup>c</th>
                     <th>+60<sup>0</sup>c</th>
