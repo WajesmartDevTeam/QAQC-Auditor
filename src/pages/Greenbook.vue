@@ -1589,7 +1589,7 @@
                         />
                       </td>
                     </tr>
- <tr>
+                    <tr>
                       <td>Is the counter tops/till machine clean?</td>
                       <td
                         id="71"
@@ -1659,7 +1659,7 @@
                         />
                       </td>
                     </tr>
-                     <tr>
+                    <tr>
                       <td>Are all packaging materials well arranged and spoons/forks wrapped?</td>
                       <td
                         id="74"
@@ -1799,7 +1799,7 @@
                         />
                       </td>
                     </tr>
-                     <tr>
+                    <tr>
                       <td>Are the FOH chiller working and attaining temperature between 1-4 degrees?
                       </td>
                       <td
@@ -1870,7 +1870,7 @@
                         />
                       </td>
                     </tr>
-                      <tr>
+                    <tr>
 
                       <td>Has the Tables been buzzed after customer's meal?</td>
                       <td
@@ -2011,7 +2011,7 @@
                         />
                       </td>
                     </tr>
-                     <tr>
+                    <tr>
                       <td>Is the Ice cream/cake Display clean and free of residue?</td>
                       <td
                         id="89"
@@ -2081,7 +2081,7 @@
                         />
                       </td>
                     </tr>
-                     <tr>
+                    <tr>
                       <td>Is the cold slab clean and free of residue?</td>
                       <td
                         id="92"
@@ -2151,7 +2151,7 @@
                         />
                       </td>
                     </tr>
-                     <tr>
+                    <tr>
                       <td>Is the Coffee machine working and clean?</td>
                       <td
                         id="95"
@@ -2291,7 +2291,7 @@
                         />
                       </td>
                     </tr>
-                     <tr>
+                    <tr>
                       <td>Is the front hood extractor for Pizza clean and free of build up?</td>
                       <td
                         id="101"
@@ -2361,7 +2361,7 @@
                         />
                       </td>
                     </tr>
-                      <tr>
+                    <tr>
                       <td>Are all Pizza baking tools and utensils cleaned/sanitized and neatly stored?</td>
                       <td
                         id="104"
@@ -5736,15 +5736,12 @@ export default {
     if (mm < 10) {
       mm = '0' + mm
     }
-
     today = yyyy + '-' + mm + '-' + dd;
     document.getElementById("date").value = today;
   },
   watch: {
     'form.store_id': function (val) {
-
       this.stores.forEach((i) => {
-
         if (i.id === val) {
           this.store_manager = i.store_admin_name
         }
@@ -5769,7 +5766,7 @@ export default {
 
       // NodeList.prototype.forEach = Array.prototype.forEach;
       let newForm = this.form;
-      var divs = document.querySelectorAll('.question').forEach(function (el) {
+      document.querySelectorAll('.question').forEach(function (el) {
         let label;
         let index;
         let qtext;
@@ -5812,9 +5809,7 @@ export default {
             questionlabel: label,
             answer: ans,
           })
-
         }
-
       });
 
 
@@ -5822,17 +5817,14 @@ export default {
         what: "greenbook",
         data: newForm
       };
-      // console.log(req.data);
       this.$socket
         .makePostRequest(req)
         .then(response => {
-          // console.log(response.data.message);
 
           this.$swal.fire("Success", response.data.message, "success");
           location.reload();
         })
         .catch(error => {
-          console.log(error);
           this.$swal.fire("Error", error.message, "error");
           this.form.question_answer = [];
         });

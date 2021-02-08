@@ -2,6 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 import createPersistedState from "vuex-persistedstate";
 // import Cookies from 'js-cookie'
+import localStoragePlugin from './plugins/localStorage';
 
 Vue.use(Vuex);
 
@@ -46,6 +47,14 @@ export default new Vuex.Store({
         updateMsal(state, data) {
             state.msal = data
         },
+        initializeStore() {
+            const data = localStorage.getItem('boardState');
+
+            if (data) {
+                this.replaceState(Object.assign(this.state, JSON.parse(data)));
+            }
+        },
+
 
     },
 
@@ -128,5 +137,5 @@ export default new Vuex.Store({
         msalToken: state => state.msal,
     },
 
-    plugins: [createPersistedState()]
+    plugins: [createPersistedState(), localStoragePlugin]
 });

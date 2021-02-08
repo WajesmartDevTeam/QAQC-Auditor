@@ -8473,24 +8473,15 @@ export default {
 
       NodeList.prototype.forEach = Array.prototype.forEach;
       let newForm = this.form;
-      var divs = document.querySelectorAll('.question').forEach(function (el) {
+      document.querySelectorAll('.question').forEach(function (el) {
         let label = el.childNodes[0].innerText;
         let qtext = el.dataset.name.replace(/\n/g, ' ');
         let ans;
-        // console.log(el.childNodes)
         if (el.childNodes.length == 2) {
-
-          if (el.childNodes[1].localName == "input") {
-            ans = el.childNodes[1].value;
-          }
-          if ((el.childNodes[1].localName == "div" && el.childNodes[1].childNodes[0])) {
-
-            ans = el.childNodes[1].childNodes[0].value;
-          }
-
+          if (el.childNodes[1].localName == "input") ans = el.childNodes[1].value;
+          if ((el.childNodes[1].localName == "div" && el.childNodes[1].childNodes[0])) ans = el.childNodes[1].childNodes[0].value;
         }
         if (el.childNodes.length == 6) {
-
           for (let i = 1; i < el.childNodes.length; i++) {
 
             if (el.childNodes[i].localName == "input" && el.childNodes[i].checked) {
@@ -8524,26 +8515,18 @@ export default {
           questionlabel: label,
           answer: ans,
         })
-
-
-
       });
-      // console.log(newForm)
       var req = {
         what: "foodsafety",
         data: newForm
       };
-      // console.log(req.data);
       this.$socket
         .makePostRequest(req)
         .then(response => {
-          // console.log(response);
-
           this.$swal.fire("Success", response.data.message, "success");
           location.reload();
         })
         .catch(error => {
-          console.log(error);
           this.$swal.fire("Error", error.message, "error");
           this.form.question_answer = [];
         });
@@ -8553,97 +8536,70 @@ export default {
     },
     addScores () {
       let sumA = 0, sumB = 0, sumC = 0, sumD = 0, sumE = 0, sumF = 0;
-      var scoreA = document.querySelectorAll('.hygiene').forEach(function (el) {
+      document.querySelectorAll('.hygiene').forEach(function (el) {
         el.childNodes.forEach((i) => {
           if (i.checked) {
-
             sumA += parseInt(i.value);
           }
         })
       });
       this.scores.scoreA = sumA;
       //house
-
-      var scoreB = document.querySelectorAll('.house').forEach(function (el) {
+      document.querySelectorAll('.house').forEach(function (el) {
         el.childNodes.forEach((i) => {
           if (i.checked) {
-
             sumB += parseInt(i.value);
           }
         })
       });
       this.scores.scoreB = sumB;
       //recipe
-      var scoreC = document.querySelectorAll('.recipe').forEach(function (el) {
+      document.querySelectorAll('.recipe').forEach(function (el) {
         el.childNodes.forEach((i) => {
           if (i.checked) {
-
             sumC += parseInt(i.value);
           }
         })
       });
       this.scores.scoreC = sumC;
       //FOOD
-
-      var scoreD = document.querySelectorAll('.food').forEach(function (el) {
-
+      document.querySelectorAll('.food').forEach(function (el) {
         el.childNodes.forEach((i) => {
           i.childNodes.forEach(j => {
             if (j.checked) {
-              // console.log(j)
               sumD += parseInt(j.value);
-              // console.log(sumD)
             }
           })
-
         })
       });
       this.scores.scoreD = sumD;
 
       //FOOD service
-
-      var scoreE = document.querySelectorAll('.foodservice').forEach(function (el) {
+      document.querySelectorAll('.foodservice').forEach(function (el) {
         el.childNodes.forEach((i) => {
           if (i.checked) {
-
             sumE += parseInt(i.value);
           }
         })
       });
       this.scores.scoreE = sumE;
-
       //FOOD service
-
-      var scoreF = document.querySelectorAll('.hosting').forEach(function (el) {
+      document.querySelectorAll('.hosting').forEach(function (el) {
         el.childNodes.forEach((i) => {
           if (i.checked) {
-
             sumF += parseInt(i.value);
           }
         })
       });
       this.scores.scoreF = sumF;
-
-
-
-      // let total_sum = 0;
-      // var score = document.querySelectorAll('input:checked').forEach(function (el) {
-
-      //   total_sum += parseInt(el.value)
-
-      // });
-      // this.totalScore = total_sum;
-      // this.totalPercent = total_sum / 512 * 100;
     },
     getTotal () {
-
       var sum = 0;
       for (var property in this.scores) {
         let p = Number(this.scores[property]);
         sum += p
       }
       this.totalScore = sum;
-
       var psum = 0;
       for (var property in this.percents) {
         psum += Number(this.percents[property]);

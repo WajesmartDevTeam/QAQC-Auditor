@@ -2,10 +2,6 @@
   <div class="content">
     <div class="md-layout">
       <div class="md-layout-item md-size-100">
-        <!-- <div
-          class="card"
-          style="padding: 20px;"
-        > -->
 
         <md-card>
           <md-card-header data-background-color="orange">
@@ -2010,6 +2006,8 @@
 
       </div>
     </div>
+
+    <!-- mvr form report -->
     <div
       id='mvr'
       class="md-layout"
@@ -2029,7 +2027,7 @@
                 <td>Opening Procedures</td>
                 <td
                   id="77"
-                  class=" points"
+                  class="points"
                   data-name="points earned"
                 >
                   <label
@@ -2063,7 +2061,7 @@
                 <td>Staff Issues</td>
                 <td
                   id="79"
-                  class=" points"
+                  class="points"
                   data-name="points earned"
                 ><label
                     for=""
@@ -2099,7 +2097,7 @@
                 <td>Production Management</td>
                 <td
                   id="81"
-                  class=" points"
+                  class="points"
                   data-name="points earned"
                 ><label
                     for=""
@@ -2133,7 +2131,7 @@
                 <td>HACCP Compliance</td>
                 <td
                   id="83"
-                  class=" points"
+                  class="points"
                   data-name="points earned"
                 ><label
                     for=""
@@ -2167,7 +2165,7 @@
                 <td>Hygiene & Cleanliness</td>
                 <td
                   id="85"
-                  class=" points"
+                  class="points"
                   data-name="points earned"
                 ><label
                     for=""
@@ -2201,7 +2199,7 @@
                 <td>Customer Experience</td>
                 <td
                   id="87"
-                  class=" points"
+                  class="points"
                   data-name="points earned"
                 ><label
                     for=""
@@ -2238,7 +2236,7 @@
                 <th>TOTALS</th>
                 <th
                   id="89"
-                  class="points "
+                  class="points"
                   data-name="points earned"
                 ><label
                     for=""
@@ -2252,7 +2250,7 @@
                 <th>250</th>
                 <th
                   id="90"
-                  class="percent "
+                  class="percent"
                   data-name="percent earned"
                 >
                   <label
@@ -2279,7 +2277,6 @@
 </template>
 
 <script>
-import axios from "axios"
 export default {
   data () {
     return {
@@ -2406,7 +2403,6 @@ export default {
   },
   created () {
     this.stores = this.$store.getters.stores;
-
     this.username = this.$store.getters.user;
   },
   mounted () {
@@ -2430,7 +2426,7 @@ export default {
     document.getElementById("taskdate5").setAttribute("min", today);
 
     // this.stores.map(function (x) {
-    //   console.log(x)
+
     //   return x.store_address = x.address + ', ' + x.location;
     // });
 
@@ -2487,31 +2483,23 @@ export default {
   },
 
   methods: {
-    submitForm () {
-      let points = this.getTotal();
+    async submitForm () {
+      let points = await this.getTotal();
       let qa = [];
       let vm = this;
       let taskplanner = [];
-      var divs = document.querySelectorAll('.question').forEach(function (el) {
+      document.querySelectorAll('.question').forEach(function (el) {
         let index = el.id;
         let label = el.childNodes[0].innerText;
         let qtext = el.dataset.name.replace(/\n/g, ' ');
         let ans;
 
-        if (el.childNodes[1].localName == "div") {
-          ans = el.childNodes[1].childNodes[0].value;
-        }
-        else if (el.childNodes[2] && el.childNodes[2].className == "textarea") {
-          ans = el.childNodes[2].childNodes[0].value;
-        }
-        else {
+        if (el.childNodes[1].localName == "div") ans = el.childNodes[1].childNodes[0].value;
+        else if (el.childNodes[2] && el.childNodes[2].className == "textarea") ans = el.childNodes[2].childNodes[0].value;
+        else { }
 
-          // ans = el.childNodes[1].value;
-        }
+        if (index == 3) ans = vm.form.store_id;
 
-        if (index == 3) {
-          ans = vm.form.store_id;
-        }
         qa.push({
           questionno: index,
           questiontext: qtext,
@@ -2519,8 +2507,6 @@ export default {
           answer: ans,
         })
       })
-
-
 
       //microsoft planner-action tasks
 
@@ -2538,19 +2524,14 @@ export default {
             }
           });
           document.querySelectorAll("[data-name='task']").forEach((task_el, index2) => {
-
             if (my_index == index2) {
               title = task_el.childNodes[1].value;
             }
-
           })
           document.querySelectorAll("[data-name='dueDate']").forEach((date_el, index3) => {
-
             if (my_index == index3) {
               due_date = date_el.childNodes[1].value;
-              // console.log(date_el.childNodes[1].value);
             }
-
           });
 
           let plannerTask =
@@ -2574,18 +2555,11 @@ export default {
           this.acquireTokenPopupAndCallMSGraph(JSON.stringify(plannerTask))
         }
       });
-
-
-      let data = [this.form.store_id, qa, points, taskplanner, this.images];
+      // let data = [this.form.store_id, qa, points, taskplanner, this.images];
       this.form.question_answer = qa;
       this.points = points;
       this.form.taskplanner = taskplanner;
-
-      // console.log(this.form)
-
       this.setPercents();
-      this.getSum();
-
     },
     setPercents () {
       this.percents.p1 = Math.ceil(this.points.p1 / 35 * 100);
@@ -2594,48 +2568,40 @@ export default {
       this.percents.p4 = Math.ceil(this.points.p4 / 50 * 100);
       this.percents.p5 = Math.ceil(this.points.p5 / 65 * 100);
       this.percents.p6 = Math.ceil(this.points.p6 / 60 * 100);
+      this.getSum();
     },
-    getTotal () {
+    async getTotal () {
 
       //opening procedures
       var oSum = 0;
       for (var property in this.opening_procedures) {
-        let p = Number(this.opening_procedures[property]);
-        oSum += p
+        oSum += Number(this.opening_procedures[property]);
       }
-
       //staff_issues
       var sSum = 0;
       for (var property in this.staff_issues) {
-        let p = Number(this.staff_issues[property]);
-        sSum += p
+        sSum += Number(this.staff_issues[property]);
       }
       //production_management
       var pSum = 0;
       for (var property in this.production_management) {
-        let p = Number(this.production_management[property]);
-        pSum += p
+        pSum += Number(this.production_management[property]);
       }
       //haccp_compliance
       var haSum = 0;
       for (var property in this.haccp_compliance) {
-        let p = Number(this.haccp_compliance[property]);
-        haSum += p
+        haSum += Number(this.haccp_compliance[property]);
       }
       //hygiene
       var hySum = 0;
       for (var property in this.hygiene) {
-        let p = Number(this.hygiene[property]);
-        hySum += p
+        hySum += Number(this.hygiene[property]);
       }
       //customer_experience
       var cSum = 0;
       for (var property in this.customer_experience) {
-        let p = Number(this.customer_experience[property]);
-        cSum += p
+        cSum += Number(this.customer_experience[property]);
       }
-
-
       let points = {
         p1: oSum,
         p2: sSum,
@@ -2654,7 +2620,6 @@ export default {
         sum += p
       }
       this.total_point = sum;
-
       var psum = 0;
       for (var property in this.percents) {
         psum += Number(this.percents[property]);
@@ -2675,19 +2640,14 @@ export default {
         allowOutsideClick: false
       });
       let that = this;
-      var divs = document.querySelectorAll('.points').forEach(function (el, ind) {
+      document.querySelectorAll('.points').forEach(function (el, ind) {
         let label = el.childNodes[0].innerText;
         let qtext = el.dataset.name.replace(/\n/g, ' ');
         let ans;
         Object.keys(that.points).map(function (value, key) {
-          if (key == ind) {
-            ans = that.points[value]
-          }
-
+          if (key == ind) ans = that.points[value]
         });
-        if (ans == undefined) {
-          ans = that.total_point;
-        }
+        if (ans == undefined) ans = that.total_point;
         let index = el.id;
         that.form.question_answer.push({
           questionno: index,
@@ -2697,19 +2657,14 @@ export default {
         })
 
       });
-      var divs = document.querySelectorAll('.percent').forEach(function (el, ind) {
+      document.querySelectorAll('.percent').forEach(function (el, ind) {
         let label = el.childNodes[0].innerText;
         let qtext = el.dataset.name.replace(/\n/g, ' ');
         let ans;
         Object.keys(that.percents).map(function (value, key) {
-          if (key == ind) {
-            ans = that.percents[value]
-          }
-
+          if (key == ind) ans = that.percents[value]
         });
-        if (ans == undefined) {
-          ans = that.form.total_percent;
-        }
+        if (ans == undefined) ans = that.form.total_percent;
         let index = el.id;
         that.form.question_answer.push({
           questionno: index,
@@ -2723,13 +2678,10 @@ export default {
         what: "ammvr",
         data: this.form
       };
-      // console.log(req.data)
       this.$socket
         .makePostRequest(req)
         .then(response => {
-          console.log(response)
           this.submitImages(response.data.form_id)
-
         })
         .catch(error => {
           this.$swal.fire("Error", error.message, "error");
@@ -2777,20 +2729,29 @@ export default {
       this.photos.splice(index, 1);
     },
     async submitImages (id) {
-      // console.log(this.images)
-      let formData = new FormData();
-      formData.append('form_id', id);
+      var html =
+        '<img src="https://freefrontend.com/assets/img/css-loaders/css-fun-Little-loader.gif"/>';
+
+      this.$swal.fire({
+        title: "Processing",
+        html: html,
+        showConfirmButton: false,
+        showCancelButton: false,
+        width: "380px",
+        allowOutsideClick: false
+      });
+
       for (var i = 0; i < this.images.length; i++) {
         let file = this.images[i];
         let count = i + 1;
-        // formData.append('image' + count + '', file);
+        let formData = new FormData();
+        formData.append('form_id', id);
         formData.append('image', file);
-        await this.postImage(formData, count);
-        formData.delete('image');
+        let res = await this.postImage(formData, count);
       }
 
     },
-    postImage (formData, count) {
+    async postImage (formData, count) {
       let req = {
         what: "amvrimage",
         formData: true,
@@ -2800,33 +2761,35 @@ export default {
         .makePostRequest(req)
         .then(res => {
           if (res.type == 'amvrimage') {
-            console.log(res);
             if (this.images.length == count) {
               this.$swal.fire("Success", "Form created", "success")
                 .then(() => {
-                  location.reload();
+                  setTimeout(() => {
+                    location.reload();
+                  }, 1000)
                 });
             }
+            else return true;
 
           }
 
         })
         .catch(error => {
-          console.log(error);
+          console.log(error)
           this.$swal.fire("Error", error.message, "error");
         });
     },
     async acquireTokenPopupAndCallMSGraph (task) {
 
       //Always start with acquireTokenSilent to obtain a token in the signed in user from cache
-      // console.log(task)
+
       try {
         let tokenResponse = this.$store.getters.msalToken
         this.callMSGraphPost("https://graph.microsoft.com/v1.0/planner/tasks", tokenResponse.accessToken, task, (data) => {
-          // console.log(data)
+
         });
       } catch (ex) {
-        console.log(ex);
+
 
       }
     },
@@ -2840,7 +2803,7 @@ export default {
         const tokenResponse = await this.myMSALObj.acquireTokenSilent(requestObj);
         this.callMSGraphGet("https://graph.microsoft.com/v1.0/groups/df8ec304-ccda-4c33-b244-edb05f0e5731/members", tokenResponse.accessToken, this.userAPICallback);
       } catch (ex) {
-        console.log(ex);
+
 
       }
     },
@@ -2877,25 +2840,21 @@ export default {
           'Content-type': 'application/json'
         }
       }
-      // console.log(data)
+
       // var data = JSON.parse(data)
 
       let url = theUrl
 
       this.$axios.post(url, data, config)
         .then((response) => {
-          // console.log(response)
+
         })
         .catch((err) => {
-          console.log(err)
+
         })
     },
 
 
-
-    // async graphAPICallback (data) {
-    //   console.log(data)
-    // },
   },
 };
 </script>

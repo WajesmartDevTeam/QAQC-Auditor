@@ -2437,7 +2437,7 @@
                   <td class="possible">80</td>
                   <td
                     id="97"
-                    class="percent "
+                    class="percent"
                     data-name="percent earned"
                   >
                     <label
@@ -2469,7 +2469,7 @@
                   <td class="possible">30</td>
                   <td
                     id="99"
-                    class="percent "
+                    class="percent"
                     data-name="percent earned"
                   >
                     <label
@@ -2501,7 +2501,7 @@
                   <td class="possible">40</td>
                   <td
                     id="101"
-                    class="percent "
+                    class="percent"
                     data-name="percent earned"
                   >
                     <label
@@ -2533,7 +2533,7 @@
                   <td class="possible">40</td>
                   <td
                     id="103"
-                    class="percent "
+                    class="percent"
                     data-name="percent earned"
                   >
                     <label
@@ -2565,7 +2565,7 @@
                   <td class="possible">80</td>
                   <td
                     id="105"
-                    class="percent "
+                    class="percent"
                     data-name="percent earned"
                   >
                     <label
@@ -2597,7 +2597,7 @@
                   <td class="possible">50</td>
                   <td
                     id="107"
-                    class="percent "
+                    class="percent"
                     data-name="percent earned"
                   >
                     <label
@@ -2629,7 +2629,7 @@
                   <td class="possible">40</td>
                   <td
                     id="109"
-                    class="percent "
+                    class="percent"
                     data-name="percent earned"
                   >
                     <label
@@ -2866,9 +2866,7 @@ export default {
   },
   watch: {
     'form.store_id': function (val) {
-
       this.stores.forEach((i) => {
-
         if (i.id === val) {
           this.store_manager = i.store_admin_name
         }
@@ -2919,8 +2917,8 @@ export default {
     },
   },
   methods: {
-    submitForm () {
-      let points = this.getTotal();
+    async submitForm () {
+      let points = await this.getTotal();
       let qa = [];
       let vm = this;
       let taskplanner = [];
@@ -2929,19 +2927,10 @@ export default {
         let label = el.childNodes[0].innerText;
         let qtext = el.dataset.name.replace(/\n/g, ' ');
         let ans;
-        if (el.childNodes[1].localName == "div") {
-          ans = el.childNodes[1].childNodes[0].value;
-        }
-        else if (el.childNodes[2] && el.childNodes[2].className == "textarea") {
-          ans = el.childNodes[2].childNodes[0].value;
-        }
-        else {
-          // ans = el.childNodes[1].value;
-        }
-        if (index == 3) {
-          ans = vm.form.store_id;
-        }
-
+        if (el.childNodes[1].localName == "div") ans = el.childNodes[1].childNodes[0].value;
+        else if (el.childNodes[2] && el.childNodes[2].className == "textarea") ans = el.childNodes[2].childNodes[0].value;
+        else { }
+        if (index == 3) ans = vm.form.store_id;
         qa.push({
           questionno: index,
           questiontext: qtext,
@@ -2949,9 +2938,8 @@ export default {
           answer: ans,
         })
       });
+
       //microsoft planner-action tasks
-
-
       document.querySelectorAll("[data-name='assignedTo']").forEach((i, index1) => {
         let my_index = index1;
         let title;
@@ -2976,7 +2964,7 @@ export default {
 
             if (my_index == index3) {
               due_date = date_el.childNodes[1].value;
-              // console.log(date_el.childNodes[1].value);
+
             }
 
           });
@@ -3000,30 +2988,20 @@ export default {
             due_date: due_date
 
           })
-          // console.log(plannerTask)
+
           this.acquireTokenPopupAndCallMSGraph(JSON.stringify(plannerTask))
         }
 
-
-
-
       });
-
-
-      // console.log(taskplanner)
-      let data = [this.form.store_id, qa, points, taskplanner, this.images];
       this.form.question_answer = qa;
       this.points = points;
       this.form.taskplanner = taskplanner;
-
-      // console.log(this.form)
       this.setPercents();
-      this.getSum();
+
 
 
     },
-    getTotal () {
-
+    async getTotal () {
       //services
       var sSum = 0;
       for (var property in this.services) {
@@ -3089,9 +3067,9 @@ export default {
       this.percents.p5 = Math.ceil(this.points.p5 / 85 * 100);
       this.percents.p6 = Math.ceil(this.points.p6 / 50 * 100);
       this.percents.p7 = Math.ceil(this.points.p7 / 40 * 100);
+      this.getSum();
     },
     getSum () {
-
       var sum = 0;
       for (var property in this.points) {
         let p = Number(this.points[property]);
@@ -3124,14 +3102,9 @@ export default {
         let qtext = el.dataset.name.replace(/\n/g, ' ');
         let ans;
         Object.keys(that.points).map(function (value, key) {
-          if (key == ind) {
-            ans = that.points[value]
-          }
-
+          if (key == ind) ans = that.points[value]
         });
-        if (ans == undefined) {
-          ans = that.total_point;
-        }
+        if (ans == undefined) ans = that.total_point;
         let index = el.id;
         that.form.question_answer.push({
           questionno: index,
@@ -3139,21 +3112,15 @@ export default {
           questionlabel: label,
           answer: ans,
         })
-
       });
-      var divs = document.querySelectorAll('.percent').forEach(function (el, ind) {
+      document.querySelectorAll('.percent').forEach(function (el, ind) {
         let label = el.childNodes[0].innerText;
         let qtext = el.dataset.name.replace(/\n/g, ' ');
         let ans;
         Object.keys(that.percents).map(function (value, key) {
-          if (key == ind) {
-            ans = that.percents[value]
-          }
-
+          if (key == ind) ans = that.percents[value]
         });
-        if (ans == undefined) {
-          ans = that.form.total_percent;
-        }
+        if (ans == undefined) ans = that.form.total_percent;
         let index = el.id;
         that.form.question_answer.push({
           questionno: index,
@@ -3170,11 +3137,9 @@ export default {
       this.$socket
         .makePostRequest(req)
         .then(response => {
-          console.log(response)
           this.submitImages(response.data.form_id)
         })
         .catch(error => {
-          console.log(error);
           this.$swal.fire("Error", error.message, "error");
           this.form.question_answer = [];
           // this.$store.dispatch('updatemidmvr', {})
@@ -3183,7 +3148,7 @@ export default {
     },
 
     onFileChange (e) {
-      if (this.images.length > 4) {
+      if (this.images.length > 5) {
         this.$swal.fire("Warning", "Maximum of 4 images allowed", "warning");
         return;
       }
@@ -3220,19 +3185,29 @@ export default {
       this.photos.splice(index, 1);
     },
     async submitImages (id) {
-      let formData = new FormData();
-      formData.append('form_id', id);
+      var html =
+        '<img src="https://freefrontend.com/assets/img/css-loaders/css-fun-Little-loader.gif"/>';
+
+      this.$swal.fire({
+        title: "Processing",
+        html: html,
+        showConfirmButton: false,
+        showCancelButton: false,
+        width: "380px",
+        allowOutsideClick: false
+      });
+
       for (var i = 0; i < this.images.length; i++) {
         let file = this.images[i];
         let count = i + 1;
-        // formData.append('image' + count + '', file);
+        let formData = new FormData();
+        formData.append('form_id', id);
         formData.append('image', file);
-        await this.postImage(formData, count);
-        formData.delete('image');
+        let res = await this.postImage(formData, count);
       }
 
     },
-    postImage (formData, count) {
+    async postImage (formData, count) {
       let req = {
         what: "midmvrimage",
         formData: true,
@@ -3242,18 +3217,16 @@ export default {
         .makePostRequest(req)
         .then(res => {
           if (res.type == 'midmvrimage') {
-            console.log(res)
             if (this.images.length == count) {
               this.$swal.fire("Success", "Form created", "success")
-                .then(() => {
-                  location.reload();
-                });
+              setTimeout(() => {
+                location.reload();
+              }, 1000)
             }
           }
 
         })
         .catch(error => {
-          console.log(error);
           this.$swal.fire("Error", error.message, "error");
         });
     },
@@ -3266,7 +3239,7 @@ export default {
 
         this.callMSGraphPost("https://graph.microsoft.com/v1.0/planner/tasks", tokenResponse.accessToken, task, this.graphAPICallback);
       } catch (ex) {
-        console.log(ex);
+
 
       }
     },
@@ -3280,7 +3253,7 @@ export default {
         const tokenResponse = await this.myMSALObj.acquireTokenSilent(requestObj);
         this.callMSGraphGet("https://graph.microsoft.com/v1.0/groups/df8ec304-ccda-4c33-b244-edb05f0e5731/members", tokenResponse.accessToken, this.userAPICallback);
       } catch (ex) {
-        console.log(ex);
+
 
       }
     },
@@ -3323,15 +3296,15 @@ export default {
 
       this.$axios.post(url, data, config)
         .then((response) => {
-          // console.log(response)
+
         })
         .catch((err) => {
-          console.log(err)
+
         })
     },
 
     async graphAPICallback (data) {
-      // console.log(data)
+
     },
 
   }

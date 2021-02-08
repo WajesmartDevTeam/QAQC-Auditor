@@ -10,6 +10,7 @@ import axios from 'axios';
 import "bootstrap";
 import "jquery";
 import "bootstrap/dist/css/bootstrap.min.css";
+import './registerServiceWorker'
 // router setup
 import routes from "./routes/routes";
 // Plugins
@@ -69,5 +70,8 @@ new Vue({
     store,
     data: {
         Chartist: Chartist
+    },
+    created() {
+        store.commit('initializeStore');
     }
 });

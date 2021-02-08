@@ -4065,25 +4065,24 @@ export default {
   methods: {
     submitForm () {
       let vm = this;
-      // var html =
-      //   '<img src="https://freefrontend.com/assets/img/css-loaders/css-fun-Little-loader.gif"/>';
+      var html =
+        '<img src="https://freefrontend.com/assets/img/css-loaders/css-fun-Little-loader.gif"/>';
 
-      // this.$swal.fire({
-      //   title: "Processing",
-      //   html: html,
-      //   showConfirmButton: false,
-      //   showCancelButton: false,
-      //   width: "380px",
-      //   allowOutsideClick: false
-      // });
+      this.$swal.fire({
+        title: "Processing",
+        html: html,
+        showConfirmButton: false,
+        showCancelButton: false,
+        width: "380px",
+        allowOutsideClick: false
+      });
 
       NodeList.prototype.forEach = Array.prototype.forEach;
       let newForm = this.form;
-      var divs = document.querySelectorAll('.question').forEach(function (el) {
+      document.querySelectorAll('.question').forEach(function (el) {
         let label = el.childNodes[0].innerText;
         let qtext = el.dataset.name.replace(/\n/g, ' ');
         let ans;
-        // console.log(el.childNodes)
         if (el.childNodes.length == 2) {
           if (el.childNodes[1].localName == "div") {
             ans = el.childNodes[1].childNodes[0].value;
@@ -4107,13 +4106,10 @@ export default {
         let index = el.id;
 
         if (ans == undefined) {
-          // console.log(index)
         }
         if (index == 2) {
           ans = vm.form.store_id;
         }
-
-
         newForm.question_answer.push({
           questionno: index,
           questiontext: qtext,
@@ -4127,18 +4123,14 @@ export default {
         data: newForm
       };
 
-
-      // console.log(req.data);
       this.$socket
         .makePostRequest(req)
         .then(response => {
-          // console.log(response.data.message);
 
           this.$swal.fire("Success", response.data.message, "success");
           location.reload();
         })
         .catch(error => {
-          console.log(error);
           this.form.question_answer = [];
           this.$swal.fire("Error", error.message, "error");
 
