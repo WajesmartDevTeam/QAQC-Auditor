@@ -2637,7 +2637,8 @@ export default {
         showConfirmButton: false,
         showCancelButton: false,
         width: "380px",
-        allowOutsideClick: false
+        allowOutsideClick: false,
+        allowEscapeKey: false
       });
       let that = this;
       document.querySelectorAll('.points').forEach(function (el, ind) {
@@ -2738,7 +2739,8 @@ export default {
         showConfirmButton: false,
         showCancelButton: false,
         width: "380px",
-        allowOutsideClick: false
+        allowOutsideClick: false,
+        allowEscapeKey: false
       });
 
       for (var i = 0; i < this.images.length; i++) {
@@ -2775,7 +2777,6 @@ export default {
 
         })
         .catch(error => {
-          console.log(error)
           this.$swal.fire("Error", error.message, "error");
         });
     },
@@ -2801,11 +2802,36 @@ export default {
       }
       try {
         const tokenResponse = await this.myMSALObj.acquireTokenSilent(requestObj);
-        this.callMSGraphGet("https://graph.microsoft.com/v1.0/groups/df8ec304-ccda-4c33-b244-edb05f0e5731/members", tokenResponse.accessToken, this.userAPICallback);
+        this.callMSGraphGet("https://graph.microsoft.com/v1.0/groups/df8ec304-ccda-4c33-b244-edb05f0e5731/members?$select=id,displayName&$top=500",
+          tokenResponse.accessToken, this.userAPICallback);
       } catch (ex) {
 
 
       }
+    },
+
+    callMSGraphGet (theUrl, accessToken, callback) {
+      this.$axios.get(theUrl, {
+        headers: {
+          'Authorization': 'Bearer ' + accessToken,
+          'Content-type': 'application/json',
+          'ConsistencyLevel': 'eventual'
+        }
+      })
+        .then((response) => {
+          callback(response.data);
+        })
+        .catch((err) => {
+          this.callMSGraphGet(theUrl, accessToken, callback)
+        })
+      // var xmlHttp = new XMLHttpRequest();
+      // xmlHttp.onreadystatechange = function () {
+      //   if (this.readyState == 4 && this.status == 200)
+      //     callback(JSON.parse(this.responseText));
+      // }
+      // xmlHttp.open("GET", theUrl, true); // true for asynchronous
+      // xmlHttp.setRequestHeader('Authorization', 'Bearer ' + accessToken);
+      // xmlHttp.send();
     },
     userAPICallback (data) {
       if (data.value.length > 0) {
@@ -2821,16 +2847,6 @@ export default {
         this.getTokenPopupAndCallMSGraph2()
       }
 
-    },
-    callMSGraphGet (theUrl, accessToken, callback) {
-      var xmlHttp = new XMLHttpRequest();
-      xmlHttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200)
-          callback(JSON.parse(this.responseText));
-      }
-      xmlHttp.open("GET", theUrl, true); // true for asynchronous
-      xmlHttp.setRequestHeader('Authorization', 'Bearer ' + accessToken);
-      xmlHttp.send();
     },
     callMSGraphPost (theUrl, accessToken, data, callback) {
 

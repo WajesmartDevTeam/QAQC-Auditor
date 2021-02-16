@@ -4,8 +4,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/apple-icon.png"
   },
   {
-    "revision": "b75377b5cf0b0af89105",
-    "url": "/css/app.a789e3cb.css"
+    "revision": "72cfc1ac192aa74e16bf",
+    "url": "/css/app.060f0347.css"
   },
   {
     "revision": "df4b775fecdf80b042dd",
@@ -28,12 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/sundry-logo.png"
   },
   {
-    "revision": "d4844db3c0b5c417c9a35d4ce61ce400",
+    "revision": "e75a02be9d20eac343b8575f6c3b0aab",
     "url": "/index.html"
   },
   {
-    "revision": "b75377b5cf0b0af89105",
-    "url": "/js/app.d570d8d5.js"
+    "revision": "72cfc1ac192aa74e16bf",
+    "url": "/js/app.78ef41b4.js"
   },
   {
     "revision": "df4b775fecdf80b042dd",
@@ -44,7 +44,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/manifest.json"
   },
   {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "revision": "735ab4f94fbcd57074377afca324c813",
     "url": "/robots.txt"
   }
 ]);

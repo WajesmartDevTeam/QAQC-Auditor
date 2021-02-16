@@ -8468,7 +8468,8 @@ export default {
         showConfirmButton: false,
         showCancelButton: false,
         width: "380px",
-        allowOutsideClick: false
+        allowOutsideClick: false,
+        allowEscapeKey: false
       });
 
       NodeList.prototype.forEach = Array.prototype.forEach;
