@@ -4,8 +4,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/apple-icon.png"
   },
   {
-    "revision": "72cfc1ac192aa74e16bf",
-    "url": "/css/app.060f0347.css"
+    "revision": "bf4b1c77c54f7b00e02b",
+    "url": "/css/app.90a0854f.css"
   },
   {
     "revision": "df4b775fecdf80b042dd",
@@ -28,12 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/sundry-logo.png"
   },
   {
-    "revision": "e75a02be9d20eac343b8575f6c3b0aab",
+    "revision": "1e60eaecee7769a3e185427e6028368b",
     "url": "/index.html"
   },
   {
-    "revision": "72cfc1ac192aa74e16bf",
-    "url": "/js/app.78ef41b4.js"
+    "revision": "bf4b1c77c54f7b00e02b",
+    "url": "/js/app.398083f8.js"
   },
   {
     "revision": "df4b775fecdf80b042dd",

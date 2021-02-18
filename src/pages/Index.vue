@@ -125,7 +125,6 @@ export default {
       try {
         const loginResponse = await this.myMSALObj.loginPopup(this.requestObj);
         // this.showWelcomeMessage();
-        // console.log(loginResponse)
         this.acquireTokenPopupAndCallMSGraph();
       } catch (ex) {
         console.log(ex);
@@ -165,41 +164,56 @@ export default {
     },
     graphAPICallback (data) {
       let access;
-      data.value.forEach(i => {
+      if (data.value.length > 0) {
+        data.value.forEach(i => {
+
+          if (i.mailNickname == "storemanagers" || i.mailNickname == "sundryfoodsauditors") {
+
+            this.$store.dispatch('user', this.myMSALObj.getAccount().name);
+            this.$store.dispatch('role', i.mailNickname)
+            this.$store.dispatch('loggedIn', true)
+            access = true
+          }
+
+          if (access === true) {
+            this.$swal.fire("Success", "Welcome " + this.myMSALObj.getAccount().name + "", "success");
+
+            window.location.href = "/audit/home"
+          }
+          else {
+            this.$swal.fire({
+              title: "Error",
+              text: "User Access Denied. Contact your Admin to grant you access.",
+              showCloseButton: true,
+              focusConfirm: false,
+              confirmButtonText:
+                '<i class="fa fa-thumbs-down"></i> Sign Out',
+              width: "300px",
+              allowOutsideClick: false
+            }).then(() => {
+              this.signOut()
+            })
 
 
-        if (i.mailNickname == "storemanagers" || i.mailNickname == "sundryfoodsauditors") {
 
-          this.$store.dispatch('user', this.myMSALObj.getAccount().name);
-          this.$store.dispatch('role', i.mailNickname)
-          this.$store.dispatch('loggedIn', true)
-          access = true
-        }
+          }
+        })
+      }
+      else {
+        this.$swal.fire({
+          title: "Error",
+          text: "User Access Denied. Contact your Admin to grant you access.",
+          showCloseButton: true,
+          focusConfirm: false,
+          confirmButtonText:
+            '<i class="fa fa-thumbs-down"></i> Sign Out',
+          width: "300px",
+          allowOutsideClick: false
+        }).then(() => {
+          this.signOut()
+        })
+      }
 
-        if (access === true) {
-          this.$swal.fire("Success", "Welcome " + this.myMSALObj.getAccount().name + "", "success");
-
-          window.location.href = "/audit/home"
-        }
-        else {
-          this.$swal.fire({
-            title: "Error",
-            text: "User Access Denied. Contact your Admin to grant you access.",
-            showCloseButton: true,
-            focusConfirm: false,
-            confirmButtonText:
-              '<i class="fa fa-thumbs-down"></i> Sign Out',
-            width: "300px",
-            allowOutsideClick: false
-          }).then(() => {
-            this.$store.dispatch('logout', true)
-            location.reload()
-          })
-
-
-
-        }
-      })
     },
 
     showWelcomeMessage () {
