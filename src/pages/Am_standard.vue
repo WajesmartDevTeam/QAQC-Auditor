@@ -12,7 +12,7 @@
               enctype="multipart/form-data"
               id="Am-StandardOperation"
               role="form"
-              v-on:submit.prevent="submitForm"
+              v-on:submit.prevent="submitImages"
             >
               <div
                 id="form-fields"
@@ -1973,7 +1973,7 @@
 
                 </div>
                 <div>
-                  <small class="text-warning">* Maximum of 4 images</small> <br><small class="text-warning">* Maximum of 5MB image size</small><br>
+                  <small class="text-warning">* Maximum of 5 images</small> <br><small class="text-warning">* Maximum of 5MB image size</small><br>
                   <small class="text-warning">* Only JPEG, JPG and PNG allowed </small>
                   <input
                     accept="image/jpg, image/jpeg, image/png"
@@ -2277,9 +2277,15 @@
 </template>
 
 <script>
+
 export default {
+
   data () {
     return {
+      loading: false,
+      cloudName: 'sundryfood-qaqc',
+      preset: 'orkxqp0c',
+      count: 0,
       username: "",
       o365_users: [],
       all_users: [],
@@ -2362,8 +2368,6 @@ export default {
         s12: "",
       },
 
-
-
       total_point: "",
       points: {
         p1: "",
@@ -2432,6 +2436,25 @@ export default {
 
   },
   watch: {
+    loading (val) {
+      if (val) {
+        var html =
+          '<img src="https://freefrontend.com/assets/img/css-loaders/css-fun-Little-loader.gif"/>';
+
+        this.$swal.fire({
+          title: "Processing",
+          html: html,
+          showConfirmButton: false,
+          showCancelButton: false,
+          width: "380px",
+          allowOutsideClick: false,
+          allowEscapeKey: false
+        });
+      }
+      else {
+        this.$swal.close()
+      }
+    },
     'form.store_id': function (val) {
 
       this.stores.forEach((i) => {
@@ -2483,6 +2506,47 @@ export default {
   },
 
   methods: {
+    async submitImages () {
+      this.loading = true;
+      if (this.images.length > 0) {
+        for (var i = 0; i < this.images.length; i++) {
+          let file = this.images[i];
+          let formData = new FormData();
+          formData.append("upload_preset", this.preset);
+          formData.append("file", file);
+          const resp = await this.postImage(formData);
+        }
+      }
+      else {
+        this.submitForm()
+      }
+    },
+    async postImage (formData) {
+      let cloudinaryUploadURL = `https://api.cloudinary.com/v1_1/${this.cloudName}/upload`;
+      let req = {
+        url: cloudinaryUploadURL,
+        method: "POST",
+        data: formData,
+      }
+      this.$axios.post(req.url, req.data)
+        .then(response => {
+          this.form.question_answer.push({
+            questionno: 'image' + this.count,
+            questiontext: 'image' + this.count,
+            questionlabel: 'image' + this.count,
+            answer: response.data.secure_url,
+          });
+        })
+        .then(data => {
+          this.count++;
+          if (this.count == this.images.length) {
+            this.submitForm()
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        })
+    },
     async submitForm () {
       let points = await this.getTotal();
       let qa = [];
@@ -2556,7 +2620,7 @@ export default {
         }
       });
       // let data = [this.form.store_id, qa, points, taskplanner, this.images];
-      this.form.question_answer = qa;
+      this.form.question_answer = this.form.question_answer.concat(qa);
       this.points = points;
       this.form.taskplanner = taskplanner;
       this.setPercents();
@@ -2628,18 +2692,6 @@ export default {
       this.submitMvr()
     },
     submitMvr () {
-      var html =
-        '<img src="https://freefrontend.com/assets/img/css-loaders/css-fun-Little-loader.gif"/>';
-
-      this.$swal.fire({
-        title: "Processing",
-        html: html,
-        showConfirmButton: false,
-        showCancelButton: false,
-        width: "380px",
-        allowOutsideClick: false,
-        allowEscapeKey: false
-      });
       let that = this;
       document.querySelectorAll('.points').forEach(function (el, ind) {
         let label = el.childNodes[0].innerText;
@@ -2677,27 +2729,31 @@ export default {
 
       var req = {
         what: "ammvr",
-        data: this.form
+        data: this.form,
+        showLoader: false
       };
       this.$socket
         .makePostRequest(req)
         .then(response => {
-          this.submitImages(response.data.form_id)
+          this.$swal.fire("Success", "Form created", "success")
+            .then(() => {
+              location.reload();
+            });
         })
         .catch(error => {
           this.$swal.fire("Error", error.message, "error");
           this.form.question_answer = [];
         });
+
     },
 
     onFileChange (e) {
-      if (this.images.length > 4) {
-        this.$swal.fire("Warning", "Maximum of 4 images allowed", "warning");
+      var files = this.$refs.files.files;
+      if (files.length > 5) {
+        this.$swal.fire("Warning", "Maximum of 5 images allowed", "warning");
         return;
       }
-      var files = this.$refs.files.files;
-
-      if (!files.length) return;
+      else if (!files.length) return;
       else {
         var fsize = (files[0].size / (1024 * 1024)).toFixed(2);
         if (!(fsize <= 5)) {
@@ -2729,57 +2785,7 @@ export default {
       this.images.splice(index, 1);
       this.photos.splice(index, 1);
     },
-    async submitImages (id) {
-      var html =
-        '<img src="https://freefrontend.com/assets/img/css-loaders/css-fun-Little-loader.gif"/>';
 
-      this.$swal.fire({
-        title: "Processing",
-        html: html,
-        showConfirmButton: false,
-        showCancelButton: false,
-        width: "380px",
-        allowOutsideClick: false,
-        allowEscapeKey: false
-      });
-
-      for (var i = 0; i < this.images.length; i++) {
-        let file = this.images[i];
-        let count = i + 1;
-        let formData = new FormData();
-        formData.append('form_id', id);
-        formData.append('image', file);
-        let res = await this.postImage(formData, count);
-      }
-
-    },
-    async postImage (formData, count) {
-      let req = {
-        what: "amvrimage",
-        formData: true,
-        data: formData
-      }
-      this.$socket
-        .makePostRequest(req)
-        .then(res => {
-          if (res.type == 'amvrimage') {
-            if (this.images.length == count) {
-              this.$swal.fire("Success", "Form created", "success")
-                .then(() => {
-                  setTimeout(() => {
-                    location.reload();
-                  }, 1000)
-                });
-            }
-            else return true;
-
-          }
-
-        })
-        .catch(error => {
-          this.$swal.fire("Error", error.message, "error");
-        });
-    },
     async acquireTokenPopupAndCallMSGraph (task) {
 
       //Always start with acquireTokenSilent to obtain a token in the signed in user from cache
@@ -2849,16 +2855,13 @@ export default {
 
     },
     callMSGraphPost (theUrl, accessToken, data, callback) {
-
       let config = {
         headers: {
           'Authorization': 'Bearer ' + accessToken,
           'Content-type': 'application/json'
         }
       }
-
       // var data = JSON.parse(data)
-
       let url = theUrl
 
       this.$axios.post(url, data, config)
