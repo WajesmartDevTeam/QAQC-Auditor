@@ -2843,10 +2843,11 @@ export default {
     this.myMSALObj = new Msal.UserAgentApplication(this.msalConfig);
     this.getTokenPopupAndCallMSGraph2()
   },
-  mounted () {
-
+  created () {
     this.stores = this.$store.getters.stores;
     this.username = this.$store.getters.user;
+  },
+  mounted () {
     var today = new Date();
     var dd = today.getDate();
     var mm = today.getMonth() + 1; //January is 0!
@@ -3057,15 +3058,21 @@ export default {
 
           this.acquireTokenPopupAndCallMSGraph(JSON.stringify(plannerTask))
         }
-
       });
       this.form.question_answer = this.form.question_answer.concat(qa);
       this.points = points;
       this.form.taskplanner = taskplanner;
       this.setPercents();
-
-
-
+    },
+    setPercents () {
+      this.percents.p1 = Math.ceil(this.points.p1 / 75 * 100);
+      this.percents.p2 = Math.ceil(this.points.p2 / 25 * 100);
+      this.percents.p3 = Math.ceil(this.points.p3 / 45 * 100);
+      this.percents.p4 = Math.ceil(this.points.p4 / 50 * 100);
+      this.percents.p5 = Math.ceil(this.points.p5 / 85 * 100);
+      this.percents.p6 = Math.ceil(this.points.p6 / 50 * 100);
+      this.percents.p7 = Math.ceil(this.points.p7 / 40 * 100);
+      this.getSum();
     },
     async getTotal () {
       //services
@@ -3125,16 +3132,7 @@ export default {
       return points;
 
     },
-    setPercents () {
-      this.percents.p1 = Math.ceil(this.points.p1 / 75 * 100);
-      this.percents.p2 = Math.ceil(this.points.p2 / 25 * 100);
-      this.percents.p3 = Math.ceil(this.points.p3 / 45 * 100);
-      this.percents.p4 = Math.ceil(this.points.p4 / 50 * 100);
-      this.percents.p5 = Math.ceil(this.points.p5 / 85 * 100);
-      this.percents.p6 = Math.ceil(this.points.p6 / 50 * 100);
-      this.percents.p7 = Math.ceil(this.points.p7 / 40 * 100);
-      this.getSum();
-    },
+
     getSum () {
       var sum = 0;
       for (var property in this.points) {
@@ -3142,7 +3140,6 @@ export default {
         sum += p
       }
       this.total_point = sum;
-
       var psum = 0;
       for (var property in this.percents) {
         psum += Number(this.percents[property]);
@@ -3151,7 +3148,6 @@ export default {
       this.submitMvr()
     },
     submitMvr () {
-
       let that = this;
       document.querySelectorAll('.points').forEach(function (el, ind) {
         let label = el.childNodes[0].innerText;

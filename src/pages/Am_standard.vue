@@ -2429,11 +2429,6 @@ export default {
     document.getElementById("taskdate4").setAttribute("min", today);
     document.getElementById("taskdate5").setAttribute("min", today);
 
-    // this.stores.map(function (x) {
-
-    //   return x.store_address = x.address + ', ' + x.location;
-    // });
-
   },
   watch: {
     loading (val) {
@@ -2708,7 +2703,6 @@ export default {
           questionlabel: label,
           answer: ans,
         })
-
       });
       document.querySelectorAll('.percent').forEach(function (el, ind) {
         let label = el.childNodes[0].innerText;
